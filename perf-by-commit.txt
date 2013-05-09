@@ -1,0 +1,1860 @@
+HEAD is now at c3fa4a7 Add a command-line performance test
+1000/100/10: 1303.5, 1305.1+/-60.2 ms (1295, 1257, 1289, 1313, 1206, 1281, 1312, 1313, 1347, 1438)
+HEAD is now at 0e73b02 Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 1341.5, 1346.7+/-43.0 ms (1323, 1276, 1310, 1327, 1350, 1390, 1335, 1348, 1385, 1423)
+HEAD is now at eed3227 Merge pull request #154 from dmoena/master
+1000/100/10: 1319.5, 1321.8+/-30.5 ms (1313, 1270, 1295, 1327, 1341, 1382, 1326, 1307, 1345, 1312)
+HEAD is now at 856c1ff Merge pull request #155 from kberg/master
+1000/100/10: 1339.5, 1340.9+/-48.4 ms (1317, 1259, 1286, 1348, 1364, 1327, 1331, 1367, 1382, 1428)
+HEAD is now at 106b16e Merge pull request #157 from helder-git/patch-1
+1000/100/10: 421, 425.8+/-15.4 ms (450, 407, 419, 418, 423, 418, 423, 416, 456, 428)
+HEAD is now at e79c8be Removing duplicated word
+1000/100/10: 416.5, 421.7+/-17.9 ms (446, 402, 409, 422, 415, 410, 408, 418, 458, 429)
+HEAD is now at 1413fab added superior limit for small scale labels (yocto)
+1000/100/10: 427, 426.5+/-18.1 ms (449, 405, 404, 418, 443, 436, 406, 418, 446, 440)
+HEAD is now at 7bf8791 added zetta (Z) and yotta (Y) labels for consistency purposes
+1000/100/10: 413, 422.1+/-17.4 ms (448, 408, 409, 418, 413, 412, 412, 413, 457, 431)
+HEAD is now at a26206c Rewrite iterator.
+1000/100/10: 1316, 1316.0+/-36.3 ms (1317, 1312, 1306, 1331, 1348, 1374, 1315, 1330, 1290, 1237)
+HEAD is now at 6488553 Add default values to the iterator factory.
+1000/100/10: 1435, 1452.2+/-49.4 ms (1405, 1401, 1407, 1435, 1422, 1435, 1468, 1501, 1506, 1542)
+HEAD is now at a02978e Optimization: inline isNullOrNan. Also, don't bother calling isNaN just to test NaN itself; x != x is a high-speed replacement.
+1000/100/10: 1456.5, 1457.6+/-47.3 ms (1383, 1410, 1422, 1469, 1445, 1435, 1468, 1514, 1529, 1501)
+HEAD is now at 1fdef78 Two more optimizations: remove default value for predicate, and, use local variable for nextIdx in advance.
+1000/100/10: 1879, 1844.9+/-328.0 ms (1471, 1523, 2423, 2137, 2036, 2064, 1900, 1858, 1566, 1471)
+HEAD is now at 5442f87 Iterator optimization - peek-ahead is optimized, and, remove idx_, which is not required.
+1000/100/10: 1593, 1581.7+/-40.5 ms (1598, 1535, 1571, 1602, 1527, 1588, 1654, 1532, 1603, 1607)
+HEAD is now at db51cdf Decent optimziation by precomputing hasNext, saves about 3%
+1000/100/10: 1660.5, 1643.0+/-55.8 ms (1601, 1534, 1588, 1626, 1657, 1666, 1682, 1720, 1692, 1664)
+HEAD is now at b43b50f Post success count along with failure count.
+1000/100/10: 1907.5, 1902.3+/-57.0 ms (1829, 1902, 1803, 1859, 1908, 1907, 1970, 1922, 1968, 1955)
+HEAD is now at 31f8e58 Recombine drawTrivialLine and drawNonTrivialLine, using a strategy to separate out the behavior. I haven't had a chance to performance test this yet. We shall see.
+1000/100/10: 2205.5, 2147.7+/-348.0 ms (2431, 2574, 2563, 2120, 2405, 2291, 1737, 1776, 1842, 1738)
+HEAD is now at 796ccbc Add TODO -- move that assertion someplace else.
+1000/100/10: 1461.5, 1460.0+/-40.2 ms (1420, 1484, 1440, 1455, 1486, 1506, 1401, 1522, 1418, 1468)
+HEAD is now at fb09a25 Finish the tests for missing_points, that map to tests/independent-series.html
+1000/100/10: 1459, 1460.3+/-40.1 ms (1420, 1491, 1432, 1447, 1516, 1397, 1471, 1440, 1516, 1473)
+HEAD is now at 71f9461 More turbocharge for CanvasAssertions.
+1000/100/10: 1464.5, 1468.8+/-42.7 ms (1424, 1480, 1437, 1448, 1497, 1513, 1411, 1477, 1549, 1452)
+HEAD is now at bbb9a8f Add some power to the canvas assertions. Also, the canvas assertions weren't actually testing attributes. Fortunately they all passed.
+1000/100/10: 1480, 1491.1+/-69.0 ms (1417, 1472, 1440, 1447, 1488, 1522, 1540, 1554, 1625, 1406)
+HEAD is now at 8722284 The awful index-based iterators are gone, replaced with iterator objects - code is easier to understand.
+1000/100/10: 1520, 1607.0+/-240.1 ms (1430, 1479, 1443, 1458, 1488, 1569, 1552, 1580, 1902, 2169)
+HEAD is now at 199fd78 Whoops re: utils_test.
+1000/100/10: 1969, 2046.8+/-307.9 ms (2675, 2124, 1975, 1975, 1963, 2485, 1746, 1865, 1716, 1944)
+HEAD is now at dc18dd1 Remove unused local variable from drawNonTrivialLine.
+1000/100/10: 1992.5, 1954.7+/-150.6 ms (1633, 1856, 2063, 2086, 2114, 1968, 2017, 1851, 2081, 1878)
+HEAD is now at 7d1afbb Introduce Dygraph.createIterator, and use it to simplify the code in drawTrivialLine and drawNonTrivialLine. Lots o' tests.
+1000/100/10: 1500.5, 1499.1+/-53.1 ms (1411, 1485, 1492, 1439, 1470, 1509, 1525, 1531, 1600, 1529)
+HEAD is now at 7e4cb26 Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 417, 422.5+/-15.9 ms (446, 405, 415, 414, 423, 413, 409, 419, 454, 427)
+HEAD is now at 28b8b15 make fork ribbon appear above everything else.
+1000/100/10: 423.5, 429.3+/-17.1 ms (454, 413, 416, 428, 454, 421, 414, 416, 451, 426)
+HEAD is now at 825a47f Add failure count to top of file.
+1000/100/10: 717.5, 728.6+/-33.1 ms (772, 724, 703, 705, 697, 723, 775, 777, 712, 698)
+HEAD is now at e11c15f added support for labelsKMG2 to handle very small numbers (mili, micro, nano...)
+1000/100/10: 413, 421.3+/-17.8 ms (446, 413, 412, 417, 411, 412, 409, 413, 462, 418)
+HEAD is now at a401ca8 Mild code reduction by eliminating duplication
+1000/100/10: 717.5, 724.8+/-21.4 ms (771, 722, 713, 714, 700, 717, 717, 721, 755, 718)
+HEAD is now at 0b9ce4d Add missing_points.js to the bunch (as part of prior move .. oooops)
+1000/100/10: 724.5, 733.9+/-28.2 ms (766, 735, 706, 705, 760, 740, 714, 714, 714, 785)
+HEAD is now at cea0fb7 Moving the new missing-points tests to their own test case.
+1000/100/10: 727.5, 733.2+/-26.9 ms (783, 728, 709, 710, 714, 721, 730, 781, 729, 727)
+HEAD is now at dc2e4ba connectSeparatedPoints is working. This has also improved
+1000/100/10: 720, 727.1+/-20.7 ms (770, 725, 710, 759, 710, 716, 714, 720, 720, 727)
+HEAD is now at ccb0001 Document the role of makeNextPointStep.
+1000/100/10: 564, 566.4+/-16.4 ms (604, 564, 550, 564, 548, 563, 552, 569, 574, 576)
+HEAD is now at 061118c Properly draw separated points.
+1000/100/10: 565.5, 568.4+/-16.7 ms (607, 578, 567, 557, 547, 573, 553, 564, 575, 563)
+HEAD is now at 6a84f2d Explain the role of NaN in connectSeparatedPoints.
+1000/100/10: 560.5, 564.1+/-18.4 ms (612, 564, 550, 552, 550, 559, 554, 566, 572, 562)
+HEAD is now at 8337da0 Add assertion that gets all the drawn lines.
+1000/100/10: 555, 566.6+/-22.4 ms (606, 573, 552, 556, 554, 569, 551, 606, 545, 554)
+HEAD is now at 38ad22d Merge github.com:danvk/dygraphs
+1000/100/10: 556, 569.6+/-33.1 ms (604, 595, 542, 543, 547, 553, 560, 642, 551, 559)
+HEAD is now at 57915b7 Fix bug 336. parseFloat(null) == NaN. Delightful.
+1000/100/10: 563, 565.1+/-16.6 ms (607, 566, 560, 551, 552, 563, 550, 564, 575, 563)
+HEAD is now at c2cba2c Merge pull request #153 from jzgg/master
+1000/100/10: 419, 423.3+/-15.1 ms (447, 406, 420, 427, 412, 412, 418, 412, 450, 429)
+HEAD is now at c20eabd Add test case which confirms regression reported in https://issuenav.googleplex.com/issues/dygraphs/336
+1000/100/10: 411.5, 418.6+/-15.0 ms (448, 407, 411, 417, 411, 411, 416, 408, 445, 412)
+HEAD is now at 5b0a01b regenerated
+1000/100/10: 416, 422.3+/-24.3 ms (446, 406, 417, 419, 478, 433, 404, 398, 415, 407)
+HEAD is now at 5e89347 updated check for empty string
+1000/100/10: 415, 420.6+/-15.0 ms (449, 435, 415, 411, 421, 411, 408, 403, 438, 415)
+HEAD is now at f571565 only add ':' to legend if x value formatter returns a value
+1000/100/10: 413.5, 420.3+/-16.3 ms (448, 406, 407, 422, 413, 414, 408, 411, 450, 424)
+HEAD is now at f57d599 minor fix for push-to-web
+1000/100/10: 414, 422.1+/-15.8 ms (448, 407, 411, 422, 413, 413, 415, 411, 451, 430)
+HEAD is now at aedf332 fix "fork me on github" image
+1000/100/10: 416, 422.4+/-15.1 ms (448, 409, 413, 420, 412, 416, 415, 416, 452, 423)
+HEAD is now at 22c615a Merge pull request #152 from kberg/master
+1000/100/10: 418, 422.6+/-16.1 ms (448, 425, 430, 410, 416, 411, 405, 410, 451, 420)
+HEAD is now at dd790e5 Merge branch 'tmp_branch'
+1000/100/10: 1543.5, 1533.8+/-39.2 ms (1477, 1564, 1479, 1496, 1519, 1541, 1546, 1590, 1563, 1563)
+HEAD is now at a06c73a include copyright/@license in dygraph-combined.js
+1000/100/10: 1529, 1565.1+/-125.3 ms (1471, 1506, 1503, 1505, 1526, 1541, 1552, 1906, 1609, 1532)
+HEAD is now at 0c76da8 Improvements to range selector touch event handling
+1000/100/10: 1511.5, 1526.2+/-49.4 ms (1487, 1500, 1500, 1503, 1526, 1652, 1485, 1557, 1520, 1532)
+HEAD is now at 99a77a0 Add some tepid comments, use of local variables, etc.
+1000/100/10: 418.5, 423.8+/-15.4 ms (445, 406, 412, 420, 415, 424, 417, 415, 455, 429)
+HEAD is now at 0d0a92d Standardize isNullOrNan.
+1000/100/10: 419.5, 427.7+/-21.1 ms (464, 407, 411, 420, 410, 419, 444, 416, 461, 425)
+HEAD is now at b843b52 bhs performance enhancement base. This hits biggest bang for the buck.
+1000/100/10: 414, 421.2+/-17.3 ms (457, 404, 413, 413, 414, 414, 418, 407, 447, 425)
+HEAD is now at 5cfed8c Make auto_tests easier to read, and also, add easy filter for identifying failed tests.
+1000/100/10: 1516, 1519.7+/-40.2 ms (1458, 1506, 1481, 1483, 1503, 1547, 1526, 1571, 1544, 1578)
+HEAD is now at ec0e104 add plugins to jsTestDriver.conf
+1000/100/10: 1492.5, 1494.9+/-33.3 ms (1458, 1489, 1496, 1445, 1469, 1489, 1503, 1515, 1556, 1529)
+HEAD is now at a8b9a8e Add @license tag to dygraph-combined.js
+1000/100/10: 1492, 1499.0+/-40.6 ms (1471, 1506, 1494, 1490, 1576, 1449, 1534, 1539, 1451, 1480)
+HEAD is now at 36d54f3 Merge pull request #150 from klausw-g/axis-at-zero
+1000/100/10: 1504.5, 1534.7+/-73.7 ms (1457, 1497, 1492, 1484, 1512, 1675, 1497, 1557, 1520, 1656)
+HEAD is now at f4b87da Add new option "drawAxesAtZero"
+1000/100/10: 1533.5, 1538.5+/-48.9 ms (1473, 1511, 1495, 1496, 1525, 1542, 1615, 1553, 1617, 1558)
+HEAD is now at cbfcf21 Merge pull request #148 from klausw-g/edge-points
+1000/100/10: 1508, 1527.3+/-49.5 ms (1467, 1497, 1491, 1493, 1518, 1564, 1537, 1583, 1625, 1498)
+HEAD is now at 0c59041 Merge branch 'master' of git://github.com/danvk/dygraphs into edge-points
+1000/100/10: 1501, 1506.3+/-41.7 ms (1472, 1538, 1456, 1464, 1494, 1592, 1535, 1482, 1522, 1508)
+HEAD is now at a5a5072 Requests from Dan's code review:
+1000/100/10: 1501.5, 1515.6+/-40.9 ms (1473, 1502, 1497, 1559, 1480, 1501, 1610, 1496, 1520, 1518)
+HEAD is now at 321c590 Merge pull request #149 from flooey/master
+1000/100/10: 1346, 1355.8+/-56.1 ms (1301, 1317, 1287, 1323, 1338, 1354, 1422, 1386, 1363, 1467)
+HEAD is now at c84d136 Merge pull request #147 from beda42/fix_deep_copy
+1000/100/10: 1329, 1332.0+/-41.5 ms (1300, 1334, 1260, 1302, 1324, 1347, 1394, 1309, 1376, 1374)
+HEAD is now at 233d976 reset combined
+1000/100/10: 1354, 1358.3+/-42.0 ms (1303, 1333, 1353, 1310, 1347, 1361, 1368, 1438, 1355, 1415)
+HEAD is now at 12483d3 Merge branch 'resize_label' of https://github.com/beda42/dygraphs into pull146
+1000/100/10: 1348, 1351.8+/-45.8 ms (1302, 1316, 1290, 1323, 1343, 1353, 1369, 1408, 1387, 1427)
+HEAD is now at 01f2337 setMilliseconds() doesn't return this.
+1000/100/10: 1336, 1352.9+/-64.8 ms (1307, 1345, 1281, 1289, 1318, 1335, 1453, 1400, 1337, 1464)
+HEAD is now at 117b8be Merge branch 'master' of git://github.com/danvk/dygraphs
+ERROR
+HEAD is now at 4127332 Add auto test for isolated and gap points.
+1000/100/10: 1367.5, 1362.5+/-45.7 ms (1409, 1401, 1411, 1285, 1342, 1393, 1338, 1336, 1310, 1400)
+HEAD is now at 19b84fe Add new option 'drawGapPoints'
+1000/100/10: 1354, 1364.4+/-48.6 ms (1475, 1346, 1293, 1343, 1354, 1405, 1376, 1331, 1354, 1367)
+HEAD is now at c1c5dfe null should be converted into {} in deepcopy - fixes turning on/off highlightSeriesOpts
+1000/100/10: 1354.5, 1359.3+/-63.0 ms (1301, 1319, 1287, 1336, 1348, 1361, 1367, 1511, 1363, 1400)
+HEAD is now at 0673f7c re-add the legend_div into the parent div after resize, otherwise it remains stuck in an non-existing parent and does not show
+1000/100/10: 1330, 1334.6+/-43.3 ms (1304, 1339, 1265, 1295, 1321, 1342, 1394, 1317, 1370, 1399)
+HEAD is now at c9093b7 chmod everything before pushing to web
+1000/100/10: 1344.5, 1350.6+/-37.0 ms (1304, 1321, 1355, 1308, 1328, 1410, 1334, 1383, 1390, 1373)
+HEAD is now at 41da6a8 add @license tags in various places, including dygraph-combined.js
+1000/100/10: 1338.5, 1352.3+/-50.2 ms (1301, 1319, 1283, 1326, 1347, 1430, 1368, 1417, 1402, 1330)
+HEAD is now at b7d3695 chmod options reference
+1000/100/10: 1337.5, 1340.1+/-41.3 ms (1302, 1325, 1284, 1324, 1350, 1356, 1439, 1345, 1330, 1346)
+HEAD is now at 4d3672f set permissions in generate*
+1000/100/10: 1351, 1345.4+/-34.4 ms (1315, 1318, 1283, 1332, 1348, 1354, 1358, 1371, 1403, 1372)
+HEAD is now at 6070efe Use rsync instead of scp for faster, more correct remote pushing
+1000/100/10: 1341, 1364.8+/-75.0 ms (1309, 1319, 1286, 1328, 1346, 1358, 1368, 1481, 1517, 1336)
+HEAD is now at 52faf8b Merge pull request #145 from dpwatrous/master
+1000/100/10: 1398, 1400.4+/-78.1 ms (1449, 1350, 1325, 1380, 1416, 1346, 1502, 1499, 1272, 1465)
+HEAD is now at 349dd9b Fixed Issue 206: stepPlot is not considered for stacked filling
+1000/100/10: 1356, 1374.8+/-68.8 ms (1327, 1322, 1286, 1334, 1346, 1397, 1392, 1366, 1498, 1480)
+HEAD is now at 1cc3540 Tweak the addEvent/removeEvent code. Restore the non-object methods, and add a second one just for managing the events associated with a graph.
+1000/100/10: 1504, 1543.7+/-206.8 ms (1306, 1320, 1282, 1473, 1771, 1772, 1681, 1824, 1490, 1518)
+HEAD is now at c02097a Merge pull request #143 from klausw-g/plugin-tweaks
+1000/100/10: 2010.5, 1988.1+/-212.7 ms (2255, 2297, 1790, 1725, 1666, 2061, 2121, 2045, 1976, 1945)
+HEAD is now at 6a4587a Tracking all event registrations, and deallocating them en masse makes
+1000/100/10: 1376.5, 1407.8+/-107.0 ms (1354, 1330, 1287, 1508, 1532, 1302, 1339, 1399, 1425, 1602)
+HEAD is now at 002aa32 Always set milliseconds to zero when computing date tick placement, so that resulting times are exactly aligned and become dates when at 00:00.
+ERROR
+HEAD is now at 657e052 More fixes for http://code.google.com/p/dygraphs/issues/detail?id=312
+1000/100/10: 1399.5, 1410.9+/-88.9 ms (1408, 1391, 1502, 1564, 1507, 1351, 1287, 1375, 1313, 1411)
+HEAD is now at b8ef871 Filter out the query directory from docs. Fixes http://code.google.com/p/dygraphs/issues/detail?id=312
+1000/100/10: 1421.5, 1427.4+/-59.2 ms (1407, 1512, 1506, 1310, 1442, 1390, 1404, 1404, 1436, 1463)
+HEAD is now at 52ca228 Add comments
+1000/100/10: 1356, 1381.5+/-88.5 ms (1495, 1396, 1302, 1282, 1435, 1553, 1358, 1354, 1323, 1317)
+HEAD is now at c6bdcd6 Handle unstacking points when some points are missing properly
+1000/100/10: 1352.5, 1347.0+/-27.1 ms (1307, 1326, 1360, 1366, 1308, 1359, 1394, 1360, 1346, 1344)
+HEAD is now at 138f364 Merge branch 'master' of git://github.com/danvk/dygraphs
+1000/100/10: 1338, 1342.1+/-37.1 ms (1306, 1319, 1284, 1325, 1351, 1355, 1404, 1323, 1380, 1374)
+HEAD is now at 28aa77a re-add 'validate eventName' TODO.
+1000/100/10: 1363.5, 1361.2+/-56.6 ms (1303, 1318, 1290, 1413, 1376, 1362, 1365, 1409, 1465, 1311)
+HEAD is now at 6a4457b Update plugin registry
+1000/100/10: 1368, 1371.3+/-52.2 ms (1304, 1330, 1365, 1325, 1330, 1414, 1475, 1371, 1411, 1388)
+HEAD is now at 63e957d Fix small regression in behavior on plugin CSS (issue 315)
+1000/100/10: 1314.5, 1331.5+/-42.0 ms (1308, 1321, 1290, 1390, 1319, 1310, 1371, 1291, 1407, 1308)
+HEAD is now at da1c187 Avoid calling length on undefined if no event handlers are registered.
+1000/100/10: 1326, 1333.1+/-38.1 ms (1309, 1336, 1279, 1296, 1399, 1315, 1318, 1334, 1382, 1363)
+HEAD is now at c12450f fix regression on issue 152
+1000/100/10: 1350.5, 1346.4+/-25.7 ms (1309, 1322, 1362, 1376, 1323, 1339, 1376, 1324, 1371, 1362)
+HEAD is now at 5bd29cf klaus comments on plugins
+1000/100/10: 1333, 1365.4+/-84.1 ms (1318, 1318, 1283, 1321, 1397, 1327, 1339, 1399, 1580, 1372)
+HEAD is now at bff6800 Merge branch 'master' of git://github.com/danvk/dygraphs
+1000/100/10: 1336, 1353.0+/-60.8 ms (1334, 1330, 1330, 1292, 1318, 1338, 1363, 1516, 1358, 1351)
+HEAD is now at 300c5ff Fix most warnings in tests; add support for loading (non-auto) tests to phantom-driver.js, but do not enable.
+1000/100/10: 1332, 1354.6+/-58.1 ms (1303, 1320, 1284, 1455, 1339, 1378, 1384, 1317, 1441, 1325)
+HEAD is now at e26b715 Merge branch 'master' of git://github.com/danvk/dygraphs
+1000/100/10: 1348, 1354.7+/-54.1 ms (1303, 1320, 1288, 1330, 1345, 1356, 1368, 1471, 1351, 1415)
+HEAD is now at a0d7a78 Copy new plugins dir to dygraphs.com
+1000/100/10: 1366.5, 1356.2+/-29.7 ms (1304, 1316, 1391, 1379, 1330, 1354, 1361, 1372, 1379, 1376)
+HEAD is now at e2c2150 Introduce a plugin system and move the legend to it.
+1000/100/10: 1343.5, 1342.2+/-39.1 ms (1303, 1319, 1281, 1317, 1338, 1353, 1408, 1363, 1349, 1391)
+HEAD is now at 29cb484 Edit in jsFiddle
+1000/100/10: 1362.5, 1372.5+/-64.4 ms (1313, 1339, 1295, 1338, 1363, 1362, 1372, 1389, 1517, 1437)
+HEAD is now at 08fcae0 more docs in phantom-driver.js; log speed
+1000/100/10: 1340.5, 1362.8+/-63.0 ms (1316, 1332, 1293, 1337, 1414, 1344, 1508, 1317, 1388, 1379)
+HEAD is now at e6b0b7c Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 1354.5, 1353.6+/-38.5 ms (1317, 1322, 1298, 1333, 1352, 1370, 1431, 1379, 1377, 1357)
+HEAD is now at 86a3e64 Add "test" script, which uses phantomjs for a pure command-line test.
+1000/100/10: 1341.5, 1358.4+/-57.6 ms (1311, 1328, 1290, 1334, 1358, 1378, 1411, 1491, 1349, 1334)
+HEAD is now at f3cd243 fix broken test case
+1000/100/10: 1380.5, 1363.9+/-43.6 ms (1320, 1334, 1284, 1331, 1410, 1410, 1381, 1404, 1380, 1385)
+HEAD is now at 492ea45 Add sanity test ensuring that creating annotations in a drawCallback
+1000/100/10: 1355, 1357.0+/-49.1 ms (1301, 1331, 1288, 1397, 1451, 1394, 1372, 1326, 1347, 1363)
+HEAD is now at ee1cc0b Add highlighted weekends example to gallery
+1000/100/10: 1360, 1353.9+/-37.5 ms (1312, 1332, 1291, 1332, 1359, 1361, 1371, 1378, 1417, 1386)
+HEAD is now at 73c5def Misc range selector cleanup.
+1000/100/10: 1349.5, 1356.2+/-40.6 ms (1322, 1330, 1293, 1332, 1417, 1338, 1361, 1370, 1414, 1385)
+HEAD is now at d254d25 add DuckDuckGo to the list of users
+1000/100/10: 1358.5, 1355.4+/-39.6 ms (1310, 1333, 1292, 1398, 1327, 1351, 1366, 1379, 1414, 1384)
+HEAD is now at cb1261c destroy mouseUpHandler
+1000/100/10: 1358, 1357.2+/-40.6 ms (1347, 1323, 1287, 1328, 1350, 1369, 1370, 1401, 1431, 1366)
+HEAD is now at d9d4884 Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 1353, 1364.6+/-67.4 ms (1309, 1325, 1306, 1336, 1356, 1359, 1540, 1350, 1394, 1371)
+HEAD is now at d715323 Overwrite line heights: http://code.google.com/p/dygraphs/issues/detail?id=152
+1000/100/10: 1355, 1351.9+/-38.2 ms (1309, 1329, 1289, 1332, 1347, 1363, 1370, 1377, 1415, 1388)
+HEAD is now at e446c95 fix some trailing commas in dygraph-interaction-model.js
+1000/100/10: 1363.5, 1362.0+/-33.7 ms (1328, 1340, 1333, 1313, 1350, 1388, 1414, 1379, 1377, 1398)
+HEAD is now at 421f177 Fix Issue 279: Strange animations when zooming animations are enabled and double click zooming
+1000/100/10: 1346.5, 1345.0+/-36.1 ms (1337, 1347, 1273, 1325, 1346, 1360, 1403, 1314, 1377, 1368)
+HEAD is now at e992d19 Fix Issue 145:  Chrome/right-click seems to start implementing zoom bounding boxes.
+1000/100/10: 1339, 1344.4+/-34.6 ms (1309, 1327, 1293, 1332, 1398, 1347, 1327, 1346, 1395, 1370)
+HEAD is now at c4a1115 Fix Issue 299:  option labelsKMG2 doesn't support anything after terabyte (T)
+1000/100/10: 1339, 1345.2+/-37.0 ms (1312, 1325, 1286, 1385, 1319, 1353, 1395, 1324, 1384, 1369)
+HEAD is now at 966ac3f update changes.html to reflect auto_tests
+1000/100/10: 1346, 1361.6+/-60.3 ms (1309, 1323, 1300, 1337, 1355, 1437, 1316, 1487, 1385, 1367)
+HEAD is now at 4c919f5 Fix issue 197: Annotations are displayed outside the bounds of the graph
+1000/100/10: 1367.5, 1377.3+/-60.4 ms (1333, 1325, 1384, 1327, 1292, 1455, 1351, 1433, 1463, 1410)
+HEAD is now at 6125fed Add support for touch gestures: swipe & pinch-to-zoom.
+1000/100/10: 1355.5, 1357.1+/-55.5 ms (1320, 1346, 1274, 1391, 1419, 1406, 1314, 1298, 1365, 1438)
+HEAD is now at 01681f6 Fix unboxed-spark test.
+1000/100/10: 1391.5, 1384.7+/-64.2 ms (1321, 1327, 1475, 1471, 1393, 1421, 1424, 1390, 1294, 1331)
+HEAD is now at e0ff43a Fix error when labelsDiv=null (was affecting unboxed-spark test)
+1000/100/10: 1345, 1357.4+/-54.6 ms (1316, 1326, 1293, 1336, 1354, 1378, 1451, 1432, 1391, 1297)
+HEAD is now at 9d31b3f Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 1371.5, 1363.8+/-35.2 ms (1312, 1331, 1372, 1310, 1413, 1371, 1362, 1393, 1383, 1391)
+HEAD is now at 3f675fe Fix issue 255: date supplied as YYYY-MM-DD shows previous day's date...
+1000/100/10: 1337, 1347.5+/-44.0 ms (1331, 1333, 1298, 1341, 1357, 1449, 1352, 1387, 1304, 1323)
+HEAD is now at e27878d Merge pull request #139 from klausw-g/stacked-NaN
+1000/100/10: 1363.5, 1369.3+/-72.5 ms (1483, 1463, 1263, 1324, 1415, 1395, 1321, 1332, 1398, 1299)
+HEAD is now at 7d463f4 Fix NaN handling for stacked graphs.
+1000/100/10: 1372.5, 1369.9+/-42.9 ms (1317, 1336, 1307, 1346, 1357, 1428, 1416, 1407, 1397, 1388)
+HEAD is now at 6278f6f Check for balanced context.save() and context.restore() calls
+1000/100/10: 1318, 1349.6+/-75.4 ms (1314, 1322, 1290, 1438, 1328, 1303, 1369, 1314, 1524, 1294)
+HEAD is now at 6bf4df7 Add some missing context.restore() calls
+1000/100/10: 1340.5, 1351.4+/-40.0 ms (1321, 1333, 1288, 1325, 1345, 1360, 1418, 1336, 1393, 1395)
+HEAD is now at 1f882d0 Merge pull request #136 from klausw-g/non-logscale-x
+1000/100/10: 1373.5, 1369.9+/-37.8 ms (1314, 1370, 1424, 1317, 1344, 1403, 1389, 1352, 1409, 1377)
+HEAD is now at 0979a9f Merge pull request #137 from klausw-g/highlight-stacked
+1000/100/10: 1342.5, 1336.7+/-34.6 ms (1299, 1351, 1292, 1292, 1326, 1337, 1396, 1363, 1348, 1363)
+HEAD is now at 436943f Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 1291, 1287.7+/-33.3 ms (1236, 1254, 1251, 1280, 1286, 1304, 1296, 1320, 1342, 1308)
+HEAD is now at 97583b9 Fix a bug involving calls to updateOptions() while panning.
+1000/100/10: 1279.5, 1274.5+/-41.1 ms (1218, 1278, 1217, 1249, 1256, 1307, 1281, 1293, 1351, 1295)
+HEAD is now at 04c104d Fix connectSeparatedPoints, add test
+1000/100/10: 1312.5, 1340.6+/-52.2 ms (1307, 1314, 1282, 1375, 1311, 1346, 1399, 1311, 1450, 1311)
+HEAD is now at 90e92cf Merge branch 'master' into highlight-stacked
+1000/100/10: 1582.5, 1567.7+/-151.2 ms (1224, 1513, 1713, 1582, 1499, 1559, 1597, 1805, 1602, 1583)
+HEAD is now at 255a961 Merge pull request #138 from klausw-g/highlight-series-gallery
+1000/100/10: 1306, 1377.6+/-144.8 ms (1500, 1513, 1571, 1578, 1289, 1295, 1230, 1317, 1225, 1258)
+HEAD is now at 014f844 Add closest-series highlighting demo to gallery
+1000/100/10: 1292.5, 1332.1+/-121.7 ms (1311, 1229, 1243, 1289, 1287, 1287, 1296, 1311, 1422, 1646)
+HEAD is now at 81cb07d Fix highlighting for zoomed graphs
+1000/100/10: 1757, 1714.1+/-96.5 ms (1605, 1621, 1771, 1755, 1608, 1596, 1764, 1856, 1806, 1759)
+HEAD is now at 44462ba Keep the X axis ticks when logscale is set globally.
+1000/100/10: 1699, 1704.4+/-92.4 ms (1615, 1586, 1690, 1707, 1722, 1768, 1691, 1588, 1822, 1855)
+HEAD is now at 87cf3e0 Merge pull request #135 from klausw-g/highlight-NaN-3
+1000/100/10: 1613.5, 1598.1+/-168.0 ms (1759, 1697, 1603, 1599, 1237, 1418, 1624, 1829, 1633, 1582)
+HEAD is now at 62c3d2f New approach to fix NaN handling in highlighting
+1000/100/10: 1575, 1578.1+/-61.8 ms (1501, 1560, 1638, 1623, 1590, 1676, 1631, 1516, 1524, 1522)
+HEAD is now at e7e949c Merge pull request #134 from timeu/bugfix_upstream
+1000/100/10: 1459, 1505.4+/-139.3 ms (1599, 1649, 1796, 1369, 1410, 1362, 1421, 1443, 1475, 1530)
+HEAD is now at d3f09b9 Merge pull request #133 from klausw-g/fix-stuck-highlighting
+1000/100/10: 1394.5, 1418.4+/-81.0 ms (1337, 1405, 1375, 1397, 1359, 1599, 1364, 1392, 1439, 1517)
+HEAD is now at 1069800 Bugfix: Avoid getting stuck when the first datapoint has a NaN value
+1000/100/10: 1468.5, 1503.2+/-119.1 ms (1376, 1603, 1403, 1545, 1487, 1450, 1403, 1686, 1682, 1397)
+HEAD is now at 470d42e Merge branch 'master' of https://github.com/danvk/dygraphs
+1000/100/10: 1379.5, 1394.8+/-39.4 ms (1360, 1371, 1358, 1388, 1406, 1369, 1360, 1428, 1436, 1472)
+HEAD is now at 0295cce Rename stuff.
+1000/100/10: 1440.5, 1449.6+/-56.1 ms (1436, 1365, 1395, 1502, 1445, 1415, 1556, 1496, 1427, 1459)
+HEAD is now at 1d44ee5 Fix stuck fading animation for series highlighting
+1000/100/10: 1409.5, 1416.6+/-93.2 ms (1271, 1491, 1396, 1360, 1460, 1587, 1479, 1404, 1303, 1415)
+HEAD is now at 11c49f0 Clean up docs a little, fix "title" propagation bug.
+1000/100/10: 1298.5, 1302.3+/-52.5 ms (1260, 1238, 1251, 1283, 1421, 1303, 1312, 1333, 1294, 1328)
+HEAD is now at 4131ea7 Merge pull request #131 from klausw-g/highlight-NaN-2
+1000/100/10: 1298.5, 1294.3+/-41.9 ms (1229, 1246, 1263, 1294, 1295, 1302, 1310, 1306, 1379, 1319)
+HEAD is now at 9355cb8 Merge branch 'master' into highlight-NaN-2
+1000/100/10: 1285.5, 1290.5+/-41.4 ms (1230, 1244, 1262, 1280, 1291, 1303, 1353, 1274, 1351, 1317)
+HEAD is now at 2941da8 Reorder; trying to move to Gallery
+1000/100/10: 1297, 1296.6+/-46.6 ms (1229, 1244, 1262, 1301, 1293, 1301, 1349, 1272, 1348, 1367)
+HEAD is now at 956ac39 Update index.html to mention the gallery
+1000/100/10: 1274, 1282.5+/-39.3 ms (1242, 1283, 1254, 1238, 1258, 1280, 1345, 1268, 1344, 1313)
+HEAD is now at d0c6a88 More name standardization.
+1000/100/10: 1278, 1288.5+/-47.7 ms (1229, 1243, 1266, 1364, 1260, 1248, 1290, 1302, 1327, 1356)
+HEAD is now at 473278e Doc updates / push gallery, rename some gallery js files for compatibility.
+1000/100/10: 1285.5, 1295.4+/-44.5 ms (1233, 1257, 1271, 1287, 1334, 1264, 1284, 1298, 1365, 1361)
+HEAD is now at a937d03 Fix NaN values confusing closest-point search
+1000/100/10: 1265.5, 1280.3+/-42.2 ms (1245, 1241, 1295, 1264, 1247, 1267, 1334, 1244, 1362, 1304)
+HEAD is now at 2550818 Remove deleted tests from index.html
+1000/100/10: 1280, 1280.6+/-41.7 ms (1232, 1244, 1294, 1277, 1243, 1271, 1292, 1289, 1381, 1283)
+HEAD is now at b98ebda Delete outdated tests.
+1000/100/10: 1278.5, 1283.6+/-39.4 ms (1231, 1245, 1280, 1329, 1268, 1324, 1277, 1234, 1320, 1328)
+HEAD is now at 47e07d0 Fix option reference, remove line continuation hack.
+1000/100/10: 1288, 1297.1+/-48.6 ms (1230, 1251, 1265, 1292, 1293, 1366, 1274, 1284, 1376, 1340)
+HEAD is now at eb96f83 Merge pull request #129 from klausw-g/tweak-circle-demo
+1000/100/10: 1282.5, 1287.9+/-41.4 ms (1230, 1257, 1280, 1255, 1263, 1285, 1308, 1303, 1374, 1324)
+HEAD is now at a7803ee Add a simple demo as a self-contained example
+1000/100/10: 1286, 1295.4+/-47.2 ms (1237, 1251, 1270, 1286, 1299, 1363, 1274, 1286, 1389, 1299)
+HEAD is now at 30b2bf7 tweak custom circle demo to add per-series highlighting
+1000/100/10: 1286.5, 1284.2+/-32.0 ms (1227, 1251, 1291, 1279, 1288, 1304, 1346, 1269, 1302, 1285)
+HEAD is now at 91df4ea Merge pull request #126 from klausw-g/highlight3
+1000/100/10: 1276, 1286.2+/-43.9 ms (1232, 1268, 1241, 1273, 1287, 1341, 1279, 1331, 1360, 1250)
+HEAD is now at afdb20d Change option to highlightSeriesBackgroundAlpha
+1000/100/10: 1268, 1292.8+/-65.5 ms (1220, 1240, 1244, 1265, 1271, 1284, 1339, 1265, 1378, 1422)
+HEAD is now at 2a02e5d Changes based on danvk's review:
+1000/100/10: 1255, 1258.4+/-33.7 ms (1227, 1271, 1239, 1272, 1213, 1238, 1303, 1227, 1303, 1291)
+HEAD is now at d0e6d17 Merge pull request #128 from klausw-g/custom-circle-tweaks
+1000/100/10: 1257, 1259.3+/-27.3 ms (1211, 1256, 1225, 1257, 1257, 1305, 1282, 1282, 1264, 1254)
+HEAD is now at 0e261c4 whitespace cleanup
+1000/100/10: 1256, 1260.3+/-35.1 ms (1204, 1245, 1218, 1254, 1253, 1266, 1318, 1258, 1304, 1283)
+HEAD is now at bceff4b Merge pull request #125 from jllodra/master
+1000/100/10: 1262.5, 1262.3+/-29.3 ms (1210, 1250, 1266, 1240, 1243, 1262, 1263, 1282, 1313, 1294)
+HEAD is now at 304c1fb Gallery failure when CSS does not exist.
+1000/100/10: 1259.5, 1256.5+/-35.7 ms (1214, 1268, 1208, 1249, 1302, 1271, 1294, 1213, 1295, 1251)
+HEAD is now at a6c2695 Gallery code links reset the URL anchor. This fixes it.
+1000/100/10: 1257.5, 1258.4+/-24.3 ms (1223, 1253, 1255, 1230, 1240, 1260, 1261, 1273, 1299, 1290)
+HEAD is now at 85ff97a clean up closePath usage
+1000/100/10: 1254.5, 1256.8+/-36.8 ms (1204, 1284, 1210, 1229, 1246, 1257, 1319, 1252, 1295, 1272)
+HEAD is now at a8ef67a Custom circle tweaks:
+1000/100/10: 1266, 1262.1+/-28.6 ms (1209, 1245, 1228, 1261, 1260, 1271, 1279, 1277, 1307, 1284)
+HEAD is now at 7ebdf2f Tweak series-highlight demo
+1000/100/10: 1283.5, 1275.0+/-35.7 ms (1221, 1228, 1248, 1264, 1286, 1281, 1289, 1293, 1340, 1300)
+HEAD is now at 38dbac3 Merge branch 'master' of git://github.com/danvk/dygraphs into highlight3
+1000/100/10: 1267, 1273.5+/-45.2 ms (1210, 1227, 1260, 1268, 1266, 1277, 1332, 1256, 1364, 1275)
+HEAD is now at 65728bc Merge pull request #127 from kberg/master
+1000/100/10: 1265, 1263.0+/-29.6 ms (1207, 1249, 1227, 1261, 1261, 1269, 1280, 1283, 1308, 1285)
+HEAD is now at fa20d2e Display CSS. This doesn't work in Chrome, locally (http://code.google.com/p/chromium/issues/detail?id=45786). Well it works with FF, and also should work when published.
+1000/100/10: 1093, 1099.7+/-35.1 ms (1118, 1112, 1079, 1061, 1084, 1072, 1072, 1181, 1116, 1102)
+HEAD is now at 3fb9650 Updated docs for drawPointCallback and drawHighlightPointCallback.
+1000/100/10: 1264.5, 1258.6+/-29.1 ms (1208, 1244, 1217, 1254, 1263, 1266, 1273, 1282, 1303, 1276)
+HEAD is now at 353e254 Add demo for series highlighting
+1000/100/10: 1247, 1263.1+/-35.4 ms (1213, 1230, 1246, 1306, 1248, 1243, 1306, 1245, 1312, 1282)
+HEAD is now at 49302d6 Support line continuation in JSON format.
+1000/100/10: 1261.5, 1262.2+/-33.3 ms (1208, 1245, 1220, 1260, 1263, 1271, 1315, 1253, 1299, 1288)
+HEAD is now at 5469113 Merge branch 'master' of git://github.com/danvk/dygraphs into highlight3
+1000/100/10: 1273, 1268.1+/-31.5 ms (1213, 1227, 1245, 1264, 1278, 1299, 1292, 1268, 1310, 1285)
+HEAD is now at 240df72 remove mouseoverCallback and highlightUnderlay from this branch
+1000/100/10: 1276, 1277.3+/-39.5 ms (1222, 1231, 1247, 1266, 1276, 1285, 1312, 1276, 1353, 1305)
+HEAD is now at 4270a28 Merge pull request #123 from kberg/custom-points
+1000/100/10: 1265, 1260.6+/-27.2 ms (1220, 1245, 1218, 1257, 1263, 1267, 1272, 1272, 1304, 1288)
+HEAD is now at 475f742 cleanups as requested in kberg's review
+1000/100/10: 1268, 1265.1+/-40.0 ms (1202, 1218, 1236, 1256, 1265, 1271, 1331, 1273, 1315, 1284)
+HEAD is now at b5bdd85 Add "parameters" specification to docs; indented rendering.
+1000/100/10: 1244, 1246.6+/-33.7 ms (1222, 1194, 1224, 1234, 1263, 1254, 1261, 1275, 1313, 1226)
+HEAD is now at 857a693 Add support for closest-series highlighting
+1000/100/10: 1262, 1260.2+/-39.8 ms (1202, 1220, 1238, 1258, 1266, 1320, 1310, 1222, 1293, 1273)
+HEAD is now at e2f6247 Better gallery; separates out the HTML, Javascript and CSS. Although the CSS is missing still. :/ Should take me an hour on the weekend to finish.
+1000/100/10: 1085, 1090.2+/-26.3 ms (1118, 1110, 1075, 1045, 1079, 1091, 1120, 1121, 1079, 1064)
+HEAD is now at 3fdc648 Remove comma, incompatible with IE.
+1000/100/10: 1267, 1268.0+/-34.3 ms (1214, 1255, 1223, 1265, 1260, 1271, 1326, 1269, 1307, 1290)
+HEAD is now at 8abce47 console.warn to this.warn
+1000/100/10: 1248.5, 1242.4+/-32.2 ms (1218, 1187, 1219, 1223, 1245, 1252, 1263, 1253, 1260, 1304)
+HEAD is now at 3c23fa9 new commit: fix labelsDivStyles IE8
+1000/100/10: 1252, 1251.1+/-26.4 ms (1229, 1231, 1261, 1209, 1243, 1261, 1305, 1267, 1262, 1243)
+HEAD is now at 623bbb4 Prevent crashing when using unsupported css3 properties for your browser in labelsDivStyles
+1000/100/10: 1232.5, 1238.3+/-32.2 ms (1215, 1185, 1219, 1224, 1241, 1253, 1293, 1259, 1219, 1275)
+HEAD is now at 5879307 Changes due to code review.
+1000/100/10: 1256.5, 1263.2+/-27.6 ms (1220, 1250, 1273, 1243, 1247, 1263, 1315, 1250, 1296, 1275)
+HEAD is now at 014a810 Merge pull request #121 from wimme/patch-1
+1000/100/10: 1231, 1244.1+/-34.0 ms (1221, 1198, 1228, 1232, 1308, 1281, 1231, 1281, 1230, 1231)
+HEAD is now at 096a71e Merge pull request #124 from timeu/bugfix_upstream
+1000/100/10: 1247, 1250.2+/-35.2 ms (1221, 1191, 1231, 1229, 1299, 1234, 1264, 1260, 1301, 1272)
+HEAD is now at 4ab51f7 Fixed Dygraph.Circles.Circle and custom circles. All working now.
+1000/100/10: 1260.5, 1260.3+/-42.1 ms (1203, 1219, 1214, 1257, 1256, 1264, 1280, 1346, 1290, 1274)
+HEAD is now at d7eddd7 Bug 284. Check that user_attrs_ and attrs_ !== null and remove mouse event handler in destroy() function
+1000/100/10: 1232, 1247.4+/-46.8 ms (1221, 1188, 1230, 1286, 1214, 1302, 1234, 1244, 1339, 1216)
+HEAD is now at 240c0b1 Many bug fixes, highlight seems to not work.
+1000/100/10: 1269.5, 1266.1+/-43.1 ms (1199, 1222, 1218, 1300, 1252, 1266, 1273, 1290, 1315, 1326)
+HEAD is now at 773d131 Add custom-circles demo to tests/. Obvious bugs in rendering custom widgets.
+1000/100/10: 1257, 1250.3+/-32.7 ms (1205, 1251, 1216, 1268, 1209, 1238, 1263, 1270, 1303, 1280)
+HEAD is now at 72c12ed Add tests for drawPointCallback and drawHighlightCallback
+1000/100/10: 1275.5, 1273.7+/-34.8 ms (1221, 1240, 1239, 1273, 1278, 1286, 1290, 1312, 1335, 1263)
+HEAD is now at a833237 Add sanity drawPointCallback tests.
+1000/100/10: 1417, 1451.2+/-228.4 ms (1226, 1239, 1220, 1258, 1254, 1653, 1765, 1576, 1630, 1691)
+HEAD is now at 3447a94 whitespace cleanup
+1000/100/10: 1260.5, 1339.1+/-141.8 ms (1505, 1571, 1548, 1240, 1214, 1245, 1256, 1255, 1292, 1265)
+HEAD is now at 2996a18 Merge http://github.com/danvk/dygraphs into custom-points
+1000/100/10: 1273, 1275.0+/-36.1 ms (1221, 1268, 1229, 1306, 1264, 1278, 1336, 1253, 1311, 1284)
+HEAD is now at 78e58af custom circles, first part.
+1000/100/10: 1088, 1085.8+/-21.9 ms (1111, 1108, 1089, 1076, 1073, 1044, 1096, 1110, 1087, 1064)
+HEAD is now at 8be14b0 Merge pull request #120 from timeu/bugfix_upstream
+1000/100/10: 1264.5, 1261.7+/-36.0 ms (1232, 1202, 1263, 1236, 1255, 1268, 1266, 1337, 1289, 1269)
+HEAD is now at 9aedaae Use DygraphOps.dispatchXXX method instead of updateOptions
+1000/100/10: 1251.5, 1256.2+/-50.2 ms (1217, 1216, 1205, 1217, 1243, 1260, 1263, 1277, 1372, 1292)
+HEAD is now at a0d847f Fix for issue 274: broken step plots
+1000/100/10: 1256, 1257.0+/-35.6 ms (1229, 1199, 1247, 1272, 1225, 1253, 1259, 1268, 1322, 1296)
+HEAD is now at 1357d81 Bug #282. Auto-test added
+1000/100/10: 1268.5, 1259.4+/-29.6 ms (1231, 1206, 1240, 1241, 1265, 1272, 1273, 1282, 1308, 1276)
+HEAD is now at 1f6a625 Bugfix #282. Use valueRange (if specified) instead of extremes during unzooming. Fixed the check whether the y-axis is dirty
+1000/100/10: 1247, 1245.3+/-33.9 ms (1219, 1203, 1274, 1269, 1199, 1229, 1231, 1302, 1264, 1263)
+HEAD is now at 77e1c55 Merge pull request #118 from klausw-g/bug-278
+1000/100/10: 1231, 1246.7+/-37.7 ms (1217, 1225, 1204, 1247, 1225, 1223, 1237, 1277, 1322, 1290)
+HEAD is now at 82c6fe4 Fix data ordering bug from issue 278, and clean up datasets handling
+1000/100/10: 1239, 1248.1+/-38.0 ms (1229, 1192, 1220, 1247, 1256, 1218, 1303, 1231, 1277, 1308)
+HEAD is now at 79253bd Support stroke patterns (i.e. dashed/dotted lines).
+1000/100/10: 1247.5, 1256.4+/-43.3 ms (1226, 1203, 1226, 1232, 1261, 1262, 1261, 1317, 1342, 1234)
+HEAD is now at db2e28c a few more users
+1000/100/10: 1076.5, 1083.4+/-19.0 ms (1115, 1108, 1079, 1053, 1092, 1072, 1071, 1074, 1074, 1096)
+HEAD is now at 1c6b239 Fix for issues 236 & 270 from timeu.
+1000/100/10: 1081.5, 1092.1+/-26.6 ms (1129, 1109, 1082, 1051, 1079, 1073, 1072, 1119, 1126, 1081)
+HEAD is now at e46e3d0 Fix for issue 267, from Paul Felix
+1000/100/10: 1106, 1097.6+/-25.5 ms (1116, 1104, 1072, 1046, 1077, 1093, 1123, 1112, 1125, 1108)
+HEAD is now at 7d783e0 Apply firefox fix to the gallery. (We should remove the test altogether someday. :))
+1000/100/10: 1079.5, 1087.5+/-23.3 ms (1115, 1105, 1071, 1046, 1074, 1078, 1111, 1117, 1081, 1077)
+HEAD is now at 5b6d85f Merge pull request #117 from jllodra/master
+1000/100/10: 1075.5, 1083.0+/-21.3 ms (1112, 1104, 1073, 1051, 1072, 1068, 1064, 1110, 1078, 1098)
+HEAD is now at 417af43 event.offsetX and Y fixed for Firefox in interaction.js
+1000/100/10: 1083.5, 1087.4+/-21.3 ms (1127, 1114, 1083, 1053, 1084, 1076, 1075, 1076, 1085, 1101)
+HEAD is now at 965cd40 Add 10gen MMS to Usage Gallery
+1000/100/10: 1089, 1089.7+/-26.4 ms (1122, 1104, 1073, 1045, 1074, 1070, 1073, 1127, 1105, 1104)
+HEAD is now at 19add90 Add Eutelsat & NASA to Usage Gallery
+1000/100/10: 1467.5, 1410.5+/-164.4 ms (1229, 1469, 1466, 1470, 1579, 1580, 1392, 1549, 1291, 1080)
+HEAD is now at 3417f01 Expose range selector interaction model publicly (removes need for pull request 101).
+1000/100/10: 1078, 1084.7+/-26.8 ms (1113, 1104, 1073, 1043, 1074, 1066, 1066, 1135, 1082, 1091)
+HEAD is now at 5be52ac Merge pull request #103 from mattmiller/master
+1000/100/10: 1078, 1087.3+/-24.1 ms (1115, 1106, 1073, 1064, 1113, 1083, 1067, 1059, 1071, 1122)
+HEAD is now at 866ceb2 Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 1079.5, 1093.4+/-30.0 ms (1129, 1133, 1077, 1049, 1070, 1082, 1074, 1117, 1127, 1076)
+HEAD is now at 5829af3 Fix issue 264 - non-alpha chars in GViz annotation labels.
+1000/100/10: 1071.5, 1078.0+/-21.9 ms (1123, 1108, 1077, 1051, 1070, 1064, 1070, 1083, 1073, 1061)
+HEAD is now at 5ecfa60 Remove memory leaks from dygraph-many-points-benchmark.
+1000/100/10: 1101.5, 1101.3+/-22.4 ms (1132, 1113, 1095, 1062, 1125, 1092, 1083, 1122, 1108, 1081)
+HEAD is now at 4dd0ac5 Per y-axis valueRange support.
+1000/100/10: 1094, 1108.8+/-39.1 ms (1129, 1130, 1091, 1087, 1198, 1070, 1081, 1131, 1097, 1074)
+HEAD is now at 3a2f385 Merge pull request #112 from kberg/master
+1000/100/10: 1072.5, 1083.6+/-29.6 ms (1112, 1106, 1074, 1047, 1073, 1069, 1066, 1072, 1069, 1148)
+HEAD is now at 04c0ae7 Plotter demo bugfix.
+1000/100/10: 1083, 1090.3+/-26.5 ms (1115, 1108, 1072, 1043, 1081, 1132, 1074, 1114, 1079, 1085)
+HEAD is now at 37f2f7b Merge pull request #111 from kberg/master
+1000/100/10: 1079.5, 1090.2+/-30.2 ms (1134, 1112, 1079, 1047, 1133, 1069, 1063, 1111, 1080, 1074)
+HEAD is now at 5c227b7 tiny
+1000/100/10: 1090, 1097.3+/-34.1 ms (1124, 1108, 1074, 1045, 1079, 1079, 1070, 1154, 1101, 1139)
+HEAD is now at 19d9e7c Style tweaks
+1000/100/10: 1083.5, 1089.4+/-19.7 ms (1120, 1115, 1087, 1101, 1070, 1079, 1068, 1068, 1080, 1106)
+HEAD is now at 26e9313 Merge pull request #110 from kberg/master
+1000/100/10: 1490, 1404.8+/-193.6 ms (1118, 1112, 1177, 1412, 1582, 1485, 1575, 1582, 1495, 1510)
+HEAD is now at 2a3953e stuff. i'm tired.
+1000/100/10: 1862, 1773.9+/-366.1 ms (1255, 1364, 1456, 1913, 2044, 2136, 2214, 2126, 1811, 1420)
+HEAD is now at 5d0f52a Make text area size configurable in pixels.
+1000/100/10: 1114, 1169.0+/-161.1 ms (1386, 1538, 1136, 1058, 1079, 1069, 1135, 1117, 1111, 1061)
+HEAD is now at 56f6428 Merge pull request #109 from kberg/master
+1000/100/10: 1084, 1092.2+/-26.7 ms (1117, 1120, 1079, 1046, 1132, 1078, 1071, 1111, 1086, 1082)
+HEAD is now at 6ced608 Show introductory text.
+1000/100/10: 1115.5, 1106.2+/-28.0 ms (1125, 1118, 1087, 1058, 1140, 1083, 1077, 1123, 1138, 1113)
+HEAD is now at 3e81f5d Cleaned up nasty table style.
+1000/100/10: 1087, 1094.5+/-24.8 ms (1118, 1115, 1078, 1050, 1090, 1123, 1084, 1126, 1081, 1080)
+HEAD is now at 10eef8e Reduce the size of some overly-long graphs. OK, that's subjective, but if you don't like the resizes, we can always undo this isolated change.
+1000/100/10: 1083.5, 1089.8+/-25.2 ms (1122, 1118, 1082, 1050, 1085, 1077, 1079, 1128, 1089, 1068)
+HEAD is now at 605b611 Rewrite HTML generation.
+1000/100/10: 1077.5, 1084.0+/-21.4 ms (1123, 1112, 1076, 1105, 1070, 1066, 1064, 1079, 1079, 1066)
+HEAD is now at 8e406c0 Include common directory. Perhaps jquery _is_ the way to go.
+1000/100/10: 1079, 1083.0+/-23.8 ms (1113, 1108, 1071, 1043, 1074, 1071, 1064, 1118, 1084, 1084)
+HEAD is now at a0da687 Merge pull request #108 from kberg/master
+1000/100/10: 1079.5, 1087.6+/-21.5 ms (1119, 1112, 1081, 1056, 1078, 1097, 1114, 1074, 1073, 1072)
+HEAD is now at 7e464a9 Fix drawing.js bug
+1000/100/10: 1075.5, 1079.0+/-21.5 ms (1122, 1109, 1075, 1047, 1078, 1077, 1070, 1071, 1076, 1065)
+HEAD is now at 60bda09 Merge pull request #107 from kberg/master
+1000/100/10: 1084, 1091.5+/-23.6 ms (1118, 1111, 1078, 1049, 1080, 1082, 1083, 1131, 1085, 1098)
+HEAD is now at a0e87b3 Add code link. It should get cleaned up.
+1000/100/10: 1071.5, 1086.6+/-28.6 ms (1123, 1125, 1083, 1067, 1133, 1070, 1069, 1062, 1073, 1061)
+HEAD is now at b497754 Move textarea to common area.
+1000/100/10: 1075, 1084.8+/-21.3 ms (1117, 1113, 1073, 1104, 1066, 1062, 1065, 1077, 1071, 1100)
+HEAD is now at 3c10a0f Clean-up.
+1000/100/10: 1074.5, 1078.6+/-21.4 ms (1121, 1111, 1077, 1049, 1075, 1068, 1071, 1074, 1075, 1065)
+HEAD is now at e14dc3f Merge pull request #106 from kberg/master
+1000/100/10: 1078, 1115.1+/-103.8 ms (1400, 1141, 1068, 1044, 1070, 1088, 1116, 1068, 1071, 1085)
+HEAD is now at d53954c Add first part of linear regression, and fixed hash hack so it doesn't jump.
+1000/100/10: 1088, 1092.2+/-27.4 ms (1116, 1131, 1083, 1054, 1118, 1093, 1071, 1119, 1078, 1059)
+HEAD is now at abfadf4 Update readme, add interaction model.
+1000/100/10: 1091, 1090.0+/-23.0 ms (1116, 1110, 1078, 1047, 1086, 1075, 1070, 1119, 1096, 1103)
+HEAD is now at d0d1f76 Rename and retitle plotter.
+1000/100/10: 1084, 1088.6+/-23.5 ms (1124, 1113, 1075, 1046, 1081, 1085, 1083, 1116, 1072, 1091)
+HEAD is now at fec1666 Add temperature-sf-ny. We should rename it.
+1000/100/10: 1079, 1090.0+/-31.2 ms (1141, 1110, 1075, 1045, 1133, 1071, 1063, 1106, 1073, 1083)
+HEAD is now at 3381d8f Add stock and styled-chart-labels.
+1000/100/10: 1074, 1079.9+/-21.9 ms (1119, 1113, 1077, 1048, 1083, 1069, 1069, 1071, 1087, 1063)
+HEAD is now at 328d2cc Add resize to gallery. It's got a bug in which I had to manually position it, and it's not inside the gray border. Not sure.
+1000/100/10: 1089, 1091.7+/-25.9 ms (1113, 1108, 1076, 1051, 1086, 1078, 1130, 1092, 1121, 1062)
+HEAD is now at 72c8bf9 Add range-selector
+1000/100/10: 1079.5, 1085.7+/-25.8 ms (1129, 1110, 1091, 1046, 1078, 1071, 1071, 1116, 1081, 1064)
+HEAD is now at fa5a85c Merge pull request #105 from kberg/master
+1000/100/10: 1086.5, 1099.3+/-31.7 ms (1141, 1122, 1091, 1058, 1087, 1085, 1083, 1079, 1086, 1161)
+HEAD is now at e2a5e39 Add per-series and synchronize.
+1000/100/10: 1106.5, 1100.2+/-21.6 ms (1113, 1110, 1090, 1103, 1111, 1086, 1132, 1069, 1121, 1067)
+HEAD is now at db071c3 specifying /usr/bin/env python instead of /usr/bin/python which is more flexible (and lets me generate jsdoc. :))
+1000/100/10: 1083.5, 1088.6+/-19.3 ms (1120, 1112, 1087, 1095, 1108, 1070, 1072, 1065, 1077, 1080)
+HEAD is now at 86d724e push-to-web now pushes the gallery.
+1000/100/10: 1084, 1089.6+/-24.2 ms (1118, 1117, 1075, 1049, 1078, 1078, 1071, 1124, 1090, 1096)
+HEAD is now at 795b163 Merge pull request #104 from kberg/master
+1000/100/10: 1080.5, 1086.0+/-24.5 ms (1118, 1111, 1074, 1048, 1077, 1068, 1070, 1125, 1085, 1084)
+HEAD is now at c1f22b5 Add hash support.
+1000/100/10: 1072, 1076.4+/-21.1 ms (1108, 1095, 1065, 1038, 1070, 1058, 1099, 1087, 1070, 1074)
+HEAD is now at 3bdf714 Allow unescaped HTML in labels
+1000/100/10: 1073, 1077.6+/-19.3 ms (1114, 1106, 1072, 1047, 1074, 1080, 1067, 1072, 1068, 1076)
+HEAD is now at aade5c6 push-to-web short-circuits when generate-jsdoc fails.
+1000/100/10: 1085, 1095.2+/-28.2 ms (1118, 1116, 1078, 1053, 1082, 1088, 1073, 1131, 1137, 1076)
+HEAD is now at 3cfc4c9 Add textarea (oops)
+1000/100/10: 1087, 1089.4+/-26.9 ms (1114, 1133, 1087, 1056, 1074, 1087, 1073, 1126, 1087, 1057)
+HEAD is now at 66ba3e1 Split out the css.
+1000/100/10: 1100, 1098.1+/-29.7 ms (1126, 1116, 1146, 1054, 1114, 1071, 1068, 1117, 1083, 1086)
+HEAD is now at 21285cf Firefox compatibility
+1000/100/10: 1070.5, 1086.2+/-31.6 ms (1121, 1115, 1129, 1054, 1123, 1067, 1074, 1061, 1066, 1052)
+HEAD is now at 909bae9 Modal dialog box, better centering.
+1000/100/10: 1085.5, 1096.3+/-27.1 ms (1127, 1116, 1084, 1056, 1086, 1136, 1085, 1122, 1084, 1067)
+HEAD is now at ce50b6e Hiding "copy".
+1000/100/10: 1078.5, 1087.0+/-28.6 ms (1116, 1134, 1086, 1050, 1121, 1096, 1067, 1071, 1069, 1060)
+HEAD is now at 3faa59c Editor title description.
+1000/100/10: 1080, 1090.3+/-30.4 ms (1116, 1113, 1076, 1050, 1079, 1081, 1072, 1086, 1073, 1157)
+HEAD is now at d95dc01 Text area is almost working. It's not modal, and it could use a little polish.
+1000/100/10: 1103.5, 1097.4+/-27.7 ms (1119, 1113, 1076, 1048, 1079, 1073, 1126, 1133, 1094, 1113)
+HEAD is now at 4488520 Moved tooltip to its own file.
+1000/100/10: 1074, 1077.9+/-20.5 ms (1110, 1104, 1081, 1043, 1075, 1064, 1063, 1073, 1070, 1096)
+HEAD is now at 2d9dee1 Filter bar input is now type "search" which looks sexy on mac.
+1000/100/10: 1081, 1089.9+/-27.9 ms (1129, 1114, 1075, 1046, 1078, 1081, 1132, 1098, 1081, 1065)
+HEAD is now at 5bcd4c8 last tweak of awesomeness.
+1000/100/10: 1080, 1095.5+/-38.6 ms (1114, 1110, 1074, 1047, 1180, 1129, 1085, 1069, 1075, 1072)
+HEAD is now at 5130c62 More style.
+1000/100/10: 1100, 1093.8+/-30.1 ms (1117, 1110, 1074, 1048, 1152, 1070, 1066, 1100, 1100, 1101)
+HEAD is now at 59a80f4 Floating help, a touch of style, no <table>.
+1000/100/10: 1070.5, 1079.3+/-23.4 ms (1122, 1119, 1077, 1048, 1082, 1068, 1068, 1069, 1072, 1068)
+HEAD is now at ef13835 Can run all tests in one fell swoop.
+1000/100/10: 1073, 1080.7+/-23.9 ms (1130, 1110, 1074, 1048, 1088, 1067, 1070, 1084, 1072, 1064)
+HEAD is now at 3d8093f Bug in the function that splits variables.
+1000/100/10: 1089, 1098.3+/-35.0 ms (1125, 1113, 1075, 1049, 1083, 1176, 1084, 1109, 1075, 1094)
+HEAD is now at a2a0bc2 Added note about data selector.
+1000/100/10: 1072, 1076.5+/-20.6 ms (1115, 1109, 1073, 1046, 1074, 1070, 1071, 1071, 1075, 1061)
+HEAD is now at cf88e0e Wrong usage statement.
+1000/100/10: 1079, 1084.8+/-21.9 ms (1119, 1123, 1076, 1050, 1082, 1077, 1071, 1077, 1081, 1092)
+HEAD is now at 2b3ebdd Properly handle multiple data selections.
+1000/100/10: 1073.5, 1079.3+/-20.5 ms (1116, 1113, 1079, 1047, 1077, 1073, 1071, 1074, 1072, 1071)
+HEAD is now at f6fbf9e Add variable declarations for most all graphs and charts.
+1000/100/10: 1099.5, 1101.9+/-30.2 ms (1121, 1118, 1106, 1064, 1078, 1077, 1077, 1121, 1093, 1164)
+HEAD is now at 3dcf1f1 Add sparse sample, rename variable.
+1000/100/10: 1091.5, 1098.7+/-24.2 ms (1137, 1130, 1089, 1061, 1083, 1089, 1083, 1125, 1096, 1094)
+HEAD is now at 36d4fab Support function() returning other data types.
+1000/100/10: 1076, 1088.4+/-30.4 ms (1118, 1111, 1076, 1046, 1076, 1069, 1146, 1105, 1075, 1062)
+HEAD is now at 5f30331 Add experimental, add usage test.
+1000/100/10: 1090, 1093.5+/-20.9 ms (1125, 1113, 1083, 1063, 1079, 1086, 1072, 1121, 1094, 1099)
+HEAD is now at f3fe39e Gave proper instructions and fixed prototype function bug.
+1000/100/10: 1089, 1094.2+/-29.1 ms (1123, 1112, 1142, 1053, 1072, 1069, 1071, 1122, 1087, 1091)
+HEAD is now at 2059000 Add experimental palette.
+1000/100/10: 1101, 1101.9+/-25.8 ms (1126, 1114, 1085, 1056, 1131, 1087, 1120, 1131, 1081, 1088)
+HEAD is now at 0049ceb More direct browser version verification test for filtering FF3.5.
+1000/100/10: 1077.5, 1084.2+/-20.5 ms (1123, 1113, 1085, 1056, 1078, 1069, 1074, 1073, 1077, 1094)
+HEAD is now at 107f9d8 Only show the secondary y-axis label when there is a secondary y-axis.
+1000/100/10: 1087, 1096.5+/-31.1 ms (1148, 1155, 1092, 1060, 1076, 1082, 1086, 1076, 1088, 1102)
+HEAD is now at d0c3910 Fix Issue 202: Second Y-Axis Label
+1000/100/10: 1095.5, 1100.0+/-24.3 ms (1126, 1119, 1092, 1058, 1085, 1077, 1123, 1132, 1089, 1099)
+HEAD is now at 4a0cb9c Fix issue 249 & add regression test
+1000/100/10: 1097, 1103.6+/-25.0 ms (1132, 1122, 1093, 1076, 1149, 1086, 1090, 1073, 1101, 1114)
+HEAD is now at 8905538 explicitly set charset=UTF-8 on docs; fixes Usage Gallery display issue.
+1000/100/10: 1094.5, 1101.1+/-21.2 ms (1138, 1129, 1095, 1068, 1091, 1093, 1095, 1094, 1088, 1120)
+HEAD is now at 3438387 FF3.5 does not support ISO8601 date format.
+1000/100/10: 1098, 1102.7+/-32.3 ms (1130, 1112, 1084, 1057, 1078, 1070, 1137, 1137, 1080, 1142)
+HEAD is now at a4e734c Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 1082.5, 1088.4+/-22.7 ms (1124, 1112, 1082, 1055, 1083, 1080, 1085, 1118, 1081, 1064)
+HEAD is now at 7a8dd19 add n-gramas example to gallery
+1000/100/10: 1074.5, 1080.6+/-19.3 ms (1116, 1108, 1080, 1049, 1072, 1073, 1076, 1072, 1072, 1088)
+HEAD is now at 1a5dc2a Warning throwing error because of bad method name when setting customBars.
+1000/100/10: 1084, 1091.3+/-20.2 ms (1125, 1115, 1083, 1058, 1078, 1082, 1082, 1085, 1094, 1111)
+HEAD is now at 0c39339 Test name in the summary was wrong when selecting individual tests.
+1000/100/10: 1085, 1092.1+/-22.5 ms (1125, 1113, 1083, 1057, 1081, 1079, 1085, 1085, 1128, 1085)
+HEAD is now at 3393328 Organize local.html just a little.
+1000/100/10: 1127.5, 1120.2+/-30.7 ms (1131, 1125, 1152, 1073, 1085, 1130, 1105, 1141, 1092, 1168)
+HEAD is now at 32566ce Add tests for isZoomed.
+1000/100/10: 1084, 1092.2+/-25.4 ms (1146, 1123, 1085, 1057, 1076, 1080, 1083, 1093, 1081, 1098)
+HEAD is now at da11a9a Make local testing AWESOME.
+1000/100/10: 1091.5, 1095.7+/-28.1 ms (1123, 1114, 1082, 1055, 1078, 1095, 1134, 1128, 1088, 1060)
+HEAD is now at ca17c24 Return tests results from runAllTests
+1000/100/10: 1071, 1076.6+/-20.1 ms (1111, 1114, 1075, 1050, 1067, 1069, 1070, 1072, 1066, 1072)
+HEAD is now at 357f7a8 Add local test selector. SOO MUCH BETTER.
+1000/100/10: 1082.5, 1095.5+/-31.8 ms (1125, 1139, 1082, 1056, 1072, 1083, 1081, 1074, 1091, 1152)
+HEAD is now at 94ea574 isZoomed broken because of == -> === comparison.
+1000/100/10: 1089.5, 1096.1+/-27.2 ms (1124, 1114, 1136, 1055, 1073, 1074, 1080, 1126, 1090, 1089)
+HEAD is now at 0826981 one more small fix from Paul
+1000/100/10: 1086, 1090.8+/-18.2 ms (1122, 1112, 1083, 1110, 1073, 1071, 1086, 1086, 1093, 1072)
+HEAD is now at 161b2a6 Add jWebChart link to gallery.
+1000/100/10: 1094.5, 1103.5+/-24.7 ms (1143, 1123, 1093, 1066, 1088, 1080, 1096, 1130, 1093, 1123)
+HEAD is now at 3810c27 Fix issue 246.
+1000/100/10: 1079, 1086.7+/-27.6 ms (1125, 1113, 1083, 1059, 1134, 1074, 1082, 1061, 1076, 1060)
+HEAD is now at 7a1f187 Extract the granularity-picking code of the date ticker into a new function.
+1000/100/10: 1100.5, 1101.1+/-28.2 ms (1124, 1112, 1081, 1057, 1141, 1074, 1135, 1115, 1083, 1089)
+HEAD is now at 758a629 Add JSHint and make dygraphs pass its checks.
+1000/100/10: 1088.5, 1097.7+/-22.2 ms (1125, 1130, 1084, 1079, 1124, 1072, 1081, 1109, 1093, 1080)
+HEAD is now at ab80172 Add a simple Usage Gallery to the dygraphs home page.
+1000/100/10: 1082, 1086.7+/-25.1 ms (1118, 1106, 1128, 1056, 1072, 1063, 1071, 1092, 1097, 1064)
+HEAD is now at 85fca6d Extract the granularity-picking code of the date ticker into a new function.
+1000/100/10: 1100.5, 1097.6+/-31.8 ms (1131, 1127, 1133, 1052, 1069, 1071, 1068, 1119, 1082, 1124)
+HEAD is now at 769e8bc Fix issue 237 (standard date/time string)
+1000/100/10: 1096.5, 1098.3+/-20.7 ms (1127, 1113, 1090, 1080, 1122, 1071, 1074, 1117, 1086, 1103)
+HEAD is now at 971870e Work around issue 200: Android 3.0: dygraph does not show
+1000/100/10: 1109, 1096.3+/-25.6 ms (1112, 1129, 1107, 1111, 1072, 1065, 1063, 1070, 1120, 1114)
+HEAD is now at 395e98a Fix Issue 60: Add tests for one data point and zero data points
+1000/100/10: 1088, 1098.6+/-27.1 ms (1143, 1118, 1088, 1062, 1139, 1077, 1081, 1084, 1088, 1106)
+HEAD is now at a2da377 Fix issue 131: setVisibility() broken with multiple axes
+1000/100/10: 1086.5, 1090.0+/-14.6 ms (1093, 1108, 1110, 1095, 1075, 1076, 1077, 1078, 1080, 1108)
+HEAD is now at 107c99e remove extra logging from scrolling_div.js
+1000/100/10: 1069, 1075.4+/-24.5 ms (1108, 1094, 1068, 1037, 1060, 1064, 1063, 1119, 1071, 1070)
+HEAD is now at 27561e5 Fix some tests that started failing in OS X Lion.
+1000/100/10: 1087, 1094.9+/-24.5 ms (1131, 1117, 1088, 1058, 1133, 1081, 1084, 1095, 1086, 1076)
+HEAD is now at 0d4989d Merge branch 'master' of http://github.com/danvk/dygraphs
+1000/100/10: 1063, 1068.3+/-21.7 ms (1116, 1096, 1068, 1042, 1064, 1060, 1059, 1062, 1064, 1052)
+HEAD is now at e0ca6cd Add tests that would have caught the issue with filled/stacked graphs.
+1000/100/10: 1081.5, 1095.5+/-33.6 ms (1122, 1105, 1080, 1049, 1075, 1078, 1076, 1120, 1083, 1167)
+HEAD is now at 0d319fa Incorporate Paul's stack trace logging fix.
+1000/100/10: 1062, 1074.0+/-29.1 ms (1106, 1094, 1069, 1036, 1135, 1061, 1057, 1062, 1058, 1062)
+HEAD is now at 4792703 Add var declaration to prevent breaking stacked graphs.
+1000/100/10: 1098.5, 1096.1+/-24.1 ms (1124, 1106, 1127, 1054, 1117, 1091, 1076, 1108, 1075, 1083)
+HEAD is now at b5daaaf Add visualization test for changing colors.
+1000/100/10: 1072.5, 1081.2+/-25.3 ms (1113, 1102, 1082, 1042, 1067, 1067, 1068, 1076, 1069, 1126)
+HEAD is now at 45efb72 Clarify updateOptions behavior when you specify too many colors.
+1000/100/10: 1068.5, 1078.0+/-28.0 ms (1113, 1129, 1076, 1045, 1103, 1071, 1066, 1066, 1064, 1047)
+HEAD is now at 3856711 Fix another missing "var" and put rgbcolor.js into strict mode.
+1000/100/10: 1087.5, 1093.4+/-23.1 ms (1129, 1114, 1084, 1058, 1091, 1084, 1083, 1127, 1091, 1073)
+HEAD is now at 9fa43d8 Remove duplicated layout/range selector initialization code
+1000/100/10: 1083.5, 1093.5+/-25.6 ms (1126, 1114, 1096, 1054, 1080, 1078, 1081, 1083, 1084, 1139)
+HEAD is now at 5061b42 squash a few remaining "use strict" errors
+1000/100/10: 1093.5, 1093.5+/-22.0 ms (1113, 1103, 1078, 1052, 1107, 1113, 1079, 1124, 1082, 1084)
+HEAD is now at c0f54d4 Enable "strict" mode -- and fix one missing "var" declaration.
+1000/100/10: 1093, 1100.5+/-24.0 ms (1126, 1117, 1092, 1062, 1088, 1091, 1145, 1081, 1094, 1109)
+HEAD is now at 0842b24 Fix issue 186 (dygraphs does not accept "1e-5" as a numeric x-value).
+1000/100/10: 1086.5, 1118.0+/-109.7 ms (1113, 1425, 1107, 1043, 1093, 1067, 1075, 1089, 1084, 1084)
+HEAD is now at 00639fa When possible, record the file/line number that logged an error/warning.
+1000/100/10: 1092.5, 1084.3+/-21.8 ms (1112, 1104, 1094, 1045, 1091, 1071, 1066, 1062, 1099, 1099)
+HEAD is now at a8f4eb6 Fix issue 247 and flesh out its regression test.
+1000/100/10: 1060, 1066.9+/-22.9 ms (1104, 1092, 1062, 1034, 1056, 1058, 1055, 1091, 1075, 1042)
+HEAD is now at b455a0e Merge pull request #99 from kberg/master
+1000/100/10: 1070.5, 1079.1+/-25.3 ms (1123, 1095, 1071, 1042, 1106, 1064, 1060, 1061, 1070, 1099)
+HEAD is now at 8c5d379 Added testUpdateColors, which represents bug #247
+1000/100/10: 1065, 1071.5+/-27.0 ms (1109, 1122, 1086, 1035, 1062, 1061, 1057, 1068, 1069, 1046)
+HEAD is now at b1a3b19 Add support for animated zooms.
+1000/100/10: 1078.5, 1079.7+/-22.1 ms (1108, 1096, 1076, 1036, 1062, 1065, 1089, 1108, 1079, 1078)
+HEAD is now at 41ee764 Add jsdoc for setAnnotations() and an example of how to use them with native-format dates.
+1000/100/10: 1059, 1065.5+/-22.5 ms (1083, 1092, 1058, 1056, 1033, 1094, 1047, 1060, 1042, 1090)
+HEAD is now at fbff6d7 Patch for issue 242 from kberg
+1000/100/10: 1062.5, 1068.5+/-20.4 ms (1089, 1098, 1088, 1063, 1049, 1087, 1048, 1061, 1040, 1062)
+HEAD is now at 26ee261 Merge pull request #97 from bombela/master
+1000/100/10: 1060, 1062.0+/-18.9 ms (1091, 1093, 1062, 1060, 1041, 1058, 1040, 1060, 1043, 1072)
+HEAD is now at fa54c19 fix js exception on interactive zoom
+1000/100/10: 1061, 1063.6+/-20.4 ms (1082, 1097, 1062, 1060, 1036, 1054, 1037, 1089, 1055, 1064)
+HEAD is now at 5cb6204 Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 1052, 1056.7+/-21.5 ms (1083, 1088, 1059, 1054, 1032, 1048, 1034, 1050, 1035, 1084)
+HEAD is now at 920208f Various fixes/workarounds for IE7/IE8 and some fixes/tweaks of range selector
+1000/100/10: 1074, 1070.1+/-21.3 ms (1086, 1092, 1082, 1066, 1041, 1059, 1041, 1095, 1050, 1089)
+HEAD is now at 1a27bd1 Move to JSTD133
+1000/100/10: 1069, 1077.1+/-30.4 ms (1085, 1096, 1062, 1066, 1039, 1119, 1051, 1072, 1050, 1131)
+HEAD is now at bbba718 Enhancement to dygraph-many-point*-benchmark.html
+1000/100/10: 1068.5, 1073.8+/-19.8 ms (1094, 1100, 1064, 1065, 1038, 1072, 1065, 1086, 1058, 1096)
+HEAD is now at f6828af Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 1058.5, 1058.6+/-22.9 ms (1079, 1088, 1053, 1057, 1028, 1060, 1032, 1065, 1033, 1091)
+HEAD is now at 61f10b6 Merge pull request #89 from flooey/master
+1000/100/10: 1060.5, 1064.5+/-22.6 ms (1091, 1094, 1056, 1061, 1029, 1064, 1037, 1094, 1059, 1060)
+HEAD is now at 015b31d Add test for laying out multiple axis items that ensures that
+1000/100/10: 1065, 1065.4+/-21.3 ms (1085, 1094, 1061, 1067, 1035, 1066, 1051, 1064, 1036, 1095)
+HEAD is now at 14a2c2a Merge pull request #86 from flooey/master
+1000/100/10: 1061, 1059.2+/-21.4 ms (1083, 1088, 1056, 1060, 1030, 1062, 1032, 1082, 1035, 1064)
+HEAD is now at a9aa257 Merge pull request #88 from kberg/master
+1000/100/10: 1072, 1068.8+/-28.4 ms (1082, 1097, 1057, 1103, 1035, 1094, 1038, 1062, 1028, 1092)
+HEAD is now at 66ad360 Fix infinite loop when updateOptions contains labelsDiv (or any other document node for that matter.)
+1000/100/10: 1056.5, 1061.1+/-27.3 ms (1077, 1086, 1052, 1051, 1027, 1061, 1026, 1090, 1037, 1104)
+HEAD is now at 70be5ed Change DygraphLayout so it calculates the plot area when its requested
+1000/100/10: 1062.5, 1064.8+/-16.9 ms (1083, 1093, 1060, 1061, 1044, 1070, 1038, 1078, 1057, 1064)
+HEAD is now at 0987402 temporarily disable some ticker tests
+1000/100/10: 1066, 1065.7+/-22.2 ms (1085, 1094, 1064, 1089, 1048, 1066, 1031, 1066, 1034, 1080)
+HEAD is now at 80d143b update docs to point to blog
+1000/100/10: 1063.5, 1067.3+/-26.0 ms (1085, 1094, 1061, 1060, 1036, 1093, 1040, 1066, 1033, 1105)
+HEAD is now at 88c4a47 switch from underscores to hyphens for CSS class names
+1000/100/10: 1082, 1073.0+/-26.5 ms (1094, 1112, 1087, 1079, 1038, 1085, 1046, 1059, 1036, 1094)
+HEAD is now at ccd9d7c A range selector widget for dygraphs.
+1000/100/10: 1061, 1063.5+/-23.6 ms (1089, 1089, 1056, 1055, 1029, 1066, 1039, 1079, 1039, 1094)
+HEAD is now at 88e95c4 update license comments
+1000/100/10: 1070.5, 1068.1+/-25.6 ms (1095, 1095, 1070, 1073, 1038, 1065, 1033, 1071, 1037, 1104)
+HEAD is now at c9faeaf fix disappearing annotations bug
+1000/100/10: 1067, 1068.2+/-21.8 ms (1086, 1094, 1065, 1066, 1034, 1068, 1043, 1086, 1046, 1094)
+HEAD is now at 5108eb2 update All Rights Reserved string
+1000/100/10: 1064, 1062.5+/-19.6 ms (1081, 1092, 1065, 1060, 1033, 1066, 1041, 1063, 1041, 1083)
+HEAD is now at 48e614a Factor out ticker functions and clean up their semantics/usage.
+1000/100/10: 1064, 1060.7+/-20.3 ms (1080, 1096, 1063, 1058, 1033, 1066, 1036, 1065, 1038, 1072)
+HEAD is now at f35016e error bars test
+1000/100/10: 1050, 1054.1+/-21.2 ms (1076, 1099, 1054, 1064, 1051, 1041, 1027, 1047, 1033, 1049)
+HEAD is now at 7f02898 Fix display of error bars when using logscale
+1000/100/10: 1049.5, 1055.2+/-20.7 ms (1083, 1091, 1057, 1050, 1033, 1047, 1034, 1049, 1035, 1073)
+HEAD is now at 947ab5a remove extra log
+1000/100/10: 959.5, 958.7+/-12.3 ms (969, 973, 947, 965, 971, 949, 954, 971, 940, 948)
+HEAD is now at 639fd40 Set a max-width on the content column of the main documentation page and add a "Fork me on github" ribbon.
+1000/100/10: 953, 957.4+/-12.7 ms (969, 972, 949, 946, 947, 945, 954, 982, 958, 952)
+HEAD is now at 77b5e09 Add a test case for rolling averages and fix two bugs that it uncovered
+1000/100/10: 959, 960.0+/-10.8 ms (972, 973, 969, 970, 953, 954, 953, 964, 948, 944)
+HEAD is now at 28cbe89 A small shell script to create a new auto_test
+1000/100/10: 961, 961.9+/-10.7 ms (969, 974, 979, 955, 953, 948, 955, 968, 967, 951)
+HEAD is now at 3914c8e Simplify running tests from auto_tests/misc/local.html. Now a one-step process with full auto-complete.
+1000/100/10: 968, 966.3+/-10.7 ms (973, 976, 982, 963, 959, 949, 958, 973, 974, 956)
+HEAD is now at f9414b1 From antrob: Single point per pixel, do the optimization in the actual rendering function.
+1000/100/10: 955.5, 956.8+/-11.5 ms (969, 975, 948, 947, 945, 942, 958, 968, 963, 953)
+HEAD is now at 9ca829f From antrob; don't recalculate layout when updateOptions() would not change it.
+1000/100/10: 1017, 1021.8+/-15.6 ms (1040, 1031, 1004, 1006, 1007, 1013, 1014, 1047, 1020, 1036)
+HEAD is now at 003f94b Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 1028.5, 1036.4+/-15.4 ms (1055, 1048, 1024, 1026, 1023, 1027, 1030, 1049, 1020, 1062)
+HEAD is now at 4828ae9 Merge pull request #81 from kberg/master
+1000/100/10: 1016, 1020.2+/-10.6 ms (1038, 1033, 1015, 1011, 1011, 1013, 1017, 1029, 1008, 1027)
+HEAD is now at ad69cb8 cleanup; use passing assert
+1000/100/10: 1036.5, 1044.5+/-25.2 ms (1047, 1042, 1033, 1035, 1038, 1027, 1026, 1059, 1028, 1110)
+HEAD is now at d305673 Merge branch 'master' of https://github.com/lrobb/dygraphs into lrobb
+1000/100/10: 1031.5, 1035.2+/-18.7 ms (1042, 1042, 1019, 1019, 1021, 1043, 1019, 1052, 1021, 1074)
+HEAD is now at 8ae015b Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 1034.5, 1036.8+/-15.5 ms (1045, 1042, 1021, 1022, 1025, 1027, 1029, 1045, 1040, 1072)
+HEAD is now at 47c97d8 Provide local test execution by function reference, which is much
+1000/100/10: 1014, 1015.7+/-11.6 ms (1038, 1030, 1005, 1015, 1016, 1011, 1013, 1022, 1000, 1007)
+HEAD is now at 97889da Format for x-axis labels test added.
+1000/100/10: 1011.5, 1016.7+/-12.1 ms (1036, 1032, 1004, 1009, 1009, 1008, 1014, 1031, 1019, 1005)
+HEAD is now at 104ea5a remove ineffective labelsDivStyle, rename the other
+1000/100/10: 1029, 1037.1+/-20.7 ms (1049, 1075, 1016, 1026, 1025, 1022, 1032, 1033, 1023, 1070)
+HEAD is now at 02d8dc6 set class on labelsDiv
+1000/100/10: 1024, 1031.1+/-17.4 ms (1043, 1041, 1014, 1022, 1022, 1018, 1026, 1037, 1017, 1071)
+HEAD is now at 4b4d1a6 resize automatically
+1000/100/10: 1029.5, 1031.7+/-14.6 ms (1043, 1044, 1015, 1018, 1023, 1022, 1036, 1039, 1018, 1059)
+HEAD is now at fffad74 fix bug with invisible dygraphs and add a regression test
+1000/100/10: 1015.5, 1020.0+/-11.2 ms (1039, 1029, 1007, 1013, 1013, 1017, 1014, 1026, 1008, 1034)
+HEAD is now at a232a35 change line endings back in rgbcolor.js
+1000/100/10: 1016.5, 1023.0+/-16.1 ms (1049, 1032, 1004, 1008, 1011, 1014, 1017, 1031, 1016, 1048)
+HEAD is now at fc77253 misc cleanup
+1000/100/10: 1019, 1021.1+/-13.1 ms (1047, 1031, 1004, 1009, 1022, 1013, 1016, 1033, 1024, 1012)
+HEAD is now at 7153e00 add timingName option
+1000/100/10: 1025, 1026.5+/-13.8 ms (1035, 1040, 1008, 1020, 1015, 1015, 1030, 1047, 1014, 1041)
+HEAD is now at 5f453f1 clean up alignment
+1000/100/10: 1026, 1011.8+/-16.5 ms (1045, 1024, 996, 1001, 1001, 1014, 1028, 1015, 997, 997)
+HEAD is now at b477300 Merge branch 'canvas' of https://github.com/clocksmith/dygraphs
+1000/100/10: 1011.5, 1019.9+/-14.6 ms (1032, 1035, 1006, 1011, 1012, 1009, 1041, 1038, 1008, 1007)
+HEAD is now at f6939dc temporarily disable optimization
+1000/100/10: 2177, 2175.9+/-12.5 ms (2186, 2185, 2159, 2190, 2172, 2191, 2163, 2172, 2159, 2182)
+HEAD is now at 87bbdb4 regression test for dense setSelection bug; currently fails
+1000/100/10: 1799.5, 1826.0+/-85.0 ms (1814, 2066, 1788, 1794, 1789, 1811, 1791, 1788, 1814, 1805)
+HEAD is now at 0cb9bd9 prefer to use offsetWidth & offsetHeight when applicable. Add auto_test for dygraph div sizing.
+1000/100/10: 1784.5, 1788.2+/-14.5 ms (1813, 1781, 1764, 1788, 1783, 1810, 1780, 1784, 1794, 1785)
+HEAD is now at c3e1495 changed renderLineCharts algorithm for graphs without errorbars  from O(k^2 * n) to O(k * n) where k is number of series and n is number of points per series.
+1000/100/10: 913.5, 918.2+/-16.4 ms (940, 905, 911, 901, 916, 922, 925, 901, 950, 911)
+HEAD is now at 80e653a Merge pull request #76 from clocksmith/singleppp
+1000/100/10: 1792, 1793.3+/-17.4 ms (1808, 1781, 1759, 1781, 1791, 1819, 1793, 1789, 1804, 1808)
+HEAD is now at b144743 Deleted unnecessary line that was causing variable name collision that affected single point per pixel optimization.
+1000/100/10: 1783.5, 1787.4+/-18.9 ms (1830, 1783, 1757, 1782, 1786, 1805, 1784, 1778, 1787, 1782)
+HEAD is now at ecf9b46 drop pixel skipping optimization w/ annotations, too
+1000/100/10: 1804.5, 1811.2+/-20.9 ms (1821, 1794, 1780, 1794, 1804, 1838, 1802, 1805, 1832, 1842)
+HEAD is now at 4ab8db0 Only add 1 point per pixel for graphs without error bars to speed up rendering.
+1000/100/10: 1803.5, 1808.7+/-15.2 ms (1825, 1800, 1808, 1803, 1805, 1845, 1804, 1801, 1793, 1803)
+HEAD is now at bcc657d Added two demos to the tests folder for the sf vs ny temperatures.
+1000/100/10: 2302, 2302.7+/-18.8 ms (2302, 2306, 2271, 2310, 2314, 2298, 2294, 2302, 2287, 2343)
+HEAD is now at 502d599 Division by zero bug fix and regression test
+1000/100/10: 2299.5, 2298.2+/-13.8 ms (2298, 2301, 2274, 2285, 2308, 2309, 2293, 2302, 2289, 2323)
+HEAD is now at 0290d07 kberg requests that nonInteractiveModel be private
+1000/100/10: 2294, 2295.0+/-20.6 ms (2306, 2296, 2264, 2287, 2318, 2283, 2272, 2299, 2292, 2333)
+HEAD is now at 027e9e9 Add Dygraph.Interaction.nonInteractiveModel. This disables pan/zoom interactions while preserving the expected behavior of clickCallback and pointClickCallback. Also includes a test and auto_test.
+1000/100/10: 2277, 2293.2+/-33.4 ms (2297, 2296, 2265, 2272, 2368, 2275, 2270, 2279, 2275, 2335)
+HEAD is now at 36d7392 Updated the random function generator to be less sporadic.
+1000/100/10: 2304, 2333.0+/-78.9 ms (2310, 2306, 2282, 2284, 2325, 2296, 2276, 2302, 2520, 2429)
+HEAD is now at a058247 Added an option to plot random points instead of just a sine wave.
+1000/100/10: 2446.5, 2440.9+/-117.0 ms (2445, 2674, 2514, 2449, 2369, 2555, 2448, 2313, 2327, 2315)
+HEAD is now at 3609c9a make dygraph-dev a bit smarter
+1000/100/10: 2352, 2404.0+/-130.3 ms (2346, 2426, 2311, 2349, 2355, 2459, 2753, 2363, 2336, 2342)
+HEAD is now at ce69128 Merge pull request #69 from kberg/master
+1000/100/10: 2323, 2328.9+/-24.2 ms (2347, 2330, 2306, 2310, 2350, 2349, 2316, 2304, 2305, 2372)
+HEAD is now at a307700 Bad test! Use pixel counts, don't rely on stupid anchor tags.
+1000/100/10: 2549, 2692.5+/-301.4 ms (2635, 2541, 2520, 2547, 2594, 2535, 2536, 2551, 3429, 3037)
+HEAD is now at 22bce4f Merge pull request #67 from kberg/master
+1000/100/10: 2614.5, 2728.5+/-404.7 ms (3788, 2925, 2619, 2610, 2371, 2687, 2746, 2609, 2420, 2510)
+HEAD is now at 1bc38cb Comment update.
+1000/100/10: 2656.5, 2692.9+/-127.5 ms (2800, 2819, 2824, 2884, 2671, 2551, 2642, 2627, 2557, 2554)
+HEAD is now at 8442269 Fix pointClickCallback and resizing coordinate weirdness when inside a
+1000/100/10: 2603, 2638.8+/-98.7 ms (2691, 2781, 2558, 2547, 2612, 2526, 2568, 2788, 2723, 2594)
+HEAD is now at 0aa3835 Merge pull request #68 from clocksmith/master
+1000/100/10: 2342.5, 2375.8+/-83.4 ms (2318, 2323, 2281, 2317, 2362, 2464, 2418, 2448, 2528, 2299)
+HEAD is now at a11725c Added an average metric for dygraphs many points benchmark.
+1000/100/10: 2332, 2333.3+/-26.1 ms (2362, 2350, 2310, 2300, 2329, 2335, 2305, 2358, 2312, 2372)
+HEAD is now at d570a07 Breaking out of evaluateAnnotations early if there are no annotations.
+1000/100/10: 2384, 2429.4+/-137.7 ms (2607, 2611, 2629, 2362, 2406, 2453, 2317, 2307, 2297, 2305)
+HEAD is now at 2b58555 fix title on changes.html
+1000/100/10: 2538, 2543.3+/-33.8 ms (2623, 2530, 2500, 2540, 2567, 2536, 2514, 2526, 2551, 2546)
+HEAD is now at 738a62b Comment removal
+1000/100/10: 2563, 2615.2+/-165.5 ms (2616, 2530, 2503, 2533, 2577, 2636, 3069, 2528, 2611, 2549)
+HEAD is now at bf06e35 Tests for when the graph is embedded in a scrolling div.
+1000/100/10: 2541.5, 2550.9+/-42.4 ms (2653, 2541, 2508, 2519, 2581, 2564, 2521, 2524, 2556, 2542)
+HEAD is now at 914805d Oops! Forgot to rename createEvent_ in all calls; resulting in lots of test failures.
+1000/100/10: 2566, 2573.7+/-36.0 ms (2649, 2554, 2529, 2554, 2620, 2584, 2545, 2567, 2570, 2565)
+HEAD is now at 7479008 Getting more errors from tests.
+1000/100/10: 2547, 2550.1+/-31.3 ms (2626, 2553, 2525, 2527, 2570, 2552, 2531, 2518, 2557, 2542)
+HEAD is now at 17aad8d typo.
+1000/100/10: 2542, 2552.1+/-35.6 ms (2620, 2545, 2508, 2518, 2599, 2530, 2549, 2537, 2576, 2539)
+HEAD is now at 21c079e Extract the function that pushes an event onto the chart, for reuse outside this method.
+1000/100/10: 2554.5, 2551.8+/-35.0 ms (2624, 2563, 2511, 2514, 2574, 2565, 2546, 2524, 2572, 2525)
+HEAD is now at e6e12f1 remove NOTE, update comment
+1000/100/10: 2530, 2533.2+/-35.5 ms (2616, 2514, 2498, 2542, 2561, 2524, 2501, 2503, 2536, 2537)
+HEAD is now at 6788e30 Added code to make tests easier to repeat by specifying them as part of the URL.
+1000/100/10: 2549.5, 2558.3+/-35.1 ms (2624, 2535, 2522, 2536, 2579, 2594, 2513, 2548, 2581, 2551)
+HEAD is now at b050a8c Clarification of the point/points parameters.
+1000/100/10: 2532.5, 2540.0+/-33.6 ms (2622, 2530, 2535, 2515, 2571, 2536, 2512, 2516, 2542, 2521)
+HEAD is now at bbfb84f Merge branch 'master' of https://github.com/kberg/dygraphs
+1000/100/10: 2531.5, 2542.6+/-34.8 ms (2614, 2529, 2493, 2527, 2573, 2565, 2534, 2518, 2556, 2517)
+HEAD is now at ea910bf Clarify role of generate-documentation.py
+1000/100/10: 2536, 2542.3+/-32.2 ms (2611, 2536, 2508, 2512, 2578, 2550, 2536, 2518, 2552, 2522)
+HEAD is now at 3f2f472 Update document reference; add docs for pointClickCallback, and clarify
+1000/100/10: 2554.5, 2587.5+/-97.7 ms (2613, 2529, 2522, 2527, 2579, 2553, 2853, 2556, 2590, 2553)
+HEAD is now at 25f76ae fix re-use of loop index
+1000/100/10: 2545, 2549.3+/-34.6 ms (2622, 2536, 2499, 2548, 2582, 2542, 2548, 2526, 2568, 2522)
+HEAD is now at 7e5ddc9 update test includes
+1000/100/10: 2540.5, 2545.7+/-32.7 ms (2623, 2533, 2509, 2548, 2572, 2544, 2524, 2516, 2551, 2537)
+HEAD is now at 8d3d15a tests pass
+1000/100/10: 2538.5, 2555.4+/-39.7 ms (2615, 2520, 2602, 2532, 2599, 2535, 2519, 2509, 2581, 2542)
+HEAD is now at 004b5c9 file-level comments
+1000/100/10: 2549, 2558.3+/-36.5 ms (2634, 2542, 2516, 2514, 2592, 2577, 2571, 2546, 2552, 2539)
+HEAD is now at dedb4f5 factor out dygraph-utils.js
+1000/100/10: 2535.5, 2546.3+/-33.7 ms (2623, 2530, 2498, 2533, 2579, 2550, 2530, 2536, 2549, 2535)
+HEAD is now at 846f3d2 factor out interaction model
+1000/100/10: 2550, 2552.8+/-35.4 ms (2614, 2558, 2513, 2511, 2575, 2542, 2525, 2523, 2584, 2583)
+HEAD is now at fac494f fix merge issue
+1000/100/10: 2559.5, 2565.6+/-34.3 ms (2632, 2549, 2521, 2521, 2578, 2555, 2564, 2552, 2597, 2587)
+HEAD is now at 408ae4d un-HTMLify autotests README
+1000/100/10: 2562.5, 2564.9+/-18.0 ms (2592, 2582, 2544, 2558, 2567, 2581, 2544, 2545, 2580, 2556)
+HEAD is now at 1b89e01 merge upstream changes
+1000/100/10: 2541.5, 2551.7+/-30.1 ms (2597, 2587, 2591, 2545, 2533, 2531, 2518, 2518, 2559, 2538)
+HEAD is now at 362d4b9 Make addition of box slightly prettier. I'm crazy like that.
+1000/100/10: 2553.5, 2558.9+/-33.3 ms (2634, 2546, 2512, 2545, 2580, 2567, 2530, 2542, 2561, 2572)
+HEAD is now at 35ca7c9 merge in kberg changes
+1000/100/10: 2512, 2519.2+/-37.0 ms (2610, 2508, 2481, 2488, 2546, 2495, 2516, 2507, 2524, 2517)
+HEAD is now at 8d5846b Removing context from clickCallback because the data I care about can be
+1000/100/10: 2499, 2509.9+/-32.3 ms (2584, 2494, 2504, 2490, 2512, 2489, 2480, 2490, 2548, 2508)
+HEAD is now at af3a17a Tests for pointClickCallback.
+1000/100/10: 2517, 2523.3+/-28.8 ms (2584, 2502, 2507, 2536, 2535, 2503, 2489, 2501, 2549, 2527)
+HEAD is now at 6ace73a Add useful comments to some of the mousedispatch methods.
+1000/100/10: 2522, 2520.6+/-31.8 ms (2589, 2483, 2520, 2538, 2540, 2507, 2485, 2492, 2528, 2524)
+HEAD is now at 730852d debug -> options-reference
+1000/100/10: 2531.5, 2532.1+/-32.1 ms (2592, 2509, 2483, 2540, 2568, 2507, 2524, 2512, 2547, 2539)
+HEAD is now at 2d9596f Merge branch 'master' into split
+1000/100/10: 2518.5, 2528.1+/-35.2 ms (2595, 2514, 2487, 2497, 2557, 2499, 2523, 2501, 2559, 2549)
+HEAD is now at 9b3c242 Restructure the nature of click callbacks. PointClickCallback now
+1000/100/10: 2509.5, 2514.7+/-33.3 ms (2599, 2487, 2502, 2494, 2523, 2516, 2480, 2503, 2526, 2517)
+HEAD is now at 4fc453b Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 2520.5, 2525.6+/-36.3 ms (2590, 2508, 2478, 2547, 2572, 2490, 2503, 2501, 2533, 2534)
+HEAD is now at 9da323b fix bug in tests/resize.html
+1000/100/10: 2523, 2538.0+/-33.4 ms (2615, 2542, 2514, 2516, 2571, 2511, 2519, 2514, 2551, 2527)
+HEAD is now at 3f548e2 Better pointClickCallback, updated doc.
+1000/100/10: 2511, 2524.3+/-29.1 ms (2592, 2504, 2508, 2535, 2544, 2508, 2496, 2503, 2539, 2514)
+HEAD is now at 39338e7 allow XHRs from file:/// URLs with the right flags
+1000/100/10: 2511.5, 2520.1+/-31.2 ms (2587, 2498, 2477, 2498, 2538, 2514, 2503, 2509, 2542, 2535)
+HEAD is now at 74a5af3 split up library, use an autoloader
+1000/100/10: 2520, 2536.9+/-32.3 ms (2606, 2515, 2512, 2520, 2563, 2503, 2520, 2546, 2564, 2520)
+HEAD is now at 5d48586 Small bug: when selPoints_ is empty, pointClickCallback is always called
+1000/100/10: 2506, 2513.4+/-30.1 ms (2587, 2510, 2504, 2508, 2518, 2489, 2481, 2504, 2537, 2496)
+HEAD is now at eee806a Remove double-call of treatMouseOpAsClick, and also pass event, which
+1000/100/10: 2497.5, 2509.8+/-33.8 ms (2593, 2484, 2512, 2495, 2524, 2486, 2481, 2500, 2531, 2492)
+HEAD is now at 5a398a9 treatMouseOpAsClick requires two parameters, I didn't send them both all
+1000/100/10: 2499, 2512.7+/-31.8 ms (2591, 2499, 2498, 2500, 2527, 2499, 2480, 2499, 2536, 2498)
+HEAD is now at cb00f74 Annotation date parser was failing, but not providing the correct
+1000/100/10: 2501, 2510.7+/-38.0 ms (2606, 2487, 2516, 2491, 2511, 2483, 2479, 2484, 2530, 2520)
+HEAD is now at d64b8fe Fix bug 192.
+1000/100/10: 2535, 2535.0+/-30.1 ms (2597, 2506, 2535, 2535, 2538, 2535, 2517, 2504, 2574, 2509)
+HEAD is now at c682f20 Additional minor adjustments to dygraphs to get clickCallbacks to work.
+1000/100/10: 2514.5, 2520.1+/-30.3 ms (2600, 2495, 2520, 2514, 2523, 2490, 2511, 2507, 2526, 2515)
+HEAD is now at fc4e84f When pan is the default behavior, clearSelection can't be called on
+1000/100/10: 2506, 2514.2+/-32.1 ms (2587, 2487, 2522, 2516, 2518, 2489, 2485, 2496, 2546, 2496)
+HEAD is now at 0b38843 temporarily disabling a test while figuring out how to fix it.
+1000/100/10: 2501.5, 2513.1+/-41.8 ms (2612, 2481, 2497, 2506, 2506, 2485, 2483, 2483, 2556, 2522)
+HEAD is now at 9c83143 Start adding tests for the interaction model. Create the beginning of a
+1000/100/10: 2496, 2504.3+/-32.7 ms (2587, 2498, 2500, 2491, 2507, 2474, 2479, 2486, 2527, 2494)
+HEAD is now at 124e8d9 all tests pass
+1000/100/10: 2523, 2531.0+/-32.9 ms (2599, 2516, 2487, 2507, 2575, 2523, 2523, 2517, 2540, 2523)
+HEAD is now at 063e83b a regression test plus general fallout from the toDomYCoord bug
+1000/100/10: 2523.5, 2534.5+/-31.0 ms (2602, 2522, 2510, 2519, 2576, 2507, 2529, 2513, 2542, 2525)
+HEAD is now at d9816e6 fix issue 193 -- need to consider area.y when computing data coords
+1000/100/10: 2515.5, 2513.6+/-28.8 ms (2577, 2482, 2516, 2515, 2516, 2493, 2476, 2507, 2537, 2517)
+HEAD is now at 95398db fix broken test
+1000/100/10: 2496, 2507.0+/-31.4 ms (2579, 2478, 2517, 2495, 2496, 2476, 2536, 2496, 2513, 2484)
+HEAD is now at 01ebcbd fix name collision
+1000/100/10: 2505, 2512.0+/-32.6 ms (2584, 2494, 2495, 2527, 2520, 2487, 2469, 2515, 2537, 2492)
+HEAD is now at f3cbe61 add tests for axis labels to pin down the current behavior
+1000/100/10: 2498, 2510.1+/-29.6 ms (2583, 2488, 2497, 2516, 2519, 2495, 2482, 2493, 2529, 2499)
+HEAD is now at ba45152 add classes to x- and y-axis labels
+1000/100/10: 2476.5, 2490.8+/-38.1 ms (2574, 2474, 2492, 2474, 2482, 2467, 2456, 2479, 2465, 2545)
+HEAD is now at d7beab6 fix labels issue when loading CSV multiple times and add a test
+1000/100/10: 2485, 2491.5+/-32.5 ms (2582, 2487, 2485, 2485, 2487, 2472, 2481, 2480, 2488, 2468)
+HEAD is now at 02eb7ae Merge pull request #63 from kberg/master
+1000/100/10: 2477, 2491.7+/-49.4 ms (2624, 2467, 2481, 2470, 2482, 2467, 2454, 2475, 2479, 2518)
+HEAD is now at afdcaac reorganize doc links
+1000/100/10: 2486.5, 2495.0+/-36.1 ms (2579, 2483, 2490, 2497, 2490, 2480, 2454, 2465, 2479, 2533)
+HEAD is now at 8256138 push jsdoc to web
+1000/100/10: 2486, 2493.5+/-35.3 ms (2578, 2471, 2479, 2508, 2497, 2493, 2464, 2471, 2458, 2516)
+HEAD is now at f35d857 more space for y-axis label on noise test
+1000/100/10: 2480, 2493.1+/-33.3 ms (2581, 2478, 2476, 2475, 2511, 2492, 2482, 2468, 2493, 2475)
+HEAD is now at e418245 linear/log toggle with customBars now works perfectly
+1000/100/10: 2479.5, 2489.5+/-35.6 ms (2581, 2471, 2472, 2478, 2482, 2481, 2456, 2481, 2476, 2517)
+HEAD is now at ccfcc16 add block_redraw option
+1000/100/10: 2499.5, 2510.4+/-35.7 ms (2602, 2500, 2496, 2487, 2524, 2488, 2476, 2507, 2499, 2525)
+HEAD is now at da1369a fix lingering hover dot on zoom bug
+1000/100/10: 2493, 2499.6+/-34.6 ms (2590, 2502, 2507, 2493, 2509, 2471, 2479, 2472, 2493, 2480)
+HEAD is now at 592f449 new demo of a chart w/ no boxy elements, plus a spark line (a tiny, tiny dygraph)
+1000/100/10: 2494, 2501.2+/-34.3 ms (2591, 2478, 2498, 2479, 2494, 2480, 2477, 2501, 2520, 2494)
+HEAD is now at a35080d ignore docs/options.html
+1000/100/10: 2499, 2501.3+/-31.9 ms (2586, 2488, 2496, 2502, 2505, 2502, 2472, 2478, 2482, 2502)
+HEAD is now at 520c808 consider whether axes are displayed when computing area
+1000/100/10: 2496.5, 2502.7+/-32.1 ms (2590, 2494, 2492, 2508, 2499, 2481, 2477, 2486, 2500, 2500)
+HEAD is now at e829f52 I can't believe the 'file' option wasn't documented!
+1000/100/10: 2502.5, 2509.5+/-31.2 ms (2578, 2468, 2493, 2512, 2538, 2487, 2491, 2493, 2517, 2518)
+HEAD is now at 6beca82 extra category
+1000/100/10: 2488.5, 2505.8+/-35.6 ms (2583, 2473, 2497, 2488, 2531, 2485, 2483, 2483, 2546, 2489)
+HEAD is now at 990d6a3 flesh out docs; split axisLineWIdth and gridLineWidth properties
+1000/100/10: 2507, 2512.7+/-30.3 ms (2588, 2473, 2507, 2521, 2523, 2500, 2493, 2507, 2517, 2498)
+HEAD is now at 600d841 no more renderer options!
+1000/100/10: 2497, 2508.6+/-36.6 ms (2581, 2472, 2524, 2509, 2559, 2484, 2479, 2483, 2510, 2485)
+HEAD is now at 0e23cfc hack more renderer options out
+ERROR
+HEAD is now at 423f5ed remove most DygraphCanvasRenderer options
+ERROR
+HEAD is now at b2c9222 remove DygraphLayout.options
+1000/100/10: 2491.5, 2495.1+/-30.9 ms (2566, 2510, 2502, 2501, 2514, 2473, 2465, 2470, 2482, 2468)
+HEAD is now at b3d2a92 jsdoc toolkit license in README
+1000/100/10: 2497, 2507.5+/-40.6 ms (2579, 2488, 2481, 2490, 2524, 2462, 2504, 2466, 2573, 2508)
+HEAD is now at 0393dbf move Interaction methods out into their own class.
+1000/100/10: 2505, 2529.7+/-80.1 ms (2573, 2493, 2497, 2513, 2527, 2456, 2735, 2464, 2543, 2496)
+HEAD is now at 3234efc working generate-jsdoc script
+1000/100/10: 2487.5, 2498.2+/-37.6 ms (2564, 2480, 2477, 2494, 2526, 2437, 2503, 2475, 2481, 2545)
+HEAD is now at c39e1d9 cleanup, jsdoc warning message
+1000/100/10: 2511, 2519.9+/-40.4 ms (2570, 2476, 2487, 2490, 2555, 2589, 2532, 2478, 2521, 2501)
+HEAD is now at 2487181 chmod, .gitignore jsdoc dir
+1000/100/10: 2510, 2512.2+/-36.9 ms (2584, 2478, 2504, 2495, 2551, 2465, 2516, 2475, 2525, 2529)
+HEAD is now at cf18022 clear generated jsdoc; add script
+1000/100/10: 2507, 2512.7+/-35.1 ms (2568, 2500, 2489, 2483, 2555, 2458, 2532, 2489, 2539, 2514)
+HEAD is now at 629a09a can generate jsdoc; private methods marked as such
+1000/100/10: 2508, 2501.2+/-38.8 ms (2564, 2474, 2477, 2518, 2536, 2439, 2498, 2458, 2525, 2523)
+HEAD is now at a12f271 DygraphOps now does the right thing with events, which have read-only attributes (who knew there were read-only attributes, and can I get one of those?)
+1000/100/10: 2516, 2508.1+/-35.4 ms (2569, 2487, 2508, 2515, 2532, 2441, 2524, 2469, 2517, 2519)
+HEAD is now at 3fc84ab Merge branch 'master' of https://github.com/danvk/dygraphs
+1000/100/10: 2503, 2504.9+/-35.6 ms (2562, 2484, 2479, 2504, 2548, 2450, 2530, 2469, 2502, 2521)
+HEAD is now at 718ad8e Fix pedantic typo in copyright headers.
+1000/100/10: 2493, 2524.8+/-106.0 ms (2565, 2480, 2482, 2487, 2525, 2444, 2503, 2453, 2810, 2499)
+HEAD is now at aea23d5 Restore original data stirng in the README sample.
+1000/100/10: 2500.5, 2499.5+/-35.6 ms (2565, 2506, 2487, 2489, 2536, 2438, 2511, 2461, 2507, 2495)
+HEAD is now at 916a000 Update global README with updated example, and license information for auto-tests.
+1000/100/10: 2501.5, 2501.1+/-38.0 ms (2563, 2487, 2467, 2487, 2525, 2450, 2526, 2453, 2516, 2537)
+HEAD is now at f8e02b3 Merge pull request #62 from kberg/fix174.
+1000/100/10: 2496, 2497.5+/-34.5 ms (2559, 2476, 2463, 2479, 2529, 2458, 2521, 2462, 2515, 2513)
+HEAD is now at 72a74f0 Added range_tests, which uses DygraphOps -- an API for pushing Dygraph-specific events.
+1000/100/10: 2504, 2503.1+/-37.7 ms (2567, 2477, 2465, 2504, 2556, 2457, 2526, 2470, 2505, 2504)
+HEAD is now at 9d076ff Added runAllTests. Useful.
+1000/100/10: 2483.5, 2490.5+/-34.3 ms (2560, 2481, 2463, 2480, 2525, 2444, 2511, 2459, 2486, 2496)
+HEAD is now at 1ca7887 oops -- s/MoreAsserts.//
+1000/100/10: 3185, 3252.5+/-769.3 ms (2577, 2504, 2479, 2511, 2955, 4496, 4311, 3841, 3415, 3436)
+HEAD is now at 80d29b3 Moving the delta tests to MoreAsserts. MoreAsserts is actually going to go away when this code goes in to jstestdriver. I don't suggest you ... don't look too hard at MoreAsserts, but don't look too hard. A proper review will be done on the jstestdriver side.
+1000/100/10: 3211, 3209.0+/-236.9 ms (3390, 3395, 3230, 3489, 3395, 3192, 2677, 3135, 3160, 3027)
+HEAD is now at ca6c43a Updated fake test runner that shows stack traces on failure.
+1000/100/10: 3020.5, 2989.1+/-186.8 ms (3194, 3048, 2993, 3115, 3144, 3238, 2739, 2756, 2816, 2848)
+HEAD is now at 7165f97 Updated auto tests per danvk's comments.
+1000/100/10: 2816, 2831.5+/-114.5 ms (2839, 2677, 2910, 2770, 2750, 2803, 2852, 2829, 2782, 3103)
+HEAD is now at e07e165 Fake jstestdriver was not storing jquery, wonder why that was broken.
+1000/100/10: 2751, 2756.2+/-76.2 ms (2751, 2694, 2671, 2724, 2751, 2666, 2783, 2776, 2831, 2915)
+HEAD is now at 6cebee6 Fix bug 174. This is pulled from
+1000/100/10: 2726, 2735.8+/-121.7 ms (2874, 2727, 2912, 2772, 2878, 2670, 2725, 2634, 2591, 2575)
+HEAD is now at 644eff8 First set of automated tests for Dygraphs.
+1000/100/10: 3055.5, 2954.5+/-329.3 ms (2982, 3332, 3195, 3284, 3081, 3133, 3030, 2515, 2488, 2505)
+HEAD is now at 2cf95ff Expose function that can be replaced during tests for mocking out the HTML5 canvas context.
+1000/100/10: 2503.5, 2503.7+/-31.5 ms (2571, 2492, 2495, 2488, 2519, 2468, 2521, 2459, 2512, 2512)
+HEAD is now at c7371f0 Update documentation of the test.
+1000/100/10: 2550, 2554.5+/-24.2 ms (2551, 2512, 2543, 2535, 2593, 2545, 2580, 2556, 2581, 2549)
+HEAD is now at 6512fe1 use scp -r to copy tests directory
+1000/100/10: 2547.5, 2552.4+/-28.3 ms (2554, 2523, 2530, 2525, 2593, 2522, 2592, 2566, 2578, 2541)
+HEAD is now at 86cf5a6 works in FF too
+1000/100/10: 2544, 2550.6+/-28.4 ms (2557, 2516, 2529, 2544, 2614, 2530, 2570, 2544, 2569, 2533)
+HEAD is now at 8c5fe59 drawing demo
+1000/100/10: 2563, 2563.6+/-28.5 ms (2568, 2529, 2535, 2545, 2608, 2531, 2590, 2577, 2595, 2558)
+HEAD is now at 17d0210 docs and test
+1000/100/10: 2549.5, 2557.3+/-25.4 ms (2558, 2536, 2549, 2541, 2618, 2532, 2574, 2550, 2571, 2544)
+HEAD is now at 91c10d9 better error with non-existent labelsDiv
+1000/100/10: 2549.5, 2724.0+/-362.3 ms (2549, 2516, 2539, 2543, 2573, 2538, 2550, 2613, 3394, 3425)
+HEAD is now at 9d6c91a merge upstream changes
+1000/100/10: 3391, 3366.2+/-324.1 ms (3832, 3316, 3391, 2918, 2757, 3304, 3606, 3523, 3624, 3391)
+HEAD is now at 19589a3 add back Dygraph.floatFormat
+1000/100/10: 2548.5, 2541.9+/-15.4 ms (2552, 2567, 2527, 2524, 2553, 2529, 2548, 2521, 2549, 2549)
+HEAD is now at 2e1fcf1 working w/o scientific notation
+1000/100/10: 2529, 2534.4+/-24.4 ms (2585, 2499, 2539, 2525, 2557, 2516, 2524, 2518, 2548, 2533)
+HEAD is now at fed7b34 remove test
+1000/100/10: 2526, 2526.6+/-17.2 ms (2529, 2488, 2538, 2537, 2548, 2522, 2516, 2521, 2544, 2523)
+HEAD is now at 032e4c1 revert sig figs behavior
+1000/100/10: 2548.5, 2554.0+/-32.9 ms (2581, 2495, 2534, 2524, 2600, 2586, 2540, 2548, 2583, 2549)
+HEAD is now at 327a927 fix embarrassing CSV error on dygraphs home page
+1000/100/10: 2532, 2535.9+/-14.9 ms (2534, 2527, 2536, 2528, 2571, 2535, 2524, 2522, 2552, 2530)
+HEAD is now at 7344fae Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 2539.5, 2567.2+/-72.6 ms (2564, 2526, 2551, 2536, 2577, 2534, 2536, 2540, 2769, 2539)
+HEAD is now at 06303c3 update legend when updateOptions() is called
+1000/100/10: 2534, 2538.5+/-22.5 ms (2541, 2497, 2531, 2544, 2569, 2529, 2537, 2531, 2578, 2528)
+HEAD is now at 352c831 only show visible series on the legend
+1000/100/10: 2545, 2553.5+/-19.8 ms (2536, 2554, 2530, 2548, 2587, 2542, 2542, 2573, 2581, 2542)
+HEAD is now at bafe040 use CSS to color legend labels (fixes long-standing issue in demo.html)
+1000/100/10: 2550, 2550.8+/-15.1 ms (2545, 2547, 2553, 2529, 2566, 2531, 2542, 2570, 2572, 2553)
+HEAD is now at 169b51f Merge branch 'master' of https://github.com/kberg/dygraphs
+1000/100/10: 2548, 2551.5+/-15.5 ms (2551, 2560, 2541, 2536, 2578, 2562, 2535, 2536, 2571, 2545)
+HEAD is now at 9ed3000 Don't display a graph by default, because if you make custom settings,
+1000/100/10: 2542.5, 2544.6+/-15.6 ms (2567, 2538, 2526, 2535, 2559, 2521, 2538, 2552, 2563, 2547)
+HEAD is now at 096c115 tweaks to reduce horizontal width of home page
+1000/100/10: 2542.5, 2567.0+/-74.4 ms (2546, 2539, 2542, 2541, 2568, 2533, 2543, 2538, 2777, 2543)
+HEAD is now at 62c2a51 Replace default execution with a "go!" button. Also keeping history of
+1000/100/10: 2535.5, 2561.7+/-71.5 ms (2546, 2566, 2541, 2530, 2567, 2530, 2527, 2521, 2760, 2529)
+HEAD is now at f7adb3d Add ability to run test many times for a better sense of performance metrics.
+1000/100/10: 2537, 2541.7+/-16.7 ms (2538, 2541, 2546, 2536, 2569, 2528, 2528, 2525, 2573, 2533)
+HEAD is now at bc7f1c9 g -> g2
+1000/100/10: 2544, 2551.4+/-21.7 ms (2542, 2540, 2546, 2549, 2585, 2533, 2534, 2540, 2597, 2548)
+HEAD is now at 2cf4e66 Add test for value range being respected when no lines are visible.
+1000/100/10: 2535, 2539.0+/-22.2 ms (2588, 2541, 2530, 2540, 2561, 2519, 2520, 2519, 2548, 2524)
+HEAD is now at 06fc69b Change no-series-defined behavior so that it computes the
+1000/100/10: 2548.5, 2574.8+/-74.3 ms (2538, 2546, 2549, 2539, 2580, 2548, 2545, 2553, 2783, 2567)
+HEAD is now at 5bc3e26 merge master
+1000/100/10: 2554, 2556.7+/-14.4 ms (2551, 2557, 2545, 2546, 2575, 2537, 2562, 2576, 2574, 2544)
+HEAD is now at 36dfa95 general cleanup
+1000/100/10: 2536.5, 2539.4+/-20.0 ms (2556, 2506, 2528, 2536, 2569, 2526, 2526, 2537, 2568, 2542)
+HEAD is now at d33de6c Merge branch 'master' of https://github.com/nealie/dygraphs into nealie
+1000/100/10: 2536, 2540.5+/-22.7 ms (2555, 2503, 2541, 2519, 2568, 2527, 2528, 2531, 2568, 2565)
+HEAD is now at fe45f97 tweak demo chart a bit
+1000/100/10: 2568.5, 2577.1+/-38.6 ms (2549, 2642, 2549, 2568, 2582, 2645, 2542, 2538, 2587, 2569)
+HEAD is now at b4202b3 tweak defaults a bit
+1000/100/10: 2537.5, 2540.4+/-17.1 ms (2553, 2506, 2539, 2545, 2565, 2536, 2534, 2532, 2562, 2532)
+HEAD is now at 3bc2cb3 two charts on demo page
+1000/100/10: 2536.5, 2538.2+/-20.6 ms (2563, 2495, 2534, 2540, 2565, 2538, 2527, 2528, 2557, 2535)
+HEAD is now at b56b699 works in IE8
+1000/100/10: 2537, 2538.5+/-19.5 ms (2550, 2503, 2519, 2545, 2569, 2539, 2534, 2529, 2562, 2535)
+HEAD is now at 52c47e8 works in IE9
+1000/100/10: 2539.5, 2541.6+/-14.8 ms (2534, 2524, 2530, 2533, 2557, 2524, 2547, 2556, 2566, 2545)
+HEAD is now at ca49434 more chart label tweaks -- getting close!
+1000/100/10: 2553, 2554.1+/-19.7 ms (2555, 2514, 2562, 2548, 2578, 2541, 2547, 2560, 2585, 2551)
+HEAD is now at 626505e Merge branch 'master' into chart-labels
+1000/100/10: 2555, 2564.0+/-36.7 ms (2555, 2517, 2541, 2646, 2603, 2541, 2546, 2562, 2574, 2555)
+HEAD is now at 1a5411b remove flashcanvas
+1000/100/10: 2541.5, 2544.0+/-17.0 ms (2556, 2519, 2528, 2526, 2564, 2540, 2540, 2543, 2571, 2553)
+HEAD is now at d96b7d1 wrap Date.parse() defensively (mootools and joomla override it with something incompatible)
+1000/100/10: 2539.5, 2539.7+/-10.2 ms (2540, 2530, 2546, 2537, 2556, 2541, 2528, 2526, 2554, 2539)
+HEAD is now at 41deeaf move asynchronous JS snippet to <head>
+1000/100/10: 2528.5, 2532.6+/-11.9 ms (2529, 2526, 2539, 2528, 2558, 2528, 2531, 2518, 2546, 2523)
+HEAD is now at e515259 - Merge branch 'master' of http://github.com/danvk/dygraphs
+1000/100/10: 2543.5, 2542.8+/-22.1 ms (2555, 2508, 2543, 2551, 2590, 2530, 2519, 2543, 2545, 2544)
+HEAD is now at d731e96 add analytics to all dygraphs pages
+1000/100/10: 2551, 2550.3+/-16.0 ms (2547, 2542, 2560, 2555, 2566, 2536, 2525, 2536, 2578, 2558)
+HEAD is now at 88cd343 Merge branch 'master' into chart-labels
+1000/100/10: 2554.5, 2553.0+/-17.1 ms (2556, 2515, 2554, 2554, 2577, 2543, 2555, 2545, 2573, 2558)
+HEAD is now at d1d19c3 add debug mode to generate-documentation and fix small bug
+1000/100/10: 2533.5, 2538.5+/-13.7 ms (2533, 2533, 2552, 2534, 2566, 2539, 2523, 2526, 2551, 2528)
+HEAD is now at e14b350 Merge branch 'master' of https://github.com/kberg/dygraphs
+1000/100/10: 2556, 2604.8+/-117.7 ms (2555, 2529, 2549, 2557, 2576, 2545, 2543, 2886, 2751, 2557)
+HEAD is now at 9ec21d0 Bug in panEdgeFraction -- release prior values so that you can unset the pan edge fraction.
+1000/100/10: 2556, 2559.3+/-21.3 ms (2597, 2542, 2566, 2551, 2582, 2543, 2561, 2536, 2579, 2536)
+HEAD is now at 44f29e9 Merge branch 'master' of https://github.com/kberg/dygraphs
+1000/100/10: 2553, 2558.8+/-34.7 ms (2545, 2528, 2648, 2538, 2567, 2534, 2561, 2536, 2565, 2566)
+HEAD is now at 965a030 Alterations based on code review.
+1000/100/10: 2531.5, 2549.5+/-41.2 ms (2531, 2530, 2657, 2550, 2575, 2532, 2527, 2521, 2550, 2522)
+HEAD is now at dea29a4 Merge branch 'master' of https://github.com/kberg/dygraphs
+1000/100/10: 2539.5, 2550.4+/-24.4 ms (2526, 2543, 2593, 2571, 2565, 2536, 2531, 2527, 2579, 2533)
+HEAD is now at 0c38f18 fix roller positioning; add labels to docs page
+1000/100/10: 2555.5, 2557.7+/-21.8 ms (2559, 2530, 2558, 2565, 2600, 2545, 2541, 2539, 2587, 2553)
+HEAD is now at 4cac8c7 First shot at panFrame, which frames how far you can pan outside the graph's visible boundaries.
+1000/100/10: 2555.5, 2560.7+/-37.0 ms (2529, 2519, 2638, 2562, 2569, 2605, 2539, 2530, 2567, 2549)
+HEAD is now at 09c1755 Adding a "number of series" field to the benchmark, and also add a "completed in x milliseconds" comment.
+1000/100/10: 2544.5, 2545.3+/-15.6 ms (2563, 2550, 2549, 2529, 2571, 2527, 2536, 2529, 2559, 2540)
+HEAD is now at 86cce9e a few more tweaks
+1000/100/10: 2567, 2578.6+/-40.3 ms (2564, 2523, 2672, 2581, 2587, 2555, 2557, 2568, 2613, 2566)
+HEAD is now at ad1798c Initial implementation
+1000/100/10: 2558, 2561.3+/-19.3 ms (2557, 2521, 2558, 2581, 2580, 2550, 2565, 2558, 2589, 2554)
+HEAD is now at 0f70cfa Removing unnecessary HTML from per-series.
+1000/100/10: 2534.5, 2546.5+/-41.4 ms (2529, 2540, 2657, 2542, 2563, 2529, 2515, 2517, 2546, 2527)
+HEAD is now at 1920a00 Clean up perf.html for readability.
+1000/100/10: 2553.5, 2553.4+/-13.2 ms (2550, 2545, 2540, 2538, 2569, 2541, 2557, 2557, 2578, 2559)
+HEAD is now at 135d996 fix issue 170
+1000/100/10: 2543.5, 2584.4+/-93.8 ms (2830, 2542, 2656, 2553, 2543, 2536, 2529, 2544, 2572, 2539)
+HEAD is now at 25c2433 update IE documentation on home page
+1000/100/10: 2543.5, 2548.1+/-13.6 ms (2540, 2543, 2556, 2542, 2577, 2546, 2544, 2535, 2564, 2534)
+HEAD is now at 10494b4 add the magic <meta> tag for IE8+9
+1000/100/10: 2550.5, 2550.7+/-12.1 ms (2543, 2567, 2547, 2538, 2569, 2542, 2533, 2556, 2558, 2554)
+HEAD is now at 606568f push flashcanvas to web
+1000/100/10: 2555.5, 2570.5+/-33.8 ms (2558, 2568, 2659, 2552, 2585, 2553, 2547, 2553, 2581, 2549)
+HEAD is now at f3ec18d Add flashcanvas
+1000/100/10: 2557.5, 2559.7+/-14.0 ms (2559, 2555, 2554, 2567, 2585, 2546, 2538, 2556, 2578, 2559)
+HEAD is now at 1b8d37e update IE notes
+1000/100/10: 2542.5, 2546.1+/-15.9 ms (2536, 2561, 2542, 2532, 2580, 2543, 2532, 2532, 2559, 2544)
+HEAD is now at 53e5cec add HTML5 doctype to docs pages
+1000/100/10: 2539.5, 2539.5+/-12.7 ms (2536, 2553, 2547, 2543, 2561, 2533, 2523, 2526, 2547, 2526)
+HEAD is now at 54425b1 add HTML5 doctype to all tests
+1000/100/10: 2541, 2545.6+/-11.0 ms (2543, 2547, 2553, 2537, 2569, 2536, 2539, 2539, 2557, 2536)
+HEAD is now at 92fd68d fix gviz-numeric test
+1000/100/10: 2554.5, 2562.8+/-28.3 ms (2556, 2553, 2635, 2559, 2578, 2541, 2543, 2544, 2573, 2546)
+HEAD is now at 1eb2feb fix error when no series are visible
+1000/100/10: 2556.5, 2560.4+/-17.3 ms (2562, 2566, 2546, 2542, 2590, 2545, 2556, 2550, 2590, 2557)
+HEAD is now at 1ac37a0 Merge branch 'master' of https://github.com/kberg/dygraphs
+1000/100/10: 2540.5, 2544.3+/-11.9 ms (2535, 2542, 2545, 2530, 2567, 2539, 2537, 2536, 2560, 2552)
+HEAD is now at 35a3c48 Merge branch 'master' of https://github.com/raineth/dygraphs
+1000/100/10: 2549, 2554.1+/-14.9 ms (2557, 2543, 2544, 2557, 2581, 2539, 2549, 2543, 2579, 2549)
+HEAD is now at b5f3dd4 Update documentation, include anchors for each option.
+1000/100/10: 2563.5, 2570.9+/-20.1 ms (2561, 2564, 2558, 2563, 2589, 2545, 2550, 2606, 2594, 2579)
+HEAD is now at a109b71 Fix typo in logscale option documentation.
+1000/100/10: 2537, 2542.2+/-14.0 ms (2558, 2547, 2539, 2532, 2563, 2531, 2535, 2525, 2561, 2531)
+HEAD is now at 5cc5f63 document annotation callbacks
+1000/100/10: 2553, 2556.2+/-13.6 ms (2561, 2553, 2545, 2551, 2581, 2538, 2556, 2547, 2577, 2553)
+HEAD is now at 8165189 empty docs for two more optoins
+1000/100/10: 2539, 2543.6+/-18.0 ms (2537, 2549, 2555, 2541, 2573, 2532, 2531, 2523, 2571, 2524)
+HEAD is now at 817b08d py -> sh
+1000/100/10: 2539, 2540.9+/-17.5 ms (2537, 2543, 2549, 2541, 2564, 2513, 2522, 2535, 2571, 2534)
+HEAD is now at d3454ce generate docs in push-to-web
+1000/100/10: 2543, 2547.2+/-16.9 ms (2535, 2548, 2542, 2535, 2580, 2551, 2525, 2540, 2572, 2544)
+HEAD is now at c4370b9 update compressed size
+1000/100/10: 2554.5, 2556.1+/-15.3 ms (2573, 2554, 2543, 2555, 2578, 2556, 2538, 2537, 2577, 2550)
+HEAD is now at 5af2de2 remove old options reference
+1000/100/10: 2544, 2549.8+/-19.2 ms (2529, 2543, 2545, 2558, 2598, 2550, 2540, 2537, 2558, 2540)
+HEAD is now at a38e933 add categories
+1000/100/10: 2541, 2543.4+/-15.7 ms (2536, 2560, 2533, 2531, 2555, 2519, 2534, 2549, 2571, 2546)
+HEAD is now at 88b1e05 more comments
+1000/100/10: 2545, 2547.6+/-13.0 ms (2536, 2545, 2553, 2547, 2570, 2545, 2542, 2534, 2569, 2535)
+HEAD is now at 0e37f8e script for generating HTML docs
+1000/100/10: 2554.5, 2562.9+/-21.3 ms (2554, 2554, 2553, 2568, 2600, 2542, 2537, 2555, 2598, 2568)
+HEAD is now at 0addac0 adjust slightly for JSON parsing; add comment about JSON
+1000/100/10: 2560, 2559.3+/-14.3 ms (2566, 2557, 2567, 2562, 2580, 2543, 2539, 2543, 2578, 2558)
+HEAD is now at a96f59f make the options reference into valid JSON
+1000/100/10: 2541, 2539.5+/-15.9 ms (2543, 2553, 2539, 2539, 2564, 2545, 2519, 2522, 2554, 2517)
+HEAD is now at b4bd880 strip options reference from combined
+1000/100/10: 2609.5, 2612.0+/-16.9 ms (2607, 2632, 2624, 2591, 2626, 2592, 2593, 2607, 2636, 2612)
+HEAD is now at 028ddf8 institute really draconian options documentation requirements
+ERROR
+HEAD is now at 81862a8 add docs for "legend" option
+1000/100/10: 2545.5, 2546.5+/-17.8 ms (2539, 2565, 2557, 2550, 2575, 2541, 2527, 2530, 2560, 2521)
+HEAD is now at 2fccd3d add "legend" option and an example of its usage.
+1000/100/10: 2532.5, 2537.1+/-14.0 ms (2532, 2554, 2545, 2533, 2563, 2531, 2519, 2525, 2544, 2525)
+HEAD is now at e9fe4a2 factor out logic for generating the html legend
+1000/100/10: 2544.5, 2560.4+/-61.3 ms (2543, 2513, 2728, 2554, 2570, 2529, 2529, 2531, 2561, 2546)
+HEAD is now at e9d78ba Fix CSVs with a numeric (non-date) X axis and add a test for that case.
+1000/100/10: 2525, 2520.9+/-25.0 ms (2545, 2518, 2500, 2483, 2542, 2490, 2506, 2532, 2554, 2539)
+HEAD is now at 7219edb more warnings on CSV parsing
+1000/100/10: 2536, 2531.1+/-14.3 ms (2547, 2550, 2511, 2523, 2538, 2509, 2536, 2521, 2536, 2540)
+HEAD is now at 876cc77 record Dygraph in independent-series.html
+1000/100/10: 2528, 2523.8+/-20.4 ms (2551, 2537, 2513, 2492, 2530, 2493, 2529, 2527, 2549, 2517)
+HEAD is now at 5cd7ac6 parse "NaN" as NaN, not null. Log descriptive errors on bad values
+1000/100/10: 2525.5, 2525.6+/-15.3 ms (2547, 2527, 2500, 2516, 2536, 2543, 2506, 2524, 2535, 2522)
+HEAD is now at 6d0aaa0 A warning and better default behavior when labels option and CSV labels are both present
+1000/100/10: 2528, 2527.2+/-16.7 ms (2545, 2523, 2533, 2514, 2543, 2499, 2512, 2516, 2548, 2539)
+HEAD is now at 05a9ef8 fix bug (I think) introduced by 6faebb69
+1000/100/10: 2531.5, 2532.7+/-20.4 ms (2556, 2524, 2521, 2501, 2557, 2511, 2544, 2539, 2556, 2518)
+HEAD is now at c6a0ebb csv format does not work
+1000/100/10: 2515.5, 2518.4+/-20.7 ms (2553, 2519, 2503, 2490, 2541, 2494, 2514, 2517, 2540, 2513)
+HEAD is now at 75c589d demonstration of independent series w/ NaN
+1000/100/10: 2511, 2516.9+/-20.2 ms (2556, 2525, 2505, 2491, 2537, 2494, 2511, 2508, 2531, 2511)
+HEAD is now at ba049b8 - Don't use invalid values for axis extreme calculation.
+1000/100/10: 2527.5, 2531.6+/-31.1 ms (2544, 2559, 2523, 2500, 2538, 2600, 2499, 2515, 2532, 2506)
+HEAD is now at 7aedf6f minor tweaks to jeremy's change
+1000/100/10: 2512.5, 2513.8+/-18.8 ms (2551, 2518, 2521, 2496, 2518, 2486, 2507, 2507, 2533, 2501)
+HEAD is now at 685ebbb Merge branch 'master' of https://github.com/danvk/dygraphs
+1000/100/10: 2544.5, 2546.6+/-27.2 ms (2581, 2538, 2528, 2513, 2572, 2507, 2586, 2551, 2553, 2537)
+HEAD is now at e863a17 Fixes from merging repo for two-axes.html and logscale.html.
+1000/100/10: 2515.5, 2510.1+/-20.1 ms (2541, 2514, 2490, 2472, 2526, 2498, 2517, 2522, 2521, 2500)
+HEAD is now at 3aa79d9 fix issue 124
+1000/100/10: 2516, 2522.0+/-28.4 ms (2584, 2553, 2505, 2492, 2529, 2522, 2496, 2503, 2526, 2510)
+HEAD is now at d916677 Small fixes from the last merge update.
+1000/100/10: 2528, 2528.6+/-19.0 ms (2562, 2526, 2517, 2513, 2526, 2493, 2538, 2530, 2547, 2534)
+HEAD is now at 70a50f9 Fix bug w/ annotations and raw format
+1000/100/10: 2491.5, 2504.2+/-30.1 ms (2574, 2526, 2483, 2470, 2510, 2490, 2486, 2489, 2521, 2493)
+HEAD is now at dcb2513 Updated noZoomFlagChange related documentation.
+1000/100/10: 2507.5, 2506.7+/-21.8 ms (2528, 2512, 2491, 2468, 2523, 2544, 2494, 2492, 2511, 2504)
+HEAD is now at 5b469bb Fix conflicts in index.html
+1000/100/10: 2502.5, 2503.8+/-17.9 ms (2527, 2510, 2494, 2475, 2509, 2531, 2496, 2493, 2516, 2487)
+HEAD is now at 995b997 Merge branch 'master' of http://github.com/danvk/dygraphs
+1000/100/10: 2522, 2528.5+/-37.9 ms (2543, 2511, 2501, 2479, 2550, 2617, 2503, 2528, 2537, 2516)
+HEAD is now at a6a505d Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 2519.5, 2525.0+/-26.0 ms (2588, 2534, 2504, 2503, 2538, 2519, 2501, 2510, 2533, 2520)
+HEAD is now at 485efa3 Restructured the noZoomFlagChange test page and added explanations.
+1000/100/10: 2505.5, 2508.1+/-13.9 ms (2535, 2514, 2504, 2507, 2518, 2498, 2498, 2489, 2521, 2497)
+HEAD is now at 9d8685c Update tests to ensure values == 0 are ignored and don't disrupt showing in log scale graphs.
+1000/100/10: 2509.5, 2523.5+/-26.8 ms (2587, 2532, 2501, 2503, 2534, 2509, 2506, 2509, 2544, 2510)
+HEAD is now at 74dfe45 Can't include points on the log scale when the values are zero. How was this missed?
+1000/100/10: 2527, 2525.7+/-28.2 ms (2583, 2528, 2500, 2490, 2542, 2506, 2498, 2526, 2541, 2543)
+HEAD is now at c742293 Turns out that I had to also check for infinity, which happens when
+1000/100/10: 2524.5, 2525.3+/-29.7 ms (2582, 2527, 2500, 2478, 2551, 2530, 2506, 2509, 2548, 2522)
+HEAD is now at 22bd1df Add toString function to dygraph instances. Doesn't work with graphs on divs without ids -- ever thought of adding a "name" attribute to support many graphs on a page?
+1000/100/10: 2520, 2528.3+/-24.0 ms (2580, 2519, 2503, 2509, 2551, 2546, 2521, 2510, 2530, 2514)
+HEAD is now at 6fd1990 Merge branch 'master' of https://github.com/danvk/dygraphs
+1000/100/10: 2526.5, 2524.8+/-25.1 ms (2560, 2527, 2508, 2489, 2526, 2488, 2514, 2538, 2553, 2545)
+HEAD is now at 4cb5e2d * Altered formatting to use the shorter of floatFormat() or intFormat().  This
+1000/100/10: 2529, 2537.0+/-18.5 ms (2573, 2532, 2522, 2526, 2558, 2534, 2523, 2524, 2556, 2522)
+HEAD is now at 315d487 Undo change to logscale test.
+1000/100/10: 2531.5, 2532.9+/-18.3 ms (2548, 2540, 2496, 2530, 2560, 2516, 2532, 2550, 2526, 2531)
+HEAD is now at d03e78e Add error when computing axis scales that just won't display because of an invalid range.
+1000/100/10: 2504, 2504.6+/-17.9 ms (2531, 2513, 2498, 2471, 2524, 2494, 2510, 2496, 2518, 2491)
+HEAD is now at ea62df8 fix bug 92
+1000/100/10: 2504, 2509.4+/-22.8 ms (2542, 2496, 2478, 2488, 2546, 2499, 2516, 2494, 2526, 2509)
+HEAD is now at c0cef1f Merge branch 'master' of https://github.com/flooey/dygraphs
+1000/100/10: 2531, 2528.7+/-23.8 ms (2552, 2544, 2509, 2491, 2559, 2551, 2512, 2507, 2544, 2518)
+HEAD is now at 0209e56 Remove code that clamps horizontal hover to the final point.  I don't think
+1000/100/10: 2515.5, 2520.2+/-24.1 ms (2561, 2516, 2514, 2475, 2549, 2515, 2504, 2515, 2537, 2516)
+HEAD is now at 93f26a2 Test file tweak.
+1000/100/10: 2519.5, 2520.7+/-19.8 ms (2548, 2511, 2506, 2495, 2546, 2521, 2495, 2524, 2543, 2518)
+HEAD is now at 60adad3 Add entry for logscale tests in index.html test listing.
+1000/100/10: 2530, 2532.7+/-21.6 ms (2564, 2538, 2510, 2514, 2562, 2531, 2510, 2513, 2556, 2529)
+HEAD is now at 931ea29 Add brief docs to index.html about logscale.
+1000/100/10: 2526, 2533.9+/-25.1 ms (2566, 2531, 2518, 2498, 2564, 2539, 2512, 2521, 2570, 2520)
+HEAD is now at 2cae510 Merging the two demos, and cleaned it up a little bit.
+1000/100/10: 2514.5, 2522.3+/-26.6 ms (2556, 2513, 2497, 2481, 2563, 2516, 2507, 2512, 2549, 2529)
+HEAD is now at 60a1901 minor cleanup
+1000/100/10: 2516.5, 2517.2+/-22.8 ms (2555, 2520, 2495, 2485, 2547, 2501, 2500, 2513, 2525, 2531)
+HEAD is now at 1646ecc add stock log-scale demo
+1000/100/10: 2524, 2530.9+/-26.2 ms (2554, 2518, 2500, 2570, 2559, 2555, 2507, 2511, 2530, 2505)
+HEAD is now at 5db0e24 10 -> Dygraph.LOG_SCALE
+1000/100/10: 2520.5, 2522.3+/-25.0 ms (2568, 2525, 2506, 2483, 2552, 2524, 2508, 2503, 2537, 2517)
+HEAD is now at c1bc242 add comment to PREFERRED_LOG_TICK_VALUES
+1000/100/10: 2518, 2523.0+/-22.3 ms (2554, 2513, 2504, 2485, 2551, 2529, 2511, 2516, 2547, 2520)
+HEAD is now at 4127acc merge in kberg's changes
+1000/100/10: 2489, 2525.2+/-109.1 ms (2539, 2495, 2478, 2461, 2830, 2494, 2479, 2483, 2509, 2484)
+HEAD is now at 90e29a7 Merge branch 'master' of http://github.com/danvk/dygraphs
+1000/100/10: 2552.5, 2763.6+/-377.0 ms (2535, 2513, 2505, 3175, 3452, 3269, 2619, 2493, 2570, 2505)
+HEAD is now at b598af9 log scale is no longer a "work in progress". :)
+1000/100/10: 2551, 2537.3+/-28.3 ms (2570, 2562, 2500, 2495, 2555, 2509, 2560, 2547, 2555, 2520)
+HEAD is now at ed898bd Log scale panning. I'm feeling really good about just how damn well this lined up with linear panning.
+1000/100/10: 2511, 2518.0+/-23.9 ms (2564, 2512, 2515, 2492, 2555, 2510, 2498, 2501, 2526, 2507)
+HEAD is now at 36f05c4 padding
+1000/100/10: 2511.5, 2509.8+/-16.3 ms (2532, 2516, 2493, 2518, 2502, 2493, 2530, 2485, 2522, 2507)
+HEAD is now at b70247d Zooming in log scale has been fixed, toDataCoordY was basically broken.
+1000/100/10: 2515.5, 2518.1+/-24.2 ms (2558, 2518, 2504, 2485, 2549, 2513, 2495, 2496, 2533, 2530)
+HEAD is now at fccae3c update gadget, add screenshot
+1000/100/10: 2501.5, 2505.5+/-20.8 ms (2526, 2533, 2492, 2472, 2504, 2499, 2530, 2484, 2520, 2495)
+HEAD is now at 00aa7f6 Improvement of representing scaling -- now it respects pixelsPerTick.
+1000/100/10: 2524, 2606.5+/-260.1 ms (2553, 2521, 2518, 2491, 2554, 2527, 2512, 2517, 2527, 3345)
+HEAD is now at ab51ff6 Adding an axis id to the y axes.
+1000/100/10: 2509, 2569.9+/-206.7 ms (3156, 2508, 2492, 2482, 2510, 2490, 2522, 2524, 2531, 2484)
+HEAD is now at d4b89d5 Merge https://github.com/danvk/dygraphs into logscale
+1000/100/10: 2518, 2525.8+/-19.1 ms (2556, 2515, 2508, 2509, 2549, 2518, 2510, 2518, 2553, 2522)
+HEAD is now at 0cfa06d First step to better log scale tick calculation -- introduce binary search for more comprenensible code. There's more to do unfortunately, but that will be done in another branch.
+1000/100/10: 2519, 2518.6+/-19.3 ms (2545, 2510, 2493, 2488, 2541, 2508, 2528, 2516, 2535, 2522)
+HEAD is now at 4b46712 Removed superluous array.
+1000/100/10: 2519.5, 2523.6+/-14.4 ms (2548, 2510, 2521, 2507, 2542, 2518, 2509, 2516, 2531, 2534)
+HEAD is now at 6821efb Much better algorithm for computing log scale ticks.
+1000/100/10: 2517, 2522.7+/-20.6 ms (2568, 2515, 2509, 2502, 2539, 2509, 2504, 2523, 2539, 2519)
+HEAD is now at 7bba83d More correct tickmarks for logs. They don't look as pretty but they respect the number of tickmarks requested.
+1000/100/10: 2513, 2519.3+/-21.0 ms (2536, 2513, 2496, 2504, 2555, 2515, 2513, 2509, 2552, 2500)
+HEAD is now at 6589db1 - Put back call to this.yAxisRanges() in doZoomY_
+1000/100/10: 2518, 2518.2+/-14.6 ms (2541, 2508, 2519, 2502, 2539, 2524, 2508, 2498, 2526, 2517)
+HEAD is now at 9f465eb comment update.
+1000/100/10: 2508.5, 2512.2+/-18.3 ms (2532, 2502, 2498, 2493, 2533, 2521, 2515, 2492, 2540, 2496)
+HEAD is now at 6e6a2b0 Log scale graphs no longer show points with values less than zero.
+1000/100/10: 2748.5, 2934.6+/-470.6 ms (2525, 2498, 2482, 2492, 2638, 3349, 3491, 3560, 3452, 2859)
+HEAD is now at 7d0e7a0 Didn't realize that the numeric tick function was used for x axes.
+1000/100/10: 3421.5, 3448.7+/-433.0 ms (3444, 3281, 2606, 3289, 4055, 3864, 3728, 3798, 3399, 3023)
+HEAD is now at 84dc76d Remove local variable that is no longer used.
+1000/100/10: 2543.5, 2624.5+/-140.2 ms (2848, 2792, 2808, 2660, 2514, 2531, 2549, 2508, 2497, 2538)
+HEAD is now at ec291cb Fix for issue 112: off-by-one issues with panning.
+1000/100/10: 2504.5, 2656.4+/-255.1 ms (3122, 2989, 2949, 2509, 2473, 2494, 2500, 2499, 2540, 2489)
+HEAD is now at 81856f7 - Stop charts with no visible plots from crashing.
+1000/100/10: 2526, 2523.1+/-23.2 ms (2555, 2512, 2525, 2492, 2547, 2500, 2545, 2527, 2536, 2492)
+HEAD is now at 0037b2a First round of fixes of log scaling based on code review from danvk.
+1000/100/10: 2738.5, 2747.4+/-30.6 ms (2753, 2764, 2802, 2730, 2711, 2722, 2724, 2792, 2747, 2729)
+HEAD is now at 696a2fe Remove superfluous console.log
+1000/100/10: 2742, 2748.3+/-25.0 ms (2745, 2752, 2798, 2760, 2714, 2734, 2730, 2779, 2739, 2732)
+HEAD is now at e4416fb Gah, another piece of code missing. Fixed.
+1000/100/10: 2747.5, 2754.2+/-23.8 ms (2744, 2751, 2802, 2784, 2738, 2734, 2752, 2770, 2729, 2738)
+HEAD is now at 0747928 Bug because I forgot a 'this' and also two comment tweaks.
+1000/100/10: 2722, 2723.7+/-27.4 ms (2741, 2734, 2766, 2697, 2696, 2695, 2700, 2727, 2717, 2764)
+HEAD is now at 32c1cf0 Merge branch 'master' of http://github.com/danvk/dygraphs
+1000/100/10: 2535.5, 2550.6+/-38.3 ms (2533, 2563, 2609, 2507, 2574, 2615, 2513, 2521, 2535, 2536)
+HEAD is now at 3637724 Clean up variable name and restore comment.
+1000/100/10: 2758, 2757.4+/-18.1 ms (2758, 2763, 2789, 2751, 2722, 2758, 2751, 2777, 2744, 2761)
+HEAD is now at 9da9874 Merge github.com:kberg/dygraphs into logscale
+1000/100/10: 2765, 2767.9+/-23.5 ms (2790, 2762, 2805, 2768, 2747, 2745, 2739, 2798, 2750, 2775)
+HEAD is now at be46943 file-level comment in interaction.js
+1000/100/10: 2530, 2523.4+/-26.3 ms (2557, 2521, 2498, 2476, 2546, 2509, 2539, 2546, 2540, 2502)
+HEAD is now at 9d10bca Swapping the smart scroll awareness for a dumber, better, one.
+1000/100/10: 2518.5, 2517.0+/-22.0 ms (2545, 2522, 2496, 2489, 2503, 2494, 2529, 2520, 2555, 2517)
+HEAD is now at 4f72c46 Added isZoomed description in index.html.
+1000/100/10: 2507.5, 2510.2+/-17.1 ms (2539, 2518, 2518, 2501, 2534, 2494, 2493, 2493, 2514, 2498)
+HEAD is now at b7e5862 Added setting of zoom flags when dateWindow and valueRange updated.
+1000/100/10: 2501.5, 2507.5+/-16.5 ms (2542, 2504, 2500, 2501, 2500, 2505, 2490, 2498, 2533, 2502)
+HEAD is now at 061d4e7 Merge branch 'master' of http://github.com/danvk/dygraphs
+1000/100/10: 2512, 2508.8+/-20.8 ms (2546, 2516, 2510, 2470, 2526, 2514, 2504, 2487, 2515, 2500)
+HEAD is now at 7201b11 Fix major bug introduced by my significant figures change.
+1000/100/10: 2528, 2523.8+/-17.6 ms (2533, 2502, 2497, 2540, 2534, 2551, 2529, 2505, 2520, 2527)
+HEAD is now at 062ef40 Manual fix of merge issues.  Somehow git clobbered some but not all of my
+ERROR
+HEAD is now at 6faebb6 Cleanup of previous commit which included some extraneous lefovers from
+ERROR
+HEAD is now at 15b00ba Merge branch 'master' of https://github.com/danvk/dygraphs
+ERROR
+HEAD is now at d59b6f3 Converted log scaled graphs from log(e) to log(10)
+1000/100/10: 2748, 2745.5+/-24.8 ms (2750, 2749, 2801, 2756, 2747, 2718, 2721, 2760, 2726, 2727)
+HEAD is now at ff022de Log scale support. Here's what currently works:
+1000/100/10: 2737.5, 2738.9+/-21.9 ms (2750, 2747, 2787, 2714, 2715, 2731, 2719, 2751, 2737, 2738)
+HEAD is now at 290aaf4 Wasn't supposed to go in this branch.
+1000/100/10: 2512.5, 2513.8+/-18.8 ms (2528, 2509, 2487, 2488, 2516, 2547, 2525, 2508, 2527, 2503)
+HEAD is now at 385bea2 Set up test file for logscale
+1000/100/10: 2497, 2503.1+/-21.4 ms (2530, 2497, 2497, 2473, 2497, 2491, 2546, 2496, 2515, 2489)
+HEAD is now at a13309c Merge branch 'master' of git://github.com/danvk/dygraphs
+1000/100/10: 2519, 2513.9+/-24.4 ms (2532, 2517, 2493, 2473, 2526, 2521, 2556, 2498, 2530, 2493)
+HEAD is now at fd556f3 Interaction model demo: Clever hack -- now when scrolling down the page,
+1000/100/10: 2499.5, 2505.3+/-19.8 ms (2525, 2496, 2482, 2492, 2503, 2486, 2534, 2517, 2531, 2487)
+HEAD is now at 2c1befc Gah, fixed spacing in interaction.js
+1000/100/10: 2508, 2511.4+/-17.6 ms (2523, 2498, 2487, 2497, 2501, 2515, 2538, 2497, 2528, 2530)
+HEAD is now at 66fb6a6 Fix zooming in interaction.js so it focuses on the point where the mouse cursor is.
+1000/100/10: 2494.5, 2497.5+/-12.1 ms (2518, 2497, 2498, 2485, 2501, 2492, 2490, 2492, 2518, 2484)
+HEAD is now at b4012e6 Rename unzoomGraph, remove commented-out code.
+1000/100/10: 2498, 2498.8+/-16.6 ms (2526, 2497, 2499, 2478, 2514, 2506, 2488, 2477, 2516, 2487)
+HEAD is now at 9e9ca2e Move most of the interaction javascript to a .js file.
+1000/100/10: 2507, 2510.8+/-15.6 ms (2526, 2520, 2484, 2499, 2501, 2506, 2537, 2504, 2523, 2508)
+HEAD is now at 2bedbd1 Panning is always allowed, even if you're not zoomed.
+1000/100/10: 2494.5, 2502.0+/-18.0 ms (2525, 2515, 2490, 2477, 2489, 2488, 2527, 2491, 2520, 2498)
+HEAD is now at 692e50e interaction.html's zoom was off. Zooming in and zooming out weren't
+1000/100/10: 2500.5, 2503.1+/-17.2 ms (2526, 2496, 2484, 2481, 2514, 2505, 2528, 2490, 2516, 2491)
+HEAD is now at c69da5e Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 2507.5, 2503.0+/-18.1 ms (2527, 2497, 2485, 2471, 2521, 2511, 2518, 2485, 2511, 2504)
+HEAD is now at d4f353c century scale test
+1000/100/10: 2502, 2499.7+/-22.2 ms (2547, 2509, 2483, 2464, 2500, 2491, 2508, 2482, 2509, 2504)
+HEAD is now at 33aaaca Revert "Change intended to improve dygraphs rendering of y-values with tiny values (e.g."
+1000/100/10: 2500, 2503.0+/-15.6 ms (2523, 2496, 2479, 2488, 2502, 2492, 2519, 2507, 2526, 2498)
+HEAD is now at 9f1439f Merge branch 'master' of https://github.com/danvk/dygraphs
+ERROR
+HEAD is now at 3db4c46 fix sp
+1000/100/10: 2511, 2648.0+/-307.8 ms (2536, 2501, 2510, 2488, 2512, 2548, 2497, 2487, 3408, 2993)
+HEAD is now at 6be8e54 More significant figures CL cleanup.
+ERROR
+HEAD is now at fff1de8 Changes based on code review for significantFigures.
+1000/100/10: 2510.5, 2517.6+/-20.1 ms (2532, 2520, 2507, 2492, 2564, 2514, 2507, 2507, 2528, 2505)
+HEAD is now at a4a0557 Merge branch 'master' of https://github.com/jeremybrewer/dygraphs
+1000/100/10: 2524, 2531.5+/-26.8 ms (2544, 2514, 2550, 2507, 2534, 2518, 2530, 2509, 2595, 2514)
+HEAD is now at 35a3b11 make the issue more obvious
+1000/100/10: 2505.5, 2507.3+/-22.7 ms (2550, 2498, 2482, 2490, 2513, 2519, 2479, 2493, 2527, 2522)
+HEAD is now at d1bce5a add dst test
+1000/100/10: 2526, 2518.4+/-16.2 ms (2530, 2530, 2501, 2485, 2512, 2509, 2534, 2529, 2531, 2523)
+HEAD is now at 808d7ac Merge branch 'master' of https://github.com/kberg/dygraphs
+1000/100/10: 2507.5, 2512.3+/-18.8 ms (2541, 2501, 2502, 2489, 2526, 2508, 2529, 2487, 2533, 2507)
+HEAD is now at 5f70132 works with century-scale data
+1000/100/10: 2498, 2526.6+/-97.9 ms (2525, 2504, 2484, 2471, 2497, 2485, 2493, 2499, 2802, 2506)
+HEAD is now at 1f237ed Made v3 interaction model slightly more powerful. (shift-operate to
+1000/100/10: 2510.5, 2511.1+/-23.4 ms (2551, 2501, 2506, 2478, 2515, 2516, 2544, 2494, 2520, 2486)
+HEAD is now at 734be39 Merge branch 'master' of git://github.com/danvk/dygraphs
+1000/100/10: 2495.5, 2501.8+/-17.6 ms (2530, 2503, 2495, 2478, 2496, 2493, 2529, 2485, 2515, 2494)
+HEAD is now at 3c1d225 Change intended to improve dygraphs rendering of y-values with tiny values (e.g.
+1000/100/10: 2508.5, 2511.9+/-15.9 ms (2532, 2505, 2532, 2496, 2533, 2504, 2489, 2515, 2512, 2501)
+HEAD is now at 7142904 Tab removal
+1000/100/10: 2506.5, 2509.5+/-18.5 ms (2529, 2503, 2494, 2479, 2529, 2510, 2526, 2495, 2532, 2498)
+HEAD is now at 4f0c5aa misc style cleanup
+1000/100/10: 2505.5, 2501.9+/-21.4 ms (2522, 2504, 2484, 2458, 2529, 2520, 2486, 2497, 2512, 2507)
+HEAD is now at 158e264 Merge https://github.com/kberg/dygraphs
+1000/100/10: 2504, 2510.2+/-19.6 ms (2539, 2507, 2491, 2498, 2511, 2491, 2542, 2493, 2529, 2501)
+HEAD is now at 2b188b3 Simplified bindHandler
+1000/100/10: 2492.5, 2494.7+/-19.7 ms (2536, 2504, 2482, 2461, 2496, 2489, 2497, 2484, 2509, 2489)
+HEAD is now at 0a52ab7 Further comments from danvk.
+1000/100/10: 2481, 2484.1+/-18.9 ms (2523, 2504, 2477, 2454, 2491, 2477, 2484, 2469, 2479, 2483)
+HEAD is now at 885c13e Response to code review comments, added missing interaction.html.
+1000/100/10: 2501, 2510.0+/-24.5 ms (2536, 2502, 2494, 2479, 2500, 2511, 2560, 2498, 2529, 2491)
+HEAD is now at c8f393e Reducing the size of the interaction model API.
+1000/100/10: 2511, 2513.9+/-19.4 ms (2529, 2496, 2494, 2510, 2510, 2512, 2525, 2493, 2557, 2513)
+HEAD is now at ee67258 Introduce interaction model API.
+1000/100/10: 2515.5, 2534.6+/-53.8 ms (2533, 2505, 2508, 2682, 2537, 2509, 2508, 2500, 2542, 2522)
+HEAD is now at cd12bba guide to making changes
+1000/100/10: 2498, 2504.1+/-19.0 ms (2537, 2505, 2490, 2485, 2525, 2514, 2491, 2486, 2521, 2487)
+HEAD is now at a593879 Merge branch 'master' of http://github.com/danvk/dygraphs
+1000/100/10: 2502.5, 2508.2+/-29.4 ms (2519, 2501, 2504, 2472, 2536, 2506, 2488, 2489, 2575, 2492)
+HEAD is now at 727439b update locations
+1000/100/10: 2508, 2512.5+/-17.0 ms (2539, 2516, 2498, 2497, 2530, 2523, 2500, 2498, 2530, 2494)
+HEAD is now at f99d913 Syntax error, plus used correct function for y axis ranges.
+1000/100/10: 2512, 2518.2+/-18.4 ms (2529, 2510, 2495, 2511, 2552, 2520, 2501, 2507, 2544, 2513)
+HEAD is now at 5f3b823 Merge branch 'master' of http://github.com/kberg/dygraphs
+1000/100/10: 2509, 2514.9+/-21.9 ms (2542, 2509, 2494, 2485, 2531, 2514, 2509, 2505, 2556, 2504)
+HEAD is now at dea5c74 Missing consistent use of getYRanges(). Fixed zoom.html to use yRanges in API.
+1000/100/10: 2516.5, 2512.7+/-17.2 ms (2536, 2513, 2500, 2500, 2530, 2520, 2490, 2488, 2526, 2524)
+HEAD is now at 62ac7bd Merge branch 'master' of https://github.com/kberg/dygraphs
+1000/100/10: 2512, 2511.3+/-21.0 ms (2556, 2509, 2498, 2501, 2530, 2515, 2487, 2485, 2515, 2517)
+HEAD is now at 1f7f664 fix infinity bug
+1000/100/10: 2514, 2517.6+/-16.9 ms (2537, 2511, 2512, 2511, 2535, 2519, 2495, 2495, 2545, 2516)
+HEAD is now at 8d4465c Update callback.html to reflect changes to zoomCallback API.
+1000/100/10: 2502.5, 2508.5+/-18.3 ms (2528, 2506, 2499, 2499, 2540, 2490, 2491, 2489, 2515, 2528)
+HEAD is now at ac139d1 fix dygraphs/actually get the callback right.
+1000/100/10: 2505, 2508.4+/-18.3 ms (2536, 2510, 2496, 2486, 2534, 2515, 2493, 2490, 2524, 2500)
+HEAD is now at f0f2aef Fix reporting error with dygraphs (used to show two min/max, now passes array.)
+1000/100/10: 2516, 2513.2+/-20.5 ms (2531, 2509, 2495, 2482, 2541, 2523, 2495, 2496, 2536, 2524)
+HEAD is now at b6ce9a7 More whitespace changes.
+1000/100/10: 2508.5, 2512.9+/-20.9 ms (2529, 2506, 2493, 2485, 2548, 2524, 2511, 2499, 2538, 2496)
+HEAD is now at a766282 Renamed variables for readability
+1000/100/10: 2501, 2508.1+/-17.2 ms (2533, 2511, 2496, 2501, 2539, 2497, 2485, 2500, 2518, 2501)
+HEAD is now at 90b1513 Replacing tabs.
+1000/100/10: 2507, 2507.8+/-25.3 ms (2527, 2503, 2492, 2475, 2526, 2511, 2483, 2482, 2554, 2525)
+HEAD is now at 57baab0 Changed zoom flags to isZoomed function.
+1000/100/10: 2492.5, 2502.6+/-21.8 ms (2521, 2490, 2477, 2487, 2521, 2518, 2492, 2493, 2544, 2483)
+HEAD is now at 714ba96 Merge branch 'master' of http://github.com/danvk/dygraphs
+1000/100/10: 2484, 2493.3+/-19.4 ms (2529, 2507, 2482, 2479, 2513, 2486, 2474, 2475, 2509, 2479)
+HEAD is now at 5879c20 Fixed whitespace and comments.
+1000/100/10: 2486.5, 2490.2+/-18.0 ms (2513, 2480, 2472, 2487, 2496, 2498, 2473, 2472, 2486, 2525)
+HEAD is now at fdcf1ce Added a second region for underlay-callback that helps clarify
+1000/100/10: 2493, 2496.5+/-15.0 ms (2520, 2499, 2484, 2479, 2500, 2510, 2487, 2484, 2517, 2485)
+HEAD is now at 2fc8286 fix drawing logic in underlayCallback
+1000/100/10: 2513, 2512.3+/-17.5 ms (2535, 2514, 2500, 2502, 2532, 2513, 2498, 2482, 2534, 2513)
+HEAD is now at c78882e update excanvas
+1000/100/10: 2511.5, 2516.5+/-25.9 ms (2540, 2515, 2500, 2486, 2538, 2539, 2479, 2503, 2557, 2508)
+HEAD is now at a2c8fff hack to be more robust in IE when instantiated while the page is still loading
+1000/100/10: 2518.5, 2514.4+/-15.6 ms (2527, 2505, 2498, 2520, 2531, 2524, 2489, 2499, 2534, 2517)
+HEAD is now at 00259bf remove deprecated DateGraph uses
+1000/100/10: 2513.5, 2514.0+/-16.4 ms (2537, 2510, 2499, 2523, 2540, 2517, 2501, 2493, 2521, 2499)
+HEAD is now at e1fb374 update excanvas paths
+1000/100/10: 2516.5, 2515.9+/-17.7 ms (2528, 2527, 2502, 2488, 2530, 2519, 2500, 2504, 2547, 2514)
+HEAD is now at 1e41bd2 be a little less aggressive in underlayCallback changes
+1000/100/10: 2503, 2505.6+/-15.9 ms (2529, 2505, 2496, 2503, 2527, 2502, 2486, 2483, 2522, 2503)
+HEAD is now at 0414310 avoid passing layout to underlayCallback. Document underlayCallback
+1000/100/10: 2508, 2508.9+/-17.0 ms (2537, 2512, 2508, 2503, 2532, 2508, 2488, 2489, 2520, 2492)
+HEAD is now at 2c95097 remove the commit-hook; it didn't work anyway
+1000/100/10: 2500, 2506.6+/-19.3 ms (2530, 2517, 2501, 2485, 2538, 2499, 2493, 2492, 2525, 2486)
+HEAD is now at 1903f1e clean up
+1000/100/10: 2527.5, 2523.9+/-18.6 ms (2552, 2528, 2502, 2502, 2548, 2527, 2502, 2513, 2535, 2530)
+HEAD is now at c2909c7 Merge https://github.com/stani/dygraphs
+1000/100/10: 2503, 2506.7+/-18.2 ms (2526, 2504, 2500, 2502, 2532, 2496, 2481, 2483, 2529, 2514)
+HEAD is now at 2ddb119 add row number to highlightCallback params
+1000/100/10: 2528.5, 2529.5+/-18.0 ms (2546, 2514, 2498, 2527, 2547, 2530, 2514, 2546, 2552, 2521)
+HEAD is now at c14ca33 Merge branch 'master' of http://github.com/kberg/dygraphs
+1000/100/10: 2516, 2516.0+/-17.1 ms (2534, 2529, 2526, 2486, 2533, 2505, 2503, 2504, 2534, 2506)
+HEAD is now at ddd1b11 bug: operator priority
+1000/100/10: 2516.5, 2514.6+/-11.4 ms (2523, 2510, 2515, 2500, 2533, 2522, 2498, 2504, 2518, 2523)
+HEAD is now at 3a8dc46 Merge branch 'master' of http://github.com/danvk/dygraphs
+1000/100/10: 2519.5, 2518.9+/-13.1 ms (2540, 2515, 2514, 2500, 2530, 2502, 2509, 2524, 2530, 2525)
+HEAD is now at 8a7cc60 When a module is a pure underlay with no data points, mousemove
+1000/100/10: 2558, 2561.8+/-29.0 ms (2584, 2575, 2530, 2562, 2613, 2591, 2526, 2530, 2553, 2554)
+HEAD is now at 2218687 fix css additions
+1000/100/10: 2541.5, 2533.1+/-25.1 ms (2549, 2553, 2559, 2512, 2543, 2515, 2500, 2496, 2540, 2564)
+HEAD is now at 37567cc Merge branch 'master' of http://github.com/danvk/dygraphs
+1000/100/10: 2481.5, 2487.8+/-16.6 ms (2520, 2495, 2475, 2469, 2503, 2480, 2473, 2483, 2503, 2477)
+HEAD is now at 45f2c68 - Fix vertical zoom problem where a data update would cause the zoom to be lost.
+1000/100/10: 2494.5, 2499.3+/-25.1 ms (2512, 2497, 2471, 2500, 2519, 2483, 2479, 2483, 2557, 2492)
+HEAD is now at c91f4ae fix memory leak when gviz.draw() is called repeatedly
+1000/100/10: 2518.5, 2522.5+/-40.1 ms (2542, 2536, 2620, 2478, 2528, 2500, 2494, 2490, 2518, 2519)
+HEAD is now at 79b3ee4 IE version
+1000/100/10: 2496, 2494.5+/-22.0 ms (2516, 2532, 2484, 2462, 2504, 2497, 2472, 2473, 2510, 2495)
+HEAD is now at 9922a60 prevent highlighting of text on page
+1000/100/10: 2514.5, 2513.3+/-15.2 ms (2528, 2511, 2523, 2489, 2537, 2510, 2503, 2493, 2518, 2521)
+HEAD is now at 528ce7e draw straight lines on half-integer pixels for a crisper look
+1000/100/10: 2517, 2519.9+/-15.4 ms (2535, 2521, 2515, 2519, 2546, 2504, 2500, 2510, 2539, 2510)
+HEAD is now at b304aae pull in ron's patch
+1000/100/10: 2500.5, 2507.1+/-16.2 ms (2535, 2504, 2493, 2492, 2518, 2521, 2495, 2497, 2525, 2491)
+HEAD is now at a6c109c fix logic error
+1000/100/10: 2523.5, 2526.8+/-19.2 ms (2558, 2541, 2498, 2516, 2538, 2516, 2512, 2531, 2548, 2510)
+HEAD is now at b4f12b7 Merge branch 'two_axes'
+1000/100/10: 2490.5, 2494.6+/-21.0 ms (2528, 2494, 2479, 2461, 2504, 2501, 2487, 2487, 2526, 2479)
+HEAD is now at 8c21adc clipping rectangles for interaction layer
+1000/100/10: 2501, 2506.7+/-16.3 ms (2528, 2515, 2491, 2497, 2518, 2499, 2493, 2488, 2535, 2503)
+HEAD is now at 44c6bc2 option to fill in two-axes test
+1000/100/10: 2506, 2508.3+/-19.4 ms (2539, 2503, 2509, 2483, 2533, 2495, 2491, 2491, 2528, 2511)
+HEAD is now at 1c77a3a fix color-visibility test
+1000/100/10: 2496, 2501.7+/-17.8 ms (2525, 2514, 2496, 2475, 2518, 2496, 2487, 2487, 2526, 2493)
+HEAD is now at 03f8266 support y-zooming and panning in synchronize demo
+1000/100/10: 2495.5, 2508.4+/-27.2 ms (2542, 2537, 2480, 2490, 2525, 2486, 2483, 2490, 2550, 2501)
+HEAD is now at 41b0f69 fixed some bugs for stacked charts
+1000/100/10: 2490, 2503.6+/-27.0 ms (2537, 2528, 2485, 2479, 2509, 2479, 2485, 2491, 2554, 2489)
+HEAD is now at 8c69de6 recycle roller, avoid a DOM error in resize.html
+1000/100/10: 2512.5, 2511.5+/-23.7 ms (2526, 2516, 2481, 2509, 2523, 2489, 2491, 2500, 2563, 2517)
+HEAD is now at d63e679 two bug fixes
+1000/100/10: 2514.5, 2533.0+/-60.8 ms (2537, 2524, 2695, 2505, 2526, 2495, 2485, 2501, 2557, 2505)
+HEAD is now at d58ae30 two-axes demo fully functioning again!
+1000/100/10: 2537, 2547.8+/-58.1 ms (2556, 2541, 2698, 2498, 2552, 2517, 2498, 2515, 2570, 2533)
+HEAD is now at f97785a remove unparseable bits; panning is broken
+1000/100/10: 2529, 2551.7+/-61.1 ms (2553, 2528, 2707, 2587, 2527, 2530, 2507, 2512, 2567, 2499)
+HEAD is now at 2f5e7e1 gross merge mostly done; left MERGE markers in a few spots
+ERROR
+HEAD is now at 66c380c make drawGraph parameter-free
+1000/100/10: 2543.5, 2545.6+/-24.7 ms (2552, 2551, 2508, 2528, 2591, 2565, 2534, 2523, 2568, 2536)
+HEAD is now at 0abfbd7 intelligently position labelsDiv in predraw_
+1000/100/10: 2525.5, 2527.4+/-17.4 ms (2545, 2525, 2497, 2526, 2555, 2519, 2536, 2518, 2542, 2511)
+HEAD is now at 176c94a reset linear-regression
+1000/100/10: 2530, 2534.3+/-26.1 ms (2558, 2550, 2504, 2525, 2587, 2535, 2502, 2521, 2543, 2518)
+HEAD is now at d1dfab8 fractions regression
+1000/100/10: 2541.5, 2545.8+/-27.5 ms (2555, 2533, 2523, 2550, 2605, 2562, 2526, 2509, 2563, 2532)
+HEAD is now at c5a3744 works
+1000/100/10: 2524.5, 2535.0+/-32.0 ms (2566, 2524, 2500, 2525, 2601, 2549, 2502, 2511, 2553, 2519)
+HEAD is now at 2281c33 Merge branch 'master' into frac_reg
+1000/100/10: 2573.5, 2585.0+/-96.8 ms (2585, 2541, 2518, 2596, 2842, 2587, 2507, 2515, 2597, 2562)
+HEAD is now at 0a61ee8 fractions
+1000/100/10: 2538.5, 2547.7+/-30.5 ms (2558, 2541, 2536, 2531, 2609, 2529, 2509, 2519, 2581, 2564)
+HEAD is now at 880a574 demo works in FF & Chrome
+1000/100/10: 2516, 2524.3+/-32.2 ms (2547, 2540, 2506, 2517, 2601, 2515, 2490, 2507, 2523, 2497)
+HEAD is now at 34de8b7 note
+1000/100/10: 2545.5, 2825.8+/-478.0 ms (2546, 2516, 3655, 3488, 3388, 2620, 2502, 2545, 2494, 2504)
+HEAD is now at a6cc9f3 zoom.html required errorBars set. That's fixed.
+1000/100/10: 2540, 2548.0+/-31.3 ms (2565, 2522, 2529, 2534, 2618, 2561, 2520, 2516, 2569, 2546)
+HEAD is now at aa4ddc5 show both versions on test page
+1000/100/10: 2528.5, 2539.7+/-33.4 ms (2561, 2529, 2512, 2542, 2624, 2517, 2519, 2518, 2547, 2528)
+HEAD is now at c1dbeb1 draw secondary axis line
+1000/100/10: 2534, 2542.9+/-29.1 ms (2561, 2530, 2561, 2535, 2608, 2519, 2510, 2518, 2554, 2533)
+HEAD is now at 0d64e59 two-axes demo works as intended
+1000/100/10: 2527, 2536.5+/-27.5 ms (2558, 2529, 2522, 2525, 2605, 2513, 2521, 2517, 2544, 2531)
+HEAD is now at 70c8007 fix a few bugs
+1000/100/10: 2518, 2515.5+/-18.9 ms (2533, 2519, 2487, 2491, 2542, 2495, 2533, 2516, 2517, 2522)
+HEAD is now at 26ca793 introduce predraw_ and move some logic there; panning now works
+ERROR
+HEAD is now at c94eee2 fix merge issue
+ERROR
+HEAD is now at 1f75a05 Merge branch 'master' of git://github.com/danvk/dygraphs
+1000/100/10: 2582.5, 2740.0+/-342.7 ms (2562, 2525, 2498, 2520, 2603, 2653, 3398, 3351, 2749, 2541)
+HEAD is now at eeab502 nit: s/undefined/null
+1000/100/10: 2546.5, 2541.7+/-21.3 ms (2563, 2525, 2517, 2512, 2558, 2551, 2520, 2542, 2562, 2567)
+HEAD is now at f30cf74 merge in upstream changes
+ERROR
+HEAD is now at 2b2a2f1 add annotations links, demo to docs
+1000/100/10: 2554.5, 2552.9+/-27.4 ms (2559, 2567, 2538, 2550, 2611, 2535, 2512, 2528, 2569, 2560)
+HEAD is now at 973e2b7 override, don't add
+1000/100/10: 2548.5, 2547.9+/-29.5 ms (2557, 2556, 2548, 2549, 2617, 2531, 2512, 2516, 2559, 2534)
+HEAD is now at 52e266a fix null reference in Chrome
+1000/100/10: 2542, 2553.1+/-33.0 ms (2559, 2538, 2536, 2536, 2629, 2546, 2515, 2525, 2567, 2580)
+HEAD is now at 3c51ab7 add annotation CSS rule lazily
+1000/100/10: 2549.5, 2549.6+/-26.9 ms (2559, 2540, 2533, 2556, 2612, 2543, 2513, 2525, 2558, 2557)
+HEAD is now at 88bf33a reset combined
+1000/100/10: 2522.5, 2533.7+/-36.2 ms (2579, 2531, 2489, 2537, 2597, 2504, 2505, 2513, 2568, 2514)
+HEAD is now at f023322 Change Firefox CSS rule addition to add to the end of the existent rules.
+1000/100/10: 2534, 2552.1+/-37.9 ms (2589, 2541, 2515, 2589, 2612, 2523, 2512, 2527, 2588, 2525)
+HEAD is now at 4884114 Fix problem with evaluating the limits of data containing null series'.
+1000/100/10: 2537.5, 2545.2+/-32.6 ms (2566, 2538, 2520, 2537, 2602, 2529, 2506, 2516, 2595, 2543)
+HEAD is now at d3ce928 Rebuild combined.
+1000/100/10: 2537, 2545.4+/-29.8 ms (2570, 2544, 2520, 2558, 2606, 2525, 2511, 2522, 2568, 2530)
+HEAD is now at c65f230 Fix example to only use public API. This required changing updateOptions to better be aware of specified, yet undefined, entries.
+1000/100/10: 2539, 2538.7+/-19.3 ms (2561, 2535, 2566, 2543, 2556, 2522, 2526, 2513, 2550, 2515)
+HEAD is now at 2a07b81 Removed comma in zoom.html, removed "C,D" in data.js.
+1000/100/10: 2525, 2530.7+/-22.5 ms (2556, 2527, 2496, 2514, 2555, 2514, 2519, 2536, 2567, 2523)
+HEAD is now at 64ae9ab Fixed spelling errors.
+1000/100/10: 3270.5, 3071.3+/-501.3 ms (2557, 2513, 2503, 2517, 3216, 3510, 3360, 3853, 3325, 3359)
+HEAD is now at 8cc9ca0 Reverted dygraph-combined.js
+1000/100/10: 3067.5, 3044.2+/-450.7 ms (3040, 3416, 3617, 3482, 3530, 3095, 2544, 2670, 2527, 2521)
+HEAD is now at fb25c8b Merge branch 'master' of http://github.com/nealie/dygraphs
+1000/100/10: 2537.5, 2551.0+/-37.1 ms (2586, 2531, 2520, 2531, 2615, 2520, 2510, 2544, 2602, 2551)
+HEAD is now at 848b47c Merge branch 'master' of git://github.com/danvk/dygraphs
+1000/100/10: 2549.5, 2542.8+/-20.8 ms (2559, 2536, 2555, 2547, 2570, 2552, 2517, 2514, 2562, 2516)
+HEAD is now at 313d280 Fixed bug which didn't allow panning unless you zoomed on x-axis only. Zooming on y-axis didn't enable panning.
+1000/100/10: 2517, 2522.0+/-22.3 ms (2537, 2513, 2490, 2518, 2549, 2516, 2561, 2504, 2531, 2501)
+HEAD is now at ef0b205 updated comment.
+1000/100/10: 2521.5, 2526.5+/-20.6 ms (2546, 2518, 2498, 2525, 2564, 2518, 2533, 2508, 2546, 2509)
+HEAD is now at 74f09e2 y-axis scaling is automatic until a) user zooms in on the y-axis or b) a value range is defined on construction.
+1000/100/10: 2534, 2529.8+/-23.3 ms (2546, 2519, 2504, 2499, 2554, 2538, 2539, 2502, 2567, 2530)
+HEAD is now at 8fb6dc2 Fix label colour selection for sparse data sets.
+1000/100/10: 2534.5, 2541.1+/-28.5 ms (2581, 2536, 2500, 2526, 2593, 2533, 2517, 2526, 2556, 2543)
+HEAD is now at af4cad8 Ignore data series' with null data for the purposes of auto scaling.
+1000/100/10: 2543.5, 2547.6+/-25.2 ms (2578, 2542, 2546, 2535, 2600, 2517, 2522, 2534, 2557, 2545)
+HEAD is now at 31b1e39 Fixed trailing comma that broke IE
+1000/100/10: 2551, 2544.8+/-23.1 ms (2557, 2524, 2551, 2571, 2581, 2536, 2515, 2551, 2551, 2511)
+HEAD is now at a2b2c3a Fixed excanvas.js path
+1000/100/10: 2550.5, 2552.8+/-26.2 ms (2587, 2550, 2524, 2579, 2583, 2515, 2530, 2551, 2572, 2537)
+HEAD is now at 8b8f2d5 Fixed erroneous attempt to use excanvas.js in IE9
+1000/100/10: 2515, 2524.2+/-34.6 ms (2565, 2551, 2493, 2521, 2592, 2501, 2525, 2489, 2509, 2496)
+HEAD is now at a1a4d81 Fixed path to excanvas.js
+1000/100/10: 2535.5, 2539.4+/-28.1 ms (2562, 2539, 2529, 2552, 2601, 2506, 2510, 2532, 2545, 2518)
+HEAD is now at 4755f0a Removed excanvas.js. It was just a one line text file indicating that it thought it was a symbolic link.
+1000/100/10: 2542, 2552.5+/-35.1 ms (2578, 2540, 2516, 2579, 2625, 2529, 2517, 2572, 2544, 2525)
+HEAD is now at b03b9d2 Merge branch 'master' of http://github.com/danvk/dygraphs
+1000/100/10: 2521.5, 2532.2+/-34.3 ms (2574, 2527, 2500, 2525, 2610, 2512, 2506, 2514, 2536, 2518)
+HEAD is now at 80e6559 Oops, that time for real.
+1000/100/10: 2496, 2495.1+/-21.6 ms (2534, 2498, 2474, 2475, 2516, 2500, 2512, 2464, 2494, 2484)
+HEAD is now at 8b211dd Must move mouse twice as far in y direction as x to trigger vertical pan.
+1000/100/10: 2524.5, 2532.7+/-22.1 ms (2562, 2524, 2518, 2525, 2572, 2524, 2544, 2508, 2544, 2506)
+HEAD is now at f934881 numeric-gviz test works again
+1000/100/10: 2547, 2554.0+/-27.1 ms (2574, 2535, 2520, 2572, 2611, 2538, 2532, 2556, 2564, 2538)
+HEAD is now at 4df1af7 linear regression tests work without console defined
+1000/100/10: 2500.5, 2511.1+/-29.3 ms (2547, 2522, 2484, 2539, 2562, 2499, 2483, 2485, 2502, 2488)
+HEAD is now at 895b365 Merge branch 'master' of http://github.com/adam-p/dygraphs
+1000/100/10: 2510.5, 2519.8+/-30.8 ms (2546, 2517, 2496, 2552, 2582, 2500, 2506, 2503, 2515, 2481)
+HEAD is now at b1ec006 update comment
+ERROR
+HEAD is now at 8c03ba6 Changed unstackPointAtIndex to not be decorated as private
+1000/100/10: 2545, 2544.9+/-20.0 ms (2571, 2535, 2554, 2523, 2560, 2531, 2563, 2536, 2564, 2512)
+HEAD is now at 667d510 Based on feedback from danvk, moving unstackPointAtIndex_ to DygraphLayout
+1000/100/10: 2528.5, 2534.5+/-23.6 ms (2570, 2525, 2532, 2524, 2552, 2523, 2548, 2502, 2565, 2504)
+HEAD is now at 38f33a4 Fixed y-value display in highlight labels when using setSelection
+1000/100/10: 2536, 2530.7+/-21.2 ms (2556, 2539, 2533, 2507, 2546, 2528, 2543, 2501, 2554, 2500)
+HEAD is now at 9012dd2  blah
+ERROR
+HEAD is now at 67076b2 displaying ticks again
+ERROR
+HEAD is now at ea4942e drawing works, just need to add ticks and fix filled/stacked
+ERROR
+HEAD is now at 8e48eef remove old code
+ERROR
+HEAD is now at e3b6727 fix copy/paste error
+ERROR
+HEAD is now at f09fc54 axis computation
+ERROR
+HEAD is now at 227b93c change to an implementation based on set names
+1000/100/10: 2531, 2543.6+/-30.8 ms (2574, 2535, 2513, 2558, 2608, 2522, 2520, 2518, 2561, 2527)
+HEAD is now at de0445f update both linear regression tests; support null as per-series value
+1000/100/10: 2513, 2515.8+/-17.4 ms (2544, 2514, 2502, 2529, 2536, 2492, 2512, 2504, 2527, 2498)
+HEAD is now at 46dde5f functioning demo
+1000/100/10: 2514, 2522.1+/-21.5 ms (2557, 2518, 2500, 2521, 2558, 2510, 2509, 2505, 2538, 2505)
+HEAD is now at 230b346 Merge branch 'master' into per_series
+1000/100/10: 2541, 2537.2+/-33.0 ms (2550, 2545, 2496, 2556, 2610, 2546, 2507, 2510, 2537, 2515)
+HEAD is now at 450fe64 add per-series attributes in attr_
+1000/100/10: 2545.5, 2563.9+/-73.5 ms (2553, 2538, 2588, 2750, 2606, 2514, 2509, 2513, 2556, 2512)
+HEAD is now at 129569a Fix a wrong warning() call.
+1000/100/10: 2539.5, 2537.7+/-20.4 ms (2554, 2533, 2521, 2543, 2558, 2536, 2558, 2512, 2559, 2503)
+HEAD is now at e3489f4 Support for vertical panning.
+1000/100/10: 2527, 2528.2+/-26.8 ms (2549, 2522, 2492, 2525, 2569, 2529, 2539, 2498, 2561, 2498)
+HEAD is now at 07c253a 1. Add the extra columns to NoisyData to eliminate Javascript warnings
+1000/100/10: 2528.5, 2528.0+/-26.4 ms (2553, 2524, 2501, 2497, 2550, 2518, 2541, 2492, 2571, 2533)
+HEAD is now at 39b0e09 Converting strings to less cringe-inducing constant values.
+1000/100/10: 2528.5, 2545.7+/-50.1 ms (2555, 2525, 2666, 2520, 2582, 2524, 2532, 2495, 2559, 2499)
+HEAD is now at 5ed061d Update index.html docs to clarify callbacks and features.
+1000/100/10: 2532, 2529.9+/-27.5 ms (2550, 2532, 2498, 2496, 2579, 2543, 2532, 2519, 2552, 2498)
+HEAD is now at 6b837a4 Adding doc to index to point to new zoom test page.
+1000/100/10: 2493.5, 2494.5+/-25.4 ms (2538, 2513, 2462, 2481, 2506, 2487, 2520, 2460, 2500, 2478)
+HEAD is now at 447254d Minor fix to zoom.html comment.
+1000/100/10: 2523.5, 2518.6+/-25.5 ms (2555, 2523, 2493, 2493, 2557, 2524, 2530, 2493, 2528, 2490)
+HEAD is now at 937029d Fix to bug 111, now always rendering all points whether they're in the canvas viewport. This allows any graphics that radiate from the point to be rendered.
+1000/100/10: 2524.5, 2519.4+/-26.8 ms (2547, 2526, 2491, 2495, 2561, 2523, 2530, 2492, 2543, 2486)
+HEAD is now at 437c097 Reorder unzoom operation with log of operation, which properly sets the valueRange for recording.
+1000/100/10: 2521.5, 2525.2+/-25.8 ms (2568, 2527, 2501, 2508, 2554, 2516, 2540, 2493, 2546, 2499)
+HEAD is now at a2db51b zoom.html needed a little love.
+1000/100/10: 2540, 2588.9+/-181.3 ms (2559, 2538, 2504, 2513, 2552, 2533, 2542, 2494, 2553, 3101)
+HEAD is now at 8b83c6c Implementing vertical zooming. Vertical zooming reveals rendering issues which should be dealt with too.
+1000/100/10: 3324, 3229.3+/-488.5 ms (3075, 2842, 3477, 4015, 3277, 3371, 3534, 3656, 2520, 2526)
+HEAD is now at 34bbe78 two different versions; tweak color logic
+1000/100/10: 2527, 2537.7+/-27.5 ms (2587, 2529, 2521, 2545, 2553, 2520, 2525, 2500, 2577, 2520)
+HEAD is now at 2a07b0a remove extra logging
+1000/100/10: 2550.5, 2553.3+/-37.3 ms (2557, 2551, 2550, 2648, 2566, 2528, 2537, 2510, 2557, 2529)
+HEAD is now at 05a1d11 linear regression demo
+1000/100/10: 2533, 2529.0+/-20.4 ms (2549, 2527, 2537, 2529, 2546, 2522, 2543, 2494, 2548, 2495)
+HEAD is now at e99fde0 data access API
+1000/100/10: 2540.5, 2543.9+/-14.8 ms (2554, 2543, 2538, 2550, 2560, 2535, 2534, 2522, 2571, 2532)
+HEAD is now at e2b5f2b few more tweaks
+1000/100/10: 2527.5, 2562.0+/-108.9 ms (2565, 2535, 2492, 2508, 2562, 2520, 2539, 2515, 2865, 2519)
+HEAD is now at 2a9e1bd update a few links
+1000/100/10: 2529.5, 2532.4+/-24.4 ms (2555, 2532, 2506, 2510, 2561, 2527, 2557, 2505, 2562, 2509)
+HEAD is now at 3bf2fa9 various IE fixes
+1000/100/10: 2524, 2523.3+/-27.1 ms (2536, 2510, 2483, 2503, 2550, 2524, 2578, 2525, 2524, 2500)
+HEAD is now at 9f0e1fe narrower chart
+1000/100/10: 2507, 2508.3+/-18.9 ms (2533, 2506, 2479, 2501, 2521, 2506, 2508, 2479, 2532, 2518)
+HEAD is now at 534f1a0 documentation
+1000/100/10: 2525, 2531.0+/-20.5 ms (2558, 2525, 2499, 2525, 2562, 2521, 2538, 2520, 2550, 2512)
+HEAD is now at 33030f3 merge iconWidth/iconHeight with width/height
+1000/100/10: 2510.5, 2502.5+/-23.4 ms (2535, 2504, 2473, 2488, 2521, 2522, 2517, 2471, 2517, 2477)
+HEAD is now at ec7ce8a dygraph-combined include
+1000/100/10: 2540.5, 2649.6+/-276.2 ms (2536, 2534, 2499, 2487, 2545, 2550, 2554, 2486, 2997, 3308)
+HEAD is now at d14b9ee support attachAtBottom
+1000/100/10: 2882.5, 2910.2+/-260.0 ms (2858, 2833, 3250, 3107, 2907, 3114, 3172, 2856, 2511, 2494)
+HEAD is now at 2ad87ea click to add annotations
+1000/100/10: 2515, 2514.2+/-23.0 ms (2547, 2539, 2499, 2504, 2525, 2510, 2520, 2495, 2532, 2471)
+HEAD is now at 1e1bf7d add pointClickCallback
+1000/100/10: 2533, 2530.5+/-24.8 ms (2555, 2531, 2501, 2508, 2569, 2537, 2535, 2507, 2558, 2504)
+HEAD is now at a323ff4 merge upstream changes
+1000/100/10: 2530.5, 2530.2+/-25.2 ms (2550, 2532, 2498, 2550, 2566, 2521, 2529, 2495, 2556, 2505)
+HEAD is now at 41333ec more robust missing values
+1000/100/10: 2282, 2301.6+/-62.5 ms (2292, 2267, 2277, 2267, 2475, 2283, 2287, 2281, 2272, 2315)
+HEAD is now at b39466e works in FF again
+1000/100/10: 2548, 2537.9+/-25.7 ms (2552, 2548, 2500, 2514, 2568, 2548, 2563, 2519, 2562, 2505)
+HEAD is now at 6688916 parseFloatOrNull
+1000/100/10: 2281.5, 2296.3+/-61.9 ms (2305, 2305, 2258, 2255, 2463, 2256, 2261, 2278, 2285, 2297)
+HEAD is now at 03b522a parseFloatOrNull
+1000/100/10: 2554, 2552.6+/-22.6 ms (2582, 2551, 2530, 2557, 2580, 2528, 2579, 2523, 2559, 2537)
+HEAD is now at 18a016b fix some style bugs
+1000/100/10: 2553, 2556.0+/-31.3 ms (2619, 2559, 2523, 2536, 2574, 2547, 2587, 2524, 2565, 2526)
+HEAD is now at a5ad69c change default size
+ERROR
+HEAD is now at a685723 gviz mostly working
+ERROR
+HEAD is now at e6d5314 attach divs to points; respect clipping area
+ERROR
+HEAD is now at ce5e8d3 icons working
+ERROR
+HEAD is now at 9a40897 add tick marks
+ERROR
+HEAD is now at 70aa907 all required events working
+ERROR
+HEAD is now at ab5e5c7 event works
+ERROR
+HEAD is now at 5c528fa add public interface; add cssClass property
+ERROR
+HEAD is now at ce49c2f sample annotation
+ERROR
+HEAD is now at 52fe05c Added documentation for labelsDiv option using just an element id and for labelsShowZeroValues.
+1000/100/10: 2260.5, 2283.9+/-64.5 ms (2277, 2258, 2258, 2256, 2464, 2251, 2266, 2253, 2263, 2293)
+HEAD is now at bcd3ebf Added labelsShowZeroValues option.  When this option is set to false the labelsDiv will not contain any points that have a 0 value.
+1000/100/10: 2257, 2282.5+/-64.0 ms (2284, 2252, 2257, 2255, 2457, 2257, 2263, 2249, 2245, 2306)
+HEAD is now at fedbd79 Added ability to treat the labelsDiv as a ID as well as an Element.  This allows the user to set the id of the labels div prior to it being rendered in the DOM.  Helpful for GWT wrapper implementation.
+1000/100/10: 2279, 2300.5+/-63.9 ms (2286, 2266, 2284, 2292, 2473, 2260, 2274, 2269, 2270, 2331)
+HEAD is now at 02817ff Merge remote branch 'upstream/master'
+1000/100/10: 2296, 2306.3+/-26.4 ms (2292, 2306, 2295, 2293, 2362, 2287, 2284, 2297, 2300, 2347)
+HEAD is now at 87bb795 support changing renderer options like strokeWidth and add a test
+1000/100/10: 2264, 2289.4+/-67.3 ms (2283, 2255, 2264, 2258, 2473, 2260, 2264, 2253, 2266, 2318)
+HEAD is now at 67b6526 no tests include combined anymore
+1000/100/10: 2265.5, 2288.5+/-64.7 ms (2273, 2255, 2251, 2250, 2462, 2307, 2290, 2258, 2244, 2295)
+HEAD is now at 4523c1f fixed visibility
+1000/100/10: 2256.5, 2289.0+/-69.1 ms (2348, 2250, 2260, 2247, 2464, 2255, 2258, 2252, 2255, 2301)
+HEAD is now at ed7ffce Merge branch 'master' of http://github.com/danvk/dygraphs
+1000/100/10: 2281, 2288.1+/-21.6 ms (2301, 2281, 2300, 2271, 2320, 2281, 2262, 2269, 2273, 2323)
+HEAD is now at a7ef12f fix link on home page
+1000/100/10: 2262.5, 2265.6+/-16.2 ms (2281, 2262, 2257, 2263, 2266, 2273, 2246, 2248, 2259, 2301)
+HEAD is now at 00c281d Add avoidMinZero option to disable the Y axis at zero heuristic.
+1000/100/10: 2302, 2304.3+/-16.5 ms (2300, 2317, 2295, 2304, 2316, 2299, 2280, 2307, 2287, 2338)
+HEAD is now at 5d13ef6 Fix problems with multiple null values in a row for stepped graphs.
+1000/100/10: 2271, 2278.1+/-16.5 ms (2300, 2267, 2273, 2269, 2299, 2266, 2260, 2273, 2269, 2305)
+HEAD is now at 0599d13 Ensure step plots draw lines to the start of missing values.
+1000/100/10: 2269, 2275.5+/-15.2 ms (2289, 2268, 2265, 2263, 2278, 2268, 2292, 2270, 2257, 2305)
+HEAD is now at 84fc6aa Add yAxisLabelFormatter option and make it's default value yValueFormatter.
+1000/100/10: 2280, 2281.6+/-16.7 ms (2282, 2267, 2266, 2265, 2301, 2280, 2273, 2280, 2284, 2318)
+HEAD is now at e17f6ca Update documentation to include step plots.
+1000/100/10: 2265, 2266.1+/-12.5 ms (2281, 2261, 2269, 2259, 2274, 2276, 2258, 2244, 2256, 2283)
+HEAD is now at fb369f3 fix bug reported by kakligian
+1000/100/10: 2269.5, 2271.7+/-14.6 ms (2286, 2257, 2265, 2254, 2273, 2273, 2266, 2264, 2275, 2304)
+HEAD is now at 4760075 whitespace tweaks
+1000/100/10: 2262.5, 2265.0+/-16.7 ms (2291, 2278, 2263, 2248, 2273, 2262, 2249, 2250, 2248, 2288)
+HEAD is now at afdc483 Added stepPlot option. Missed files due to git.
+1000/100/10: 2272.5, 2269.5+/-14.6 ms (2278, 2257, 2283, 2271, 2274, 2284, 2254, 2251, 2253, 2290)
+HEAD is now at 342b098 Added stepPlot option.
+1000/100/10: 2288.5, 2290.4+/-13.8 ms (2307, 2279, 2290, 2286, 2287, 2291, 2281, 2293, 2271, 2319)
+HEAD is now at cbf21a0 Merge branch 'interactive_on_top' of http://github.com/ecurran/dygraphs
+1000/100/10: 2286, 2291.2+/-17.2 ms (2315, 2282, 2298, 2283, 2289, 2297, 2270, 2275, 2280, 2323)
+HEAD is now at eb7bf00 show the interactive part on top of the underlay and static part
+1000/100/10: 2280.5, 2287.2+/-18.2 ms (2323, 2279, 2282, 2273, 2284, 2288, 2277, 2273, 2275, 2318)
+HEAD is now at 354e15a Fix issue 93: get the order of stacked graphs right.
+1000/100/10: 2302.5, 2320.5+/-63.8 ms (2334, 2304, 2497, 2298, 2307, 2309, 2283, 2286, 2301, 2286)
+HEAD is now at 4a634fc Some points may be null, not just undefined, so compare points via != with
+1000/100/10: 2270.5, 2292.3+/-79.6 ms (2291, 2254, 2274, 2269, 2279, 2272, 2253, 2253, 2262, 2516)
+HEAD is now at 10a6456 error on zero width/height
+1000/100/10: 2295.5, 2319.7+/-79.2 ms (2311, 2296, 2295, 2285, 2300, 2312, 2291, 2283, 2281, 2543)
+HEAD is now at d1278ac make bug more clear in stacked test
+1000/100/10: 2305, 2332.9+/-88.7 ms (2313, 2310, 2301, 2301, 2305, 2305, 2299, 2307, 2303, 2585)
+HEAD is now at c6f4503 some tweaks for divs with % sizes
+1000/100/10: 2304.5, 2329.0+/-88.4 ms (2308, 2291, 2307, 2306, 2299, 2304, 2292, 2298, 2305, 2580)
+HEAD is now at e8c7ef8 add resize_lock, which fixes a bug in chrome
+1000/100/10: 2279.5, 2305.8+/-88.7 ms (2298, 2263, 2289, 2270, 2288, 2297, 2258, 2269, 2271, 2555)
+HEAD is now at cff76ec include 0 in series data
+1000/100/10: 2313.5, 2342.9+/-101.8 ms (2316, 2296, 2306, 2297, 2320, 2324, 2328, 2311, 2300, 2631)
+HEAD is now at 11a2555 set -x in push-to-web
+1000/100/10: 2283.5, 2311.2+/-82.9 ms (2300, 2270, 2275, 2295, 2288, 2312, 2279, 2273, 2276, 2544)
+HEAD is now at f10f06f continue docs
+1000/100/10: 2285, 2306.8+/-79.9 ms (2294, 2262, 2274, 2287, 2283, 2304, 2265, 2294, 2274, 2531)
+HEAD is now at 14c9d5b Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 2288, 2311.1+/-83.1 ms (2299, 2283, 2270, 2293, 2296, 2303, 2269, 2280, 2273, 2545)
+HEAD is now at ff533c1 push-to-web.sh
+1000/100/10: 2281.5, 2301.4+/-82.8 ms (2293, 2256, 2285, 2284, 2279, 2275, 2257, 2255, 2297, 2533)
+HEAD is now at 708cbe0 start data.html
+1000/100/10: 2299, 2324.7+/-89.0 ms (2324, 2270, 2288, 2277, 2323, 2300, 2317, 2278, 2298, 2572)
+HEAD is now at 1bc2103 link to new underlay callback test
+1000/100/10: 2278, 2308.8+/-84.0 ms (2299, 2267, 2277, 2266, 2279, 2310, 2274, 2273, 2299, 2544)
+HEAD is now at d9e6fa4 add another underlay callback parameter, plus a nicer demo
+1000/100/10: 2287, 2306.5+/-78.9 ms (2300, 2266, 2297, 2279, 2299, 2295, 2264, 2270, 2268, 2527)
+HEAD is now at 71ac473 Add GWT Dygraphs loader class and supporting files.
+1000/100/10: 2285.5, 2312.2+/-83.8 ms (2307, 2269, 2284, 2287, 2308, 2299, 2282, 2274, 2265, 2547)
+HEAD is now at 61b78cd fix a small bug which appeared when a series had a min/max of zero
+1000/100/10: 2282.5, 2304.7+/-83.3 ms (2293, 2258, 2273, 2281, 2283, 2296, 2259, 2283, 2282, 2539)
+HEAD is now at 85abed3 uncover a bug in a test case
+1000/100/10: 2292.5, 2317.7+/-85.9 ms (2305, 2274, 2293, 2286, 2297, 2309, 2274, 2287, 2292, 2560)
+HEAD is now at a4c6a67 Add unhighlightCallback option, with documentation.
+1000/100/10: 2282, 2309.8+/-80.4 ms (2305, 2269, 2284, 2275, 2297, 2309, 2277, 2267, 2280, 2535)
+HEAD is now at 31eddad Properly format timestamps at 00:00:00 with non-zero milliseconds on x axis.
+1000/100/10: 2289.5, 2311.0+/-78.9 ms (2302, 2277, 2293, 2279, 2286, 2293, 2293, 2282, 2271, 2534)
+HEAD is now at bf640e5 Add ability to specify the formatter used for the x axis.
+1000/100/10: 2296.5, 2321.0+/-80.0 ms (2306, 2292, 2281, 2312, 2301, 2329, 2287, 2279, 2279, 2544)
+HEAD is now at bb66df3 Merge branch 'master' of github.com:danvk/dygraphs
+1000/100/10: 2296, 2298.6+/-17.9 ms (2290, 2284, 2296, 2304, 2288, 2299, 2273, 2322, 2296, 2334)
+HEAD is now at 7e6fad8 call out the "developer options reference"
+1000/100/10: 2263.5, 2266.3+/-13.4 ms (2289, 2265, 2270, 2255, 2257, 2262, 2258, 2250, 2268, 2289)
+HEAD is now at 2322a4c linkify
+1000/100/10: 2282.5, 2281.1+/-10.5 ms (2290, 2268, 2280, 2284, 2267, 2288, 2269, 2285, 2281, 2299)
+HEAD is now at 85cda1c document some more options
+1000/100/10: 2263, 2267.8+/-12.4 ms (2287, 2272, 2269, 2263, 2258, 2263, 2261, 2253, 2261, 2291)
+HEAD is now at 5edf98f css tweak
+1000/100/10: 2266, 2272.3+/-20.9 ms (2286, 2251, 2289, 2258, 2260, 2260, 2244, 2301, 2272, 2302)
+HEAD is now at 939ecc4 linkify
+1000/100/10: 2263, 2266.6+/-14.6 ms (2286, 2255, 2272, 2254, 2266, 2270, 2258, 2250, 2260, 2295)
+HEAD is now at bf5b5f4 tests divs
+1000/100/10: 2278, 2277.0+/-13.3 ms (2300, 2261, 2281, 2271, 2279, 2277, 2281, 2255, 2273, 2292)
+HEAD is now at dde90a1 add test references to docs
+1000/100/10: 2256.5, 2265.5+/-18.2 ms (2292, 2255, 2276, 2257, 2254, 2264, 2252, 2248, 2256, 2301)
+HEAD is now at d37dca4 Stop including dygraph-combined.js in tests
+1000/100/10: 2270.5, 2271.6+/-15.0 ms (2299, 2258, 2270, 2272, 2271, 2278, 2252, 2260, 2263, 2293)
+HEAD is now at f985ead update description of combined
+1000/100/10: 2283, 2287.4+/-20.5 ms (2327, 2276, 2291, 2267, 2285, 2286, 2262, 2281, 2281, 2318)
+HEAD is now at 18764f2 Added a makefile for running the generate-combined.sh script. The Makefile serves as a clue to new users that a "build" is first required before using local copies of the JS files.
+1000/100/10: 2288, 2290.9+/-16.2 ms (2314, 2273, 2287, 2282, 2291, 2291, 2276, 2282, 2289, 2324)
+HEAD is now at 416b05a push() is cheaper than unshift(). Refactor to separate the stacked case from
+1000/100/10: 2295, 2292.9+/-16.9 ms (2301, 2264, 2281, 2292, 2298, 2315, 2283, 2298, 2278, 2319)
+HEAD is now at 2aa2121 Get the color alternating logic right.
+1000/100/10: 2296, 2298.6+/-21.1 ms (2316, 2289, 2303, 2296, 2296, 2304, 2271, 2284, 2281, 2346)
+HEAD is now at 8d34158 Merge branch 'master' of git://github.com/danvk/dygraphs
+1000/100/10: 2298.5, 2299.9+/-12.5 ms (2306, 2285, 2290, 2308, 2304, 2299, 2297, 2298, 2285, 2327)
+HEAD is now at d4139cd Fixed a bug with generating points for stackedGraph.
+1000/100/10: 2300, 2314.0+/-37.0 ms (2405, 2284, 2298, 2309, 2302, 2325, 2292, 2293, 2287, 2345)
+HEAD is now at 029da4b some tweaks to knikhil's change
+1000/100/10: 2297, 2297.3+/-19.6 ms (2302, 2272, 2281, 2299, 2295, 2321, 2281, 2286, 2299, 2337)
+HEAD is now at 8bc236f update for= in callback
+1000/100/10: 2288.5, 2291.7+/-15.3 ms (2310, 2287, 2288, 2289, 2301, 2299, 2280, 2269, 2276, 2318)
+HEAD is now at 6c8a622 undo changes to dygraph-combined.js
+1000/100/10: 2287.5, 2293.1+/-15.8 ms (2302, 2273, 2286, 2304, 2288, 2296, 2287, 2286, 2280, 2329)
+HEAD is now at 50360fd Merge remote branch 'danvk/master'
+1000/100/10: 2857.5, 2714.0+/-339.4 ms (2299, 2267, 2281, 2494, 2976, 3031, 2988, 3089, 2820, 2895)
+HEAD is now at d160cc3 Added tests for yValueFormatter and showLabelsOnHighlight. s/staticLabels/showLabelsOnHighlight/g
+ERROR
+HEAD is now at 12e4c74 Add test for stacked graph.
+ERROR
+HEAD is now at 9cdc6e1 Merge branch 'master' of git://github.com/flooey/dygraphs
+1000/100/10: 2286, 2292.5+/-26.9 ms (2307, 2276, 2291, 2283, 2296, 2289, 2279, 2271, 2271, 2362)
+HEAD is now at 27eb25b undo changes to dygraph-combined
+1000/100/10: 2249, 2254.3+/-17.7 ms (2293, 2245, 2254, 2250, 2262, 2248, 2238, 2242, 2237, 2274)
+HEAD is now at 970d544 document test, add reference
+1000/100/10: 2249, 2253.6+/-20.2 ms (2281, 2243, 2258, 2285, 2252, 2246, 2238, 2231, 2229, 2273)
+HEAD is now at 5e50289 add live updates test
+1000/100/10: 2260, 2256.3+/-18.8 ms (2286, 2265, 2248, 2261, 2259, 2267, 2232, 2232, 2236, 2277)
+HEAD is now at 563c70c Fix bugs in connectSeparatedPoints implementation.  Add test.
+1000/100/10: 2298.5, 2301.9+/-22.6 ms (2313, 2298, 2299, 2301, 2310, 2294, 2281, 2282, 2283, 2358)
+HEAD is now at a62c4af rename test
+1000/100/10: 2244, 2246.5+/-14.7 ms (2273, 2240, 2249, 2241, 2247, 2257, 2231, 2230, 2232, 2265)
+HEAD is now at e21e69e cleanup
+1000/100/10: 2283, 2487.0+/-321.3 ms (2269, 2530, 3040, 2996, 2728, 2267, 2235, 2259, 2297, 2249)
+HEAD is now at 51e9f65 Added test
+1000/100/10: 2255, 2253.7+/-15.8 ms (2271, 2244, 2252, 2258, 2259, 2262, 2232, 2246, 2232, 2281)
+HEAD is now at be7cdb1 Added test fot reversing and made some cleanup
+1000/100/10: 2257.5, 2256.9+/-14.7 ms (2274, 2248, 2259, 2258, 2257, 2261, 2235, 2239, 2254, 2284)
+HEAD is now at f032c51 Add connectSeparatedPoints option to ignore points with no value.
+1000/100/10: 2296.5, 2395.0+/-281.5 ms (2304, 2276, 2283, 2288, 2309, 2303, 2287, 2290, 2423, 3187)
+HEAD is now at 48a0ac9 Little trick that allows reversing Y axis with valueRange: [300, 0]
+1000/100/10: 3054, 2999.5+/-233.9 ms (3120, 3292, 2691, 2523, 2919, 3027, 3182, 3150, 3010, 3081)
+HEAD is now at 07dbe09 clean up gviz selection test
+1000/100/10: 2270.5, 2276.1+/-24.8 ms (2284, 2335, 2266, 2263, 2288, 2275, 2255, 2254, 2253, 2288)
+HEAD is now at b263a46 Gviz-compatibility test added
+1000/100/10: 2272, 2277.1+/-14.2 ms (2293, 2260, 2277, 2271, 2272, 2272, 2263, 2270, 2287, 2306)
+HEAD is now at 16269f6 Fixed bug when graph is zoomed
+1000/100/10: 2268.5, 2273.1+/-18.6 ms (2286, 2260, 2261, 2275, 2295, 2305, 2262, 2255, 2249, 2283)
+HEAD is now at 103b729 Google Visualization API compatible getSelection() method
+1000/100/10: 2268, 2265.6+/-14.0 ms (2278, 2258, 2272, 2268, 2268, 2281, 2248, 2252, 2246, 2285)
+HEAD is now at 239c712 Support for Google Visualization API compatible setSelection method
+1000/100/10: 2269, 2269.1+/-12.8 ms (2269, 2258, 2270, 2269, 2269, 2282, 2247, 2264, 2268, 2295)
+HEAD is now at 4e2670b check in the new commit hooks
+1000/100/10: 2259, 2255.4+/-16.6 ms (2281, 2239, 2262, 2256, 2263, 2264, 2233, 2236, 2245, 2275)
+HEAD is now at 786fb12 remove dygraph-combined.js; it's now generated by a commit hook
+1000/100/10: 2264.5, 2271.4+/-15.7 ms (2289, 2264, 2289, 2260, 2265, 2283, 2256, 2254, 2259, 2295)
+HEAD is now at 2871378 remove mochikit entirely
+1000/100/10: 2263.5, 2267.7+/-15.3 ms (2283, 2255, 2266, 2251, 2281, 2290, 2261, 2253, 2253, 2284)
+HEAD is now at 145b1db update combined
+1000/100/10: 2267.5, 2290.0+/-50.4 ms (2296, 2260, 2426, 2266, 2269, 2289, 2262, 2261, 2266, 2305)
+HEAD is now at 56623f3 overdrawing with error bars
+1000/100/10: 2279, 2279.9+/-19.8 ms (2292, 2257, 2281, 2277, 2269, 2301, 2255, 2259, 2298, 2310)
+HEAD is now at 891ad84 fix bug in toDomCoords
+1000/100/10: 2317, 2322.4+/-14.3 ms (2332, 2317, 2335, 2309, 2330, 2317, 2309, 2311, 2312, 2352)
+HEAD is now at 3230c66 add new coordinate conversion functions
+1000/100/10: 2330, 2332.1+/-8.0 ms (2333, 2330, 2330, 2328, 2326, 2347, 2324, 2333, 2345, 2325)
+HEAD is now at 1a26f3f prune to visible range, plus one point on either side (for overdrawing)
+1000/100/10: 2328.5, 2326.8+/-10.9 ms (2336, 2340, 2319, 2323, 2334, 2338, 2309, 2331, 2326, 2312)
+HEAD is now at d56573a fix bug in dateWindow test
+1000/100/10: 2301, 2303.6+/-15.4 ms (2321, 2293, 2311, 2291, 2304, 2309, 2285, 2290, 2298, 2334)
+HEAD is now at be96a1f JS is not C++
+1000/100/10: 2316, 2321.0+/-20.5 ms (2331, 2307, 2314, 2302, 2330, 2326, 2299, 2313, 2318, 2370)
+HEAD is now at 3a909ec catch NaN dates like new Date("2009/10/00") in parseArray_
+1000/100/10: 2314, 2324.7+/-31.5 ms (2329, 2304, 2310, 2307, 2316, 2313, 2290, 2383, 2315, 2380)
+HEAD is now at 481bb0e Merge commit '9ac5e4aea125e706201c61b0ccb13a2cafe5618f' into clipping
+1000/100/10: 2325, 2326.6+/-7.7 ms (2332, 2331, 2321, 2318, 2326, 2330, 2317, 2324, 2343, 2324)
+HEAD is now at 4c47502 set clipping rectangles
+1000/100/10: 2323, 2325.8+/-13.8 ms (2350, 2318, 2322, 2332, 2341, 2334, 2302, 2320, 2324, 2315)
+HEAD is now at f6844d4 remove commented-out code
+1000/100/10: 2334.5, 2335.7+/-7.1 ms (2335, 2334, 2331, 2340, 2338, 2341, 2324, 2331, 2350, 2333)
+HEAD is now at e774623 Add support for custom underlay drawing
+1000/100/10: 2333.5, 2339.6+/-25.2 ms (2336, 2303, 2329, 2349, 2339, 2353, 2331, 2326, 2330, 2400)
+HEAD is now at b00db15 update combined
+1000/100/10: 2327.5, 2332.1+/-22.7 ms (2338, 2300, 2321, 2321, 2317, 2336, 2317, 2334, 2358, 2379)
+HEAD is now at 4cfcc38 add a destroy() method
+1000/100/10: 2323, 2329.5+/-20.1 ms (2339, 2304, 2319, 2313, 2327, 2336, 2319, 2316, 2351, 2371)

@@ -1,0 +1,25 @@
+Performance testing for dygraphs.
+
+To measure times on a benchmark, run:
+
+git clone https://github.com/danvk/dygraphs.git
+git clone https://github.com/danvk/dygraphs-perf.git
+cd dygraphs-perf
+./perf.sh
+
+This will print out something like:
+1000/100/10: 525, 523.7+/-20.6 ms (540, 496, 546, 518, 554, 532, 495, 515, 507, 534)
+
+This means that it ran a benchmark where it drew a chart with
+- 100 series
+- 1000 points per series
+
+It created and drew this chart 10 times to get ten elapsed times. These are
+listed in parentheses, in ms. The first number after the colon is the median, followed
+by mean +/- std. dev.
+
+If you want to run with different combinations, tweak the perf.sh script.
+
+This script is maintained outside of the dygraphs repository because it's
+useful to run git commands in the dygraphs repository (i.e. reset to an old
+commit) without having them affect the benchmark scripts.
