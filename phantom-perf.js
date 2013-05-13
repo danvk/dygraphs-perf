@@ -101,7 +101,7 @@ assert(rollPeriod != null, "Couldn't parse " + system.args[3]);
 assert(repetitions != null, "Couldn't parse " + system.args[4]);
 
 
-RunBenchmark(points, series, repetitions, rollPeriod, function(rep_times) {
+RunBenchmark(points, series, rollPeriod, repetitions, function(rep_times) {
   if (!rep_times) {
     console.log('ERROR');
     phantom.exit();
