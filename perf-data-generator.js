@@ -37,4 +37,5 @@ DataGenerator.generateData = function(numPoints, numSeries, dataType, dataFormat
     }
     data.push(sample);
   }
+  return data;
 };

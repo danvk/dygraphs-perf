@@ -54,7 +54,7 @@
         var sel = document.getElementById('dataFormat');
         var dataFormat = sel.options[sel.selectedIndex].value;
 
-        var data = DataGenerator.generateData(numPoints, numSeries, dataType, dataFormat)
+        var data = DataGenerator.generateData(numPoints, numSeries, dataType, dataFormat);
         var labels = [ "x" ];
         for (var j = 0; j < numSeries; j++) {
           labels.push("data-set-" + j);
