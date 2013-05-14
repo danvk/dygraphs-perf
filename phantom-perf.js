@@ -30,10 +30,11 @@ function assert(condition, msg){
 var config_file_template =
     "document.getElementById('points').value = (points);\n" +
     "document.getElementById('series').value = (series);\n" +
+    "document.getElementById('(dataFormat)').selected = true;\n";
     "document.getElementById('repetitions').value = (repetitions);\n";
-	"document.getElementById('rollPeriod').value = (rollPeriod);\n";
+	    "document.getElementById('rollPeriod').value = (rollPeriod);\n";
 
-var RunBenchmark = function(points, series, rollPeriod, repetitions, done_callback) {
+var RunBenchmark = function(points, series, dataFormat, rollPeriod, repetitions, done_callback) {
   var page = require('webpage').create();
 
   // page.evalute() is seriously locked down.
@@ -42,6 +43,7 @@ var RunBenchmark = function(points, series, rollPeriod, repetitions, done_callba
       config_file_template
         .replace("(points)", points)
         .replace("(series)", series)
+        .replace("(dataFormat)", dataFormat)
         .replace("(rollPeriod)", rollPeriod)
         .replace("(repetitions)", repetitions),
       "w");
@@ -85,7 +87,7 @@ function median(input) {
 }
 
 
-var points, series, rollPeriod, repetitions;
+var points, series, dataFormat, rollPeriod, repetitions;
 if (5 != system.args.length) {
   console.warn('Usage: phantomjs phantom-driver.js (points) (series) (rollPeriod) (repititions)');
   phantom.exit();
@@ -93,15 +95,17 @@ if (5 != system.args.length) {
 
 points = parseInt(system.args[1]);
 series = parseInt(system.args[2]);
-rollPeriod = parseInt(system.args[3]);
-repetitions = parseInt(system.args[4]);
+dataFormat = system.args[3];
+rollPeriod = parseInt(system.args[4]);
+repetitions = parseInt(system.args[5]);
 assert(points != null, "Couldn't parse " + system.args[1]);
 assert(series != null, "Couldn't parse " + system.args[2]);
-assert(rollPeriod != null, "Couldn't parse " + system.args[3]);
-assert(repetitions != null, "Couldn't parse " + system.args[4]);
+assert(dataFormat != null, "Couldn't parse " + system.args[3]);
+assert(rollPeriod != null, "Couldn't parse " + system.args[4]);
+assert(repetitions != null, "Couldn't parse " + system.args[5]);
 
 
-RunBenchmark(points, series, rollPeriod, repetitions, function(rep_times) {
+RunBenchmark(points, series, dataFormat, rollPeriod, repetitions, function(rep_times) {
   if (!rep_times) {
     console.log('ERROR');
     phantom.exit();
