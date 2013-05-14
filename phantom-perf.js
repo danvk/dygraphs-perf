@@ -30,9 +30,9 @@ function assert(condition, msg){
 var config_file_template =
     "document.getElementById('points').value = (points);\n" +
     "document.getElementById('series').value = (series);\n" +
-    "document.getElementById('(dataFormat)').selected = true;\n";
+    "document.getElementById('(dataFormat)').selected = true;\n" +
+    "document.getElementById('rollPeriod').value = (rollPeriod);\n" +
     "document.getElementById('repetitions').value = (repetitions);\n";
-	    "document.getElementById('rollPeriod').value = (rollPeriod);\n";
 
 var RunBenchmark = function(points, series, dataFormat, rollPeriod, repetitions, done_callback) {
   var page = require('webpage').create();
@@ -56,7 +56,7 @@ var RunBenchmark = function(points, series, dataFormat, rollPeriod, repetitions,
     }
 
     assert(page.injectJs(tmpfile), "Unable to inject JS.");
-    fs.remove(tmpfile);
+//    fs.remove(tmpfile);
 
     var start = new Date().getTime();
     var rep_times = page.evaluate(function() {
@@ -88,8 +88,8 @@ function median(input) {
 
 
 var points, series, dataFormat, rollPeriod, repetitions;
-if (5 != system.args.length) {
-  console.warn('Usage: phantomjs phantom-driver.js (points) (series) (rollPeriod) (repititions)');
+if (6 != system.args.length) {
+  console.warn('Usage: phantomjs phantom-driver.js (points) (series) (dataFormat: [line,errorBar,customBar,fractions]) (rollPeriod) (repititions)');
   phantom.exit();
 }
 
@@ -117,7 +117,7 @@ RunBenchmark(points, series, dataFormat, rollPeriod, repetitions, function(rep_t
   rep_times.forEach(function(x) { std += Math.pow(x - mean, 2); });
   std = Math.sqrt(std / (rep_times.length - 1));
 
-  console.log(points + '/' + series +'/' + rollPeriod + '/' + repetitions + ': ' +
+  console.log(points + '/' + series +'/' + dataFormat + '/' + rollPeriod + '/' + repetitions + ': \t' +
       median(rep_times) + ', ' +
       mean.toFixed(1) + '+/-' + std.toFixed(1) + ' ms (' +
       rep_times.join(', ') + ')');
