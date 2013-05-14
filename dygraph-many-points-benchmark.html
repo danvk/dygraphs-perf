@@ -62,8 +62,17 @@
         var rollPeriod = parseInt(
             document.getElementById('rollPeriod').value);
         var opts = {labels: labels, rollPeriod: rollPeriod, timingName: "x"};
-        if(dataFormat == "fractions") {
-          opts[fractions] = true;
+        
+        switch(dataFormat){
+        case "errorBar":
+          opts["errorBars"] = true;
+          break;
+        case "customBar":
+          opts["customBars"] = true;
+          break;
+        case "fractions":
+          opts["fractions"] = true;
+          break;
         }
 
         var millisecondss = [];
