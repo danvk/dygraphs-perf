@@ -2,6 +2,7 @@
 <html>
   <head>
     <script type="text/javascript" src="../dygraphs/dygraph-combined.js"></script>
+    <script type="text/javascript" src="./perf-data-generator.js"></script>
 
   </head>
   <body>
@@ -15,6 +16,13 @@
          <input type="text" id="points" size="20"></p>
       <p>Number of series:
          <input type="text" id="series" size="20"></p>
+      <p>DataFormat:
+        <select size="1" id="dataFormat" size="20">
+          <option value="line" selected="selected">line</option>
+          <option value="errorBar">error bar</option>
+          <option value="customBar">custom bar</option>
+          <option value="fractions">fractions</option>
+        </select></p>
       <p>Roll period (in points):
         <input type="text" id="rollPeriod" size="20"></p>
       <p>Repetitions:
@@ -43,27 +51,10 @@
             parseInt(document.getElementById('series').value);
         var repetitions =
             parseInt(document.getElementById('repetitions').value);
+        var sel = document.getElementById('dataFormat');
+        var dataFormat = sel.options[sel.selectedIndex].value;
 
-        var data = [];
-        var xmin = 0.0;
-        var xmax = 2.0 * Math.PI;
-        var adj = .5;
-        var delta = (xmax - xmin) / (numPoints - 1);
-
-        for (var i = 0; i < numPoints; ++i) {
-          var x = xmin + delta * i;
-          var elem = [ x ];
-          for (var j = 0; j < numSeries; j++) {
-            var y;
-            if (dataType == "rand") {
-              y = Math.pow(Math.random() - Math.random(), 7);
-            } else {
-              y = Math.sin(x + (j * adj));
-            }
-            elem.push(y);
-          }
-          data[i] = elem;
-        }
+        var data = DataGenerator.generateData(numPoints, numSeries, dataType, dataFormat)
         var labels = [ "x" ];
         for (var j = 0; j < numSeries; j++) {
           labels.push("data-set-" + j);
