@@ -18,10 +18,10 @@
          <input type="text" id="series" size="20"></p>
       <p>DataFormat:
         <select size="1" id="dataFormat" size="20">
-          <option value="line" selected="selected">line</option>
-          <option value="errorBar">error bar</option>
-          <option value="customBar">custom bar</option>
-          <option value="fractions">fractions</option>
+          <option id="line" value="line" selected="selected">line</option>
+          <option id="errorBar" value="errorBar">error bar</option>
+          <option id="customBar" value="customBar">custom bar</option>
+          <option id="fractions" value="fractions">fractions</option>
         </select></p>
       <p>Roll period (in points):
         <input type="text" id="rollPeriod" size="20"></p>
@@ -62,6 +62,10 @@
         var rollPeriod = parseInt(
             document.getElementById('rollPeriod').value);
         var opts = {labels: labels, rollPeriod: rollPeriod, timingName: "x"};
+        if(dataFormat == "fractions") {
+          opts[fractions] = true;
+        }
+
         var millisecondss = [];
         for (var i = 0; i < repetitions; i++) {
           if (graph != null) {
@@ -114,6 +118,7 @@
       var values = {
         points: 100,
         series: 1,
+        dataFormat: 'line',
         rollPeriod: 1,
         repetitions: 1,
         type: 'sine',
@@ -144,8 +149,15 @@
         elem.onclick();
       }
 
+      var populateSelect = function(name) {
+        var val = values[name];
+        var elem = document.getElementById(val);
+        elem.selected = true;
+      }
+
       populate('points');
       populate('series');
+      populateSelect('dataFormat');
       populate('rollPeriod');
       populate('repetitions');
       populateRadio('type');
