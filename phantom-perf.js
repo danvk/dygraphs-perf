@@ -56,7 +56,7 @@ var RunBenchmark = function(points, series, dataFormat, rollPeriod, repetitions,
     }
 
     assert(page.injectJs(tmpfile), "Unable to inject JS.");
-//    fs.remove(tmpfile);
+    fs.remove(tmpfile);
 
     var start = new Date().getTime();
     var rep_times = page.evaluate(function() {
