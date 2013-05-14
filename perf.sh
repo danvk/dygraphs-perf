@@ -11,7 +11,10 @@ cd $dygraph_dir
 ./generate-combined.sh
 
 cd $this_dir
-phantomjs phantom-perf.js 1000 100 10
+phantomjs phantom-perf.js 1000 100 line 1 10
+phantomjs phantom-perf.js 1000 100 fractions 1 10
+phantomjs phantom-perf.js 1000 10 customBar 1 10
+phantomjs phantom-perf.js 1000 10 errorBar 1 10
 
 cd $dygraph_dir
 git co dygraph-combined.js
