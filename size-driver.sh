@@ -9,5 +9,5 @@ for commit in $(cat commits.txt); do
   git reset --hard $commit
   cd $this_dir
 
-  ./perf.sh
+  ./size.sh
 done
